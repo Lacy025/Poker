@@ -1,0 +1,286 @@
+#dobitak0{
+    position: relative;
+    text-align:left;
+    top: -5px;
+    left: 0px;
+    font-size: 32px;
+    color:yellow;
+    font-family: Arial;
+}
+#dobitak1{
+    position: relative;
+    text-align:left;
+    top: -13px;
+    font-size: 32px;
+    color:red;
+    font-family: Arial;
+}
+#dobitak2{
+    position: relative;
+    text-align:left;
+    top: -21px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobitak3{
+    position: relative;
+    text-align:left;
+    top: -29px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobitak4{
+    position: relative;
+    text-align:left;
+    top: -37px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobitak5{
+    position: relative;
+    text-align:left;
+    top: -45px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobitak6{
+    position: relative;
+    text-align:left;
+    top: -53px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobitak7{
+    position: relative;
+    text-align:left;
+    top: -61px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobitak8{
+    position: relative;
+    text-align:left;
+    top: -69px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobitak9{
+    position: relative;
+    text-align:left;
+    top: -77px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobit0{
+    position: absolute;
+    text-align: right;
+    top: 0px;
+    right: 600px;
+    font-size: 32px;
+    color:yellow;
+    font-family: Arial;
+}
+#dobit1{
+    position: absolute;
+    text-align: right;
+    top: 28px;
+    right: 600px;
+    font-size: 32px;
+    color:red;
+    font-family: Arial;
+}
+#dobit2{
+    position: absolute;
+    text-align: right;
+    top: 56px;
+    right: 600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobit3{
+    position: absolute;
+    text-align: right;
+    top: 84px;
+    right: 600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobit4{
+    position: absolute;
+    text-align: right;
+    top: 112px;
+    right: 600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobit5{
+    position: absolute;
+    text-align: right;
+    top: 140px;
+    right: 600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobit6{
+    position: absolute;
+    text-align: right;
+    top: 168px;
+    right: 600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobit7{
+    position: absolute;
+    text-align: right;
+    top: 196px;
+    right: 600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobit8{
+    position: absolute;
+    text-align: right;
+    top: 224px;
+    right: 600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#dobit9{
+    position: absolute;
+    text-align: right;
+    top: 252px;
+    right: 600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#kredit{
+    position:absolute;
+    text-align:left;
+    top: 36px;
+    left: 1574px;
+    font-size: 32px;
+    color:red;
+    font-family: Arial;
+}
+#credit{
+    position:absolute;
+    text-align:left;
+    top: 66px;
+    left: 1600px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#ulog{
+    position: absolute;
+    text-align:left;
+    top: 120px;
+    left: 1588px;
+    font-size: 32px;
+    color:yellow;
+    font-family: Arial;
+}
+#bet{
+    position: absolute;
+    text-align:left;
+    top: 150px;
+    left: 1612px;
+    font-size: 32px;
+    color:burlywood;
+    font-family: Arial;
+}
+#autohold{
+    position: absolute;
+    text-align:left;
+    top: 208px;
+    left: 1548px;
+    font-size: 32px;
+    color:blue;
+    font-family: Arial;
+}
+
+#prazna1{
+    position:absolute;
+    left: 10px;
+    top: 320px;
+}
+#prazna2{
+    position:absolute;
+    left: 390px;
+    top: 320px;
+}
+#prazna3{
+    position:absolute;
+    left: 770px;
+    top: 320px;
+}
+#prazna4{
+    position:absolute;
+    left: 1150px;
+    top: 320px;
+}
+
+#prazna5{
+    position:absolute;
+    left: 1530px;
+    top: 320px;
+}
+
+#reklama1{
+    position: absolute;
+    text-align:left;
+    top: 340px;
+    left: 460px;
+    font-size: 250px;
+    font-style: italic;
+    color:red;
+    font-family: Algerian;
+}
+#reklama2{
+    position: absolute;
+    text-align:left;
+    top: 560px;
+    left: 720px;
+    font-size: 250px;
+    font-style: italic;
+    color:red;
+    font-family: Algerian;
+}
+#levo{
+    position: absolute;
+    text-align:left;
+    top: 885px;
+    left: 10px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#desno{
+    position: absolute;
+    text-align:left;
+    top: 885px;
+    left: 1606px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
