@@ -1,9 +1,10 @@
 if($deljenje==0) {
-
     let timerImaReklame;
     let timerNemaReklame;
     let timerLevo;
     let timerDesno;
+    let timerPoruka1;
+    let timerPoruka2;
     let timerJoker1;
     let timerJoker2;
     let timerJoker3;
@@ -28,8 +29,13 @@ if($deljenje==0) {
 
     if($deljenje==0) {
         desno.style.visibility = "hidden";
-        timerDesno = setInterval(desnoDole, 700);
-        timerLevo = setInterval(levoDole, 1400);
+        poruka1.style.visibility = "hidden";
+        poruka2.style.visibility = "hidden";
+        poruka3.style.visibility = "hidden";
+        poruka4.style.visibility = "hidden";
+        poruka5.style.visibility = "hidden";
+        timerDesno = setInterval(desnoDole, 500);
+        timerLevo = setInterval(levoDole, 1000);
     }
     else {
         levo.style.visibility = "hidden";
@@ -94,41 +100,36 @@ if($deljenje==0) {
         timerJoker5 = setInterval(joker5, 5000);
     }
     function levoDole() {
-        if($c==0) {
-            var levo = document.getElementById("levo");
-            levo.innerHTML = ' ' + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LACIKA BAČI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-            levo.style.visibility = "visible";
-            desno.style.visibility = "hidden";
-        }
-        else {
-            var levo = document.getElementById("levo");
-            levo.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIRAJTE  ULOG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-            levo.style.left = "734px";
-            levo.style.visibility = "visible";
-            desno.style.visibility = "hidden";
-        }
+        var levo = document.getElementById("levo");
+        levo.innerHTML = ' ' + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LACIKA BAČI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        levo.style.visibility = "visible";
+        desno.style.visibility = "hidden";
     }
     function desnoDole() {
-        if($c==0) {
-            var desno = document.getElementById("desno");
-            desno.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRBIJA  2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-            levo.style.visibility = "hidden";
-            desno.style.visibility = "visible";
-        }
-        else {
-            var desno = document.getElementById("desno");
-            desno.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  DELJENJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-            desno.style.left = "735px";
-            desno.style.visibility = "visible";
-            levo.style.visibility = "hidden";
-        }
+        var desno = document.getElementById("desno");
+        desno.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRBIJA  2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        levo.style.visibility = "hidden";
+        desno.style.visibility = "visible";
+    }
+    function Poruka1() {
+        var poruka1 = document.getElementById("poruka1");
+        poruka1.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIRAJTE  ULOG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        poruka1.style.left = "734px";
+        poruka1.style.visibility = "visible";
+        poruka2.style.visibility = "hidden";
+    }
+    function Poruka2() {
+        var poruka2 = document.getElementById("poruka2");
+        poruka2.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  DELJENJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        poruka2.style.left = "735px";
+        poruka2.style.visibility = "visible";
+        poruka1.style.visibility = "hidden";
     }
     function intro() {
         if($c==0) {
             document.getElementById("audioIntro").play();
             audioIntro.currentTime = 0;
         }
-        
     }
     function prazneKarte() {
         document.getElementById("$polje1").src="/Karte/53.png";
@@ -197,20 +198,25 @@ if($deljenje==0) {
                 document.getElementById("autohold").style.visibility = "visible";
             }
         }
-        
     }
     function pocetak(event) {
-    
         switch(event.keyCode) {
-            
-            case 81 : 
+            case 81 :
+                if($c==0) {
+                    levo.style.visibility = "hidden";
+                    desno.style.visibility = "hidden";
+                    clearInterval(timerLevo);
+                    clearInterval(timerDesno);
+                    timerPoruka1 = setInterval(Poruka1,1000);
+                    timerPoruka2 = setInterval(Poruka2,2000);
+                }
                 if($c<4901) {
-                $c = $c + 100;
-                vrednostKredita();
-                document.getElementById("audioKredit").play();
-                audioKredit.currentTime = 0;
-                audioIntro.currentTime = 5;
-                break;
+                    $c = $c + 100;
+                    vrednostKredita();
+                    document.getElementById("audioKredit").play();
+                    audioKredit.currentTime = 0;
+                    audioIntro.currentTime = 5;
+                    break;
                 }
                 else {
                     break;
@@ -239,8 +245,8 @@ if($deljenje==0) {
                     vrednostKredita();
                     document.getElementById("audioDeljenje1").play();
                     audioDeljenje1.currentTime = 0;
-                    clearInterval(timerLevo);
-                    clearInterval(timerDesno);
+                    clearInterval(timerPoruka1);
+                    clearInterval(timerPoruka2);
                     clearInterval(timerImaReklame);
                     clearInterval(timerNemaReklame);
                     clearInterval(timerJoker1);
@@ -248,8 +254,8 @@ if($deljenje==0) {
                     clearInterval(timerJoker3);
                     clearInterval(timerJoker4);
                     clearInterval(timerJoker5);
-                    levo.style.visibility = "hidden";
-                    desno.style.visibility = "hidden";
+                    poruka1.style.visibility = "hidden";
+                    poruka2.style.visibility = "hidden";
                     reklama1.style.visibility = "hidden";
                     reklama2.style.visibility = "hidden";
                     $polje1.style.visibility = "hidden";

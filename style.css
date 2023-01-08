@@ -1,4 +1,4 @@
-#dobitak0{
+#dobitak0 {
     position: relative;
     text-align:left;
     top: -5px;
@@ -250,6 +250,61 @@
     text-align:left;
     top: 885px;
     left: 1606px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#poruka1{
+    position: absolute;
+    text-align:left;
+    top: 885px;
+    left: 734px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#poruka2{
+    position: absolute;
+    text-align:left;
+    top: 885px;
+    left: 734px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#poruka3{
+    position: absolute;
+    text-align:left;
+    top: 885px;
+    left: 734px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#poruka4{
+    position: absolute;
+    text-align:left;
+    top: 885px;
+    left: 734px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#poruka5{
+    position: absolute;
+    text-align:left;
+    top: 885px;
+    left: 700px;
     font-size: 32px;
     text-shadow: 2px 2px red;
     color:yellow;
