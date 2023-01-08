@@ -4,6 +4,12 @@ let $k3;
 let $k4;
 let $k5;
 
+let $b1;
+let $b2;
+let $b3;
+let $b4;
+let $b5;
+
 if($deljenje==0) {
     timerCekanje = setInterval(cekanje, 100);
 }    
@@ -32,4 +38,9 @@ function prvoDeljenje() {
         $k5 = Math.floor(Math.random() * 52);
     }
 
+}
+function Karta1() {
+    if($k1==0) {
+        
+    }
 }
