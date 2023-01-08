@@ -214,34 +214,6 @@
     color:blue;
     font-family: Arial;
 }
-
-#polje1{
-    position:absolute;
-    left: 10px;
-    top: 320px;
-}
-#polje2{
-    position:absolute;
-    left: 390px;
-    top: 320px;
-}
-#polje3{
-    position:absolute;
-    left: 770px;
-    top: 320px;
-}
-#polje4{
-    position:absolute;
-    left: 1150px;
-    top: 320px;
-}
-
-#polje5{
-    position:absolute;
-    left: 1530px;
-    top: 320px;
-}
-
 #reklama1{
     position: absolute;
     text-align:left;
