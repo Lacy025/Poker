@@ -16,11 +16,11 @@ if($deljenje==0) {
     vrednostKredita();
     vrednostUloga();
 
-    prazna1.style.visibility = "hidden";
-    prazna2.style.visibility = "hidden";
-    prazna3.style.visibility = "hidden";
-    prazna4.style.visibility = "hidden";
-    prazna5.style.visibility = "hidden";
+    polje1.style.visibility = "hidden";
+    polje2.style.visibility = "hidden";
+    polje3.style.visibility = "hidden";
+    polje4.style.visibility = "hidden";
+    polje5.style.visibility = "hidden";
 
     imaReklame();
     timerNemaReklame = setInterval(nemaReklame, 6000);
@@ -72,11 +72,11 @@ if($deljenje==0) {
     function imaReklame() {
         reklama1.style.visibility = "visible";
         reklama2.style.visibility = "visible";
-        prazna1.style.visibility = "hidden";
-        prazna2.style.visibility = "hidden";
-        prazna3.style.visibility = "hidden";
-        prazna4.style.visibility = "hidden";
-        prazna5.style.visibility = "hidden";
+        polje1.style.visibility = "hidden";
+        polje2.style.visibility = "hidden";
+        polje3.style.visibility = "hidden";
+        polje4.style.visibility = "hidden";
+        polje5.style.visibility = "hidden";
         clearInterval(timerJoker1);
         clearInterval(timerJoker2);
         clearInterval(timerJoker3);
@@ -131,57 +131,57 @@ if($deljenje==0) {
         
     }
     function prazneKarte() {
-        document.getElementById("prazna1").src="/Karte/53.png";
-        document.getElementById("prazna2").src="/Karte/53.png";
-        document.getElementById("prazna3").src="/Karte/53.png";
-        document.getElementById("prazna4").src="/Karte/53.png";
-        document.getElementById("prazna5").src="/Karte/53.png";
-        prazna1.style.visibility = "visible";
-        prazna2.style.visibility = "visible";
-        prazna3.style.visibility = "visible";
-        prazna4.style.visibility = "visible";
-        prazna5.style.visibility = "visible";
+        document.getElementById("polje1").src="/Karte/53.png";
+        document.getElementById("polje2").src="/Karte/53.png";
+        document.getElementById("polje3").src="/Karte/53.png";
+        document.getElementById("polje4").src="/Karte/53.png";
+        document.getElementById("polje5").src="/Karte/53.png";
+        polje1.style.visibility = "visible";
+        polje2.style.visibility = "visible";
+        polje3.style.visibility = "visible";
+        polje4.style.visibility = "visible";
+        polje5.style.visibility = "visible";
     }
     function joker1() {
-        prazna1.style.visibility = "hidden";
-        document.getElementById("prazna1").src="/Karte/0.png";
-        prazna1.style.visibility = "visible";
+        polje1.style.visibility = "hidden";
+        document.getElementById("polje1").src="/Karte/00.png";
+        polje1.style.visibility = "visible";
         clearInterval(timerJoker1);
     }
     function joker2() {
-        prazna1.style.visibility = "hidden";
-        document.getElementById("prazna1").src="/Karte/53.png";
-        prazna1.style.visibility = "visible";
-        prazna2.style.visibility = "hidden";
-        document.getElementById("prazna2").src="/Karte/0.png";
-        prazna2.style.visibility = "visible";
+        polje1.style.visibility = "hidden";
+        document.getElementById("polje1").src="/Karte/53.png";
+        polje1.style.visibility = "visible";
+        polje2.style.visibility = "hidden";
+        document.getElementById("polje2").src="/Karte/00.png";
+        polje2.style.visibility = "visible";
         clearInterval(timerJoker2);
     }
     function joker3() {
-        prazna2.style.visibility = "hidden";
-        document.getElementById("prazna2").src="/Karte/53.png";
-        prazna2.style.visibility = "visible";
-        prazna3.style.visibility = "hidden";
-        document.getElementById("prazna3").src="/Karte/0.png";
-        prazna3.style.visibility = "visible";
+        polje2.style.visibility = "hidden";
+        document.getElementById("polje2").src="/Karte/53.png";
+        polje2.style.visibility = "visible";
+        polje3.style.visibility = "hidden";
+        document.getElementById("polje3").src="/Karte/00.png";
+        polje3.style.visibility = "visible";
         clearInterval(timerJoker3);
     }
     function joker4() {
-        prazna3.style.visibility = "hidden";
-        document.getElementById("prazna3").src="/Karte/53.png";
-        prazna3.style.visibility = "visible";
-        prazna4.style.visibility = "hidden";
-        document.getElementById("prazna4").src="/Karte/0.png";
-        prazna4.style.visibility = "visible";
+        polje3.style.visibility = "hidden";
+        document.getElementById("polje3").src="/Karte/53.png";
+        polje3.style.visibility = "visible";
+        polje4.style.visibility = "hidden";
+        document.getElementById("polje4").src="/Karte/00.png";
+        polje4.style.visibility = "visible";
         clearInterval(timerJoker4);
     }
     function joker5() {
-        prazna4.style.visibility = "hidden";
-        document.getElementById("prazna4").src="/Karte/53.png";
-        prazna4.style.visibility = "visible";
-        prazna5.style.visibility = "hidden";
-        document.getElementById("prazna5").src="/Karte/0.png";
-        prazna5.style.visibility = "visible";
+        polje4.style.visibility = "hidden";
+        document.getElementById("polje4").src="/Karte/53.png";
+        polje4.style.visibility = "visible";
+        polje5.style.visibility = "hidden";
+        document.getElementById("polje5").src="/Karte/00.png";
+        polje5.style.visibility = "visible";
         clearInterval(timerJoker5);
     }
     function autohold() {
@@ -252,11 +252,11 @@ if($deljenje==0) {
                     desno.style.visibility = "hidden";
                     reklama1.style.visibility = "hidden";
                     reklama2.style.visibility = "hidden";
-                    prazna1.style.visibility = "hidden";
-                    prazna2.style.visibility = "hidden";
-                    prazna3.style.visibility = "hidden";
-                    prazna4.style.visibility = "hidden";
-                    prazna5.style.visibility = "hidden";
+                    polje1.style.visibility = "hidden";
+                    polje2.style.visibility = "hidden";
+                    polje3.style.visibility = "hidden";
+                    polje4.style.visibility = "hidden";
+                    polje5.style.visibility = "hidden";
                     reklama1.style.visibility = "hidden";
                     reklama2.style.visibility = "hidden";
                     prazneKarte();
