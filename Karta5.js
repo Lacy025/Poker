@@ -15,7 +15,7 @@ if($deljenje==0) {
     }
     function Karta5() {
     
-        clearInterval(timerCekanje6);
+        clearInterval(timerCekanje7);
     
         if($k5==0) {
             $polje5.style.visibility = "hidden";
