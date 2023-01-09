@@ -311,3 +311,58 @@
     font-family: Arial;
     background-color: red;
 }
+#stop1{
+    position: absolute;
+    text-align:left;
+    top: 843px;
+    left: 115px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#stop2{
+    position: absolute;
+    text-align:left;
+    top: 843px;
+    left: 500px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#stop3{
+    position: absolute;
+    text-align:left;
+    top: 843px;
+    left: 880px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#stop4{
+    position: absolute;
+    text-align:left;
+    top: 843px;
+    left: 1260px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
+#stop5{
+    position: absolute;
+    text-align:left;
+    top: 843px;
+    left: 1635px;
+    font-size: 32px;
+    text-shadow: 2px 2px red;
+    color:yellow;
+    font-family: Arial;
+    background-color: red;
+}
