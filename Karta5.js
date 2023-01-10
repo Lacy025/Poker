@@ -28,7 +28,7 @@ if($deljenje==0) {
             $polje5.style.visibility = "hidden";
             document.getElementById("$polje5").src="/Karte/01.png";
             $polje5.style.visibility = "visible";
-            $n5 = 1;
+            $n5 = 14;
             $b5 = 1;
         }
         if($k5==2) {
@@ -119,7 +119,7 @@ if($deljenje==0) {
             $polje5.style.visibility = "hidden";
             document.getElementById("$polje5").src="/Karte/14.png";
             $polje5.style.visibility = "visible";
-            $n5 = 1;
+            $n5 = 14;
             $b5 = 2;
         }
         if($k5==15) {
@@ -210,7 +210,7 @@ if($deljenje==0) {
             $polje5.style.visibility = "hidden";
             document.getElementById("$polje5").src="/Karte/27.png";
             $polje5.style.visibility = "visible";
-            $n5 = 1;
+            $n5 = 14;
             $b5 = 3;
         }
         if($k5==28) {
@@ -301,7 +301,7 @@ if($deljenje==0) {
             $polje5.style.visibility = "hidden";
             document.getElementById("$polje5").src="/Karte/40.png";
             $polje5.style.visibility = "visible";
-            $n5 = 1;
+            $n5 = 14;
             $b5 = 4;
         }
         if($k5==41) {

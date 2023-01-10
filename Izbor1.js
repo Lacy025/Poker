@@ -139,7 +139,7 @@ if($deljenje==0) {
                 Ponistavanje();
                 break;
             case 13 :
-
+                // Deljenje2
         }   
     }
 
