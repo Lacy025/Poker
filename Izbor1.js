@@ -19,47 +19,54 @@ stop4.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
 var stop5 = document.getElementById("stop5");
 stop5.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
 
-var $hold1;
-var $hold2;
-var $hold3;
-var $hold4;
-var $hold5;
-
 stop1.style.visibility = "hidden";
 stop2.style.visibility = "hidden";
 stop3.style.visibility = "hidden";
 stop4.style.visibility = "hidden";
 stop5.style.visibility = "hidden";
 
+let timerStop1;
+let timerStop2;
+let timerStop3;
+let timerStop4;
+let timerStop5;
+
+let stop = 1;
+
 function $Stop1() {
     stop1.style.visibility = "visible";
     $hold1 = 1;
     document.getElementById("audioStop").play();
     audioStop.currentTime = 0;
+    clearInterval(timerStop1);
 }
 function $Stop2() {
     stop2.style.visibility = "visible";
     $hold2 = 1;
     document.getElementById("audioStop").play();
     audioStop.currentTime = 0;
+    clearInterval(timerStop2);
 }
 function $Stop3() {
     stop3.style.visibility = "visible";
     $hold3 = 1;
     document.getElementById("audioStop").play();
     audioStop.currentTime = 0;
+    clearInterval(timerStop3);
 }
 function $Stop4() {
     stop4.style.visibility = "visible";
     $hold4 = 1;
     document.getElementById("audioStop").play();
     audioStop.currentTime = 0;
+    clearInterval(timerStop4);
 }
 function $Stop5() {
     stop5.style.visibility = "visible";
     $hold5 = 1;
     document.getElementById("audioStop").play();
     audioStop.currentTime = 0;
+    clearInterval(timerStop5);
 }
 function Ponistavanje() {
     stop1.style.visibility = "hidden";
@@ -78,20 +85,49 @@ function Ponistavanje() {
 
 if($deljenje==0) {
     if($deljenje==0) {
-        timerCekanje8 = setInterval(cekanje, 500);
+        timerCekanje9 = setInterval(cekanje, 500);
     }
     function cekanje() {
         console.log($deljenje);
-        if($deljenje==7) {
-            clearInterval(timerCekanje8);
+        if($deljenje==8) {
+            clearInterval(timerCekanje9);
+
+            console.log($hold1);
+            console.log($hold2);
+            console.log($hold3);
+            console.log($hold4);
+            console.log($hold5);
+
+            if($hold1==1&&$a==1) {
+                $Stop1();
+                stop+=220;
+            }
+            if($hold2==1&&$a==1) {
+                timerStop2 = setInterval($Stop2,stop);
+                stop+=220;
+            }
+            if($hold3==1&&$a==1) {
+                timerStop3 = setInterval($Stop3,stop);
+                stop+=220;
+            }
+            if($hold4==1&&$a==1) {
+                timerStop4 = setInterval($Stop4,stop);
+                stop+=220;
+            }
+            if($hold5==1&&$a==1) {
+                timerStop5 = setInterval($Stop5,stop);
+                stop+=50;
+            }
+            
             console.log($deljenje);
-            timerCekanje8 = setInterval(Izbor1, 100);
-            $deljenje=8;
+            timerCekanje9 = setInterval(Izbor1, 500);
+            $deljenje=9;
+
             window.addEventListener("keydown", IzborKarata);
         }
     }
     function Izbor1() {
-        clearInterval(timerCekanje8);
+        clearInterval(timerCekanje9);
         timerPoruka3 = setInterval(Poruka3, 1000);
         timerPoruka4 = setInterval(Poruka4, 2000);
         timerPoruka5 = setInterval(Poruka5, 3000);

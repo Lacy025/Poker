@@ -2,23 +2,68 @@ let dobitak = 0;
 let dveiste = 0;
 let cetiriboje = 0;
 
+let $Fiveofakind = 0;
+let $Royalflush = 0;
+let $Streetflush = 0;
+let $Poker = 0;
+let $Fullhouse = 0;
+let $Flush = 0;
+let $Street = 0;
+let $Threeofakind = 0;
+let $Twopairs = 0;
+let $Highpair = 0;
+
+let $hold1 = 0;
+let $hold2 = 0;
+let $hold3 = 0;
+let $hold4 = 0;
+let $hold5 = 0;
+
+if($deljenje==0) {
+
+    if($deljenje==0) {
+        timerCekanje8 = setInterval(cekanje, 500);
+    }    
+    function cekanje() {
+        console.log($deljenje);
+    
+        if($deljenje==7) {
+            clearInterval(timerCekanje8);
+            timerCekanje8 = setInterval(Dobitak1,800);
+        }
+    
+    }
+    function Dobitak1() {
+
+        clearInterval(timerCekanje8);
+        $deljenje = 8;
+    
+        console.log($n1);
+        console.log($n2);
+        console.log($n3);
+        console.log($n4);
+        console.log($n5);
+    
         // FIVE OF A KIND
 
-        if ((($n1==$n2)&&($n2==$n3)&&($n3==$n4)&&($n5==0)) ||
+        if (dobitak==0) {
+
+            if ((($n1==$n2)&&($n2==$n3)&&($n3==$n4)&&($n5==0)) ||
 				(($n1==$n2)&&($n2==$n3)&&($n4==0)&&($n3==$n5)) ||
 				(($n1==$n2)&&($n3==0)&&($n2==$n4)&&($n4==$n5)) ||
 				(($n1==$n3)&&($n2==0)&&($n3==$n4)&&($n4==$n5)) ||
 				(($n1==0)&&($n2==$n3)&&($n3==$n4)&&($n4==$n5))) {
 
-			$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
-			dobitak++;
-			new Fiveofakind();
-		}
+			    $hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
+			    dobitak++;
+			    $Fiveofakind = 1;
+		    }
 
-		// ROYAL FLUSH OR STREET
+        }
+        
+        // ROYAL FLUSH OR STREET
 
-
-		if (dobitak==0) {
+        if (dobitak==0) {
 
 			let ROYAL = 0;
 
@@ -40,16 +85,17 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Royalflush();
+					$Royalflush = 1;
 				}
 				else {
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
-		// STREET FLUSH OR STREET
+
+        // STREET FLUSH OR STREET
 		// 1-5
 
 		if (dobitak==0) {
@@ -74,12 +120,12 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
@@ -109,12 +155,12 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
@@ -144,12 +190,12 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
@@ -179,12 +225,12 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
@@ -214,12 +260,12 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
@@ -249,12 +295,12 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
@@ -284,12 +330,12 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
@@ -319,13 +365,13 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
@@ -355,18 +401,18 @@ let cetiriboje = 0;
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Streetflush();
+					$Streetflush = 1;
 				}
 				else {
 
 					$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 					dobitak++;
-					new Street();
+					$Street = 1;
 				}
 			}
 		}
 
-		// POKER
+        // POKER
 
 		if (dobitak==0) {
 
@@ -377,7 +423,7 @@ let cetiriboje = 0;
 					(($n1==0)&&($n2==$n3)&&($n3==$n4))) {
 				$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=0;
 				dobitak++;
-				new Poker();
+				$Poker = 1;
 			}
 
 			if ((($n1==$n2)&&($n2==$n3)&&($n3==$n5)) ||
@@ -387,7 +433,7 @@ let cetiriboje = 0;
 					(($n1==0)&&($n2==$n3)&&($n3==$n5))) {
 				$hold1=1;$hold2=1;$hold3=1;$hold4=0;$hold5=1;
 				dobitak++;
-				new Poker();
+				$Poker = 1;
 			}
 
 			if ((($n1==$n2)&&($n2==$n4)&&($n4==$n5)) ||
@@ -397,7 +443,7 @@ let cetiriboje = 0;
 					(($n1==0)&&($n2==$n4)&&($n4==$n5))) {
 				$hold1=1;$hold2=1;$hold3=0;$hold4=1;$hold5=1;
 				dobitak++;
-				new Poker();
+				$Poker = 1;
 			}
 
 			if ((($n1==$n3)&&($n3==$n4)&&($n4==$n5)) ||
@@ -407,7 +453,7 @@ let cetiriboje = 0;
 					(($n1==0)&&($n3==$n4)&&($n4==$n5))) {
 				$hold1=1;$hold2=0;$hold3=1;$hold4=1;$hold5=1;
 				dobitak++;
-				new Poker();
+				$Poker = 1;
 			}
 
 			if ((($n2==$n3)&&($n3==$n4)&&($n4==$n5)) ||
@@ -417,11 +463,11 @@ let cetiriboje = 0;
 					(($n2==0)&&($n3==$n4)&&($n4==$n5))) {
 				$hold1=0;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 				dobitak++;
-				new Poker();
+				$Poker = 1;
 			}
 		}
 
-		//FULL HOUSE
+        //FULL HOUSE
 
 		if (dobitak==0) {
 
@@ -453,11 +499,11 @@ let cetiriboje = 0;
 
 				$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 				dobitak++;
-				new Fullhouse();
+				$Fullhouse = 1;
 			}
 		}
 
-		//FLUSH
+        //FLUSH
 
 		if (dobitak==0) {
 
@@ -470,111 +516,111 @@ let cetiriboje = 0;
 
 				$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 				dobitak++;
-				new Flush();
+				Flush = 1;
 			}
 		}
 
-		//THREE OF A KIND
+        //THREE OF A KIND
 
 		if (dobitak==0) {
 
 			if ((($n1==$n2)&&($n2==$n3))||(($n1==$n2)&&($n3==0))||(($n1==$n3)&&($n2==0))||(($n2==$n3)&&($n1==0))) {
 				$hold1=1;$hold2=1;$hold3=1;$hold4=0;$hold5=0;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n1==$n2)&&($n2==$n4))||(($n1==$n2)&&($n4==0))||(($n1==$n4)&&($n2==0))||(($n2==$n4)&&($n1==0))) {
 				$hold1=1;$hold2=1;$hold3=0;$hold4=1;$hold5=0;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n1==$n2)&&($n2==$n5))||(($n1==$n2)&&($n5==0))||(($n1==$n5)&&($n2==0))||(($n2==$n5)&&($n1==0))) {
 				$hold1=1;$hold2=1;$hold3=0;$hold4=0;$hold5=1;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n1==$n3)&&($n3==$n4))||(($n1==$n3)&&($n4==0))||(($n1==$n4)&&($n3==0))||(($n3==$n4)&&($n1==0))) {
 				$hold1=1;$hold2=0;$hold3=1;$hold4=1;$hold5=0;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n1==$n3)&&($n3==$n5))||(($n1==$n3)&&($n5==0))||(($n1==$n5)&&($n3==0))||(($n3==$n5)&&($n1==0))) {
 				$hold1=1;$hold2=0;$hold3=1;$hold4=0;$hold5=1;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n1==$n4)&&($n4==$n5))||(($n1==$n4)&&($n5==0))||(($n1==$n5)&&($n4==0))||(($n4==$n5)&&($n1==0))) {
 				$hold1=1;$hold2=0;$hold3=0;$hold4=1;$hold5=1;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n2==$n3)&&($n3==$n4))||(($n2==$n3)&&($n4==0))||(($n2==$n4)&&($n3==0))||(($n3==$n4)&&($n2==0))) {
 				$hold1=0;$hold2=1;$hold3=1;$hold4=1;$hold5=0;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n2==$n3)&&($n3==$n5))||(($n2==$n3)&&($n5==0))||(($n2==$n5)&&($n3==0))||(($n3==$n5)&&($n2==0))) {
 				$hold1=0;$hold2=1;$hold3=1;$hold4=0;$hold5=1;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n2==$n4)&&($n4==$n5))||(($n2==$n4)&&($n5==0))||(($n2==$n5)&&($n4==0))||(($n4==$n5)&&($n2==0))) {
 				$hold1=0;$hold2=1;$hold3=0;$hold4=1;$hold5=1;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 
 			if ((($n3==$n4)&&($n4==$n5))||(($n3==$n4)&&($n5==0))||(($n3==$n5)&&($n4==0))||(($n4==$n5)&&($n3==0))) {
 				$hold1=0;$hold2=0;$hold3=1;$hold4=1;$hold5=1;
 				dobitak++;
-				new Threeofakind();
+				$Threeofakind = 1;
 			}
 		}
 
-		//2 PAIRS
+        //2 PAIRS
 
 		if (dobitak==0) {
 
 			if ((($n1==$n2)&&($n3==$n4))||(($n1==$n3)&&($n2==$n4))||(($n1==$n4)&&($n2==$n3))) {
 				$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=0;
 				dobitak++;
-				new Twopairs();
+				$Twopairs = 1;
 			}
 
 			if ((($n1==$n2)&&($n3==$n5))||(($n1==$n3)&&($n2==$n5))||(($n1==$n5)&&($n2==$n3))) {
 				$hold1=1;$hold2=1;$hold3=1;$hold4=0;$hold5=1;
 				dobitak++;
-				new Twopairs();
+				$Twopairs = 1;
 			}
 
 			if ((($n1==$n2)&&($n4==$n5))||(($n1==$n5)&&($n2==$n4))||(($n1==$n4)&&($n2==$n5))) {
 				$hold1=1;$hold2=1;$hold3=0;$hold4=1;$hold5=1;
 				dobitak++;
-				new Twopairs();
+				$Twopairs = 1;
 			}
 
 			if ((($n1==$n3)&&($n4==$n5))||(($n1==$n5)&&($n3==$n4))||(($n1==$n4)&&($n3==$n5))) {
 				$hold1=1;$hold2=0;$hold3=1;$hold4=1;$hold5=1;
 				dobitak++;
-				new Twopairs();
+				$Twopairs = 1;
 			}
 
 			if ((($n2==$n3)&&($n4==$n5))||(($n3==$n5)&&($n2==$n4))||(($n3==$n4)&&($n2==$n5))) {
 				$hold1=0;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 				dobitak++;
-				new Twopairs();
+				$Twopairs = 1;
 			}
 		}
 
-		//HIGH PAIR
+        //HIGH PAIR
 
 		if (dobitak==0) {
 
@@ -583,11 +629,10 @@ let cetiriboje = 0;
 
 				if ($n1>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -596,11 +641,10 @@ let cetiriboje = 0;
 
 				if ($n1>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -609,11 +653,10 @@ let cetiriboje = 0;
 
 				if ($n1>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -622,11 +665,10 @@ let cetiriboje = 0;
 
 				if ($n1>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -635,11 +677,10 @@ let cetiriboje = 0;
 
 				if ($n2>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -648,11 +689,10 @@ let cetiriboje = 0;
 
 				if ($n2>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -661,11 +701,10 @@ let cetiriboje = 0;
 
 				if ($n2>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -674,11 +713,10 @@ let cetiriboje = 0;
 
 				if ($n3>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -687,11 +725,10 @@ let cetiriboje = 0;
 
 				if ($n3>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
@@ -700,17 +737,16 @@ let cetiriboje = 0;
 
 				if ($n4>10) {
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 				else {
 					dveiste=1;
-					new Hold();
 				}
 			}
 
 		}
 
-		//HIGH PAIR WITH JOKER
+        //HIGH PAIR WITH JOKER
 
 		if (dobitak==0) {
 
@@ -719,7 +755,7 @@ let cetiriboje = 0;
 				if ($n2>10) {
 					$hold2=1;$hold3=0;$hold4=0;$hold5=0;
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 
 				if (dobitak==0) {
@@ -727,7 +763,7 @@ let cetiriboje = 0;
 					if ($n3>10) {
 						$hold2=0;$hold3=1;$hold4=0;$hold5=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -736,7 +772,7 @@ let cetiriboje = 0;
 					if ($n4>10) {
 						$hold2=0;$hold3=0;$hold4=1;$hold5=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -745,20 +781,20 @@ let cetiriboje = 0;
 					if ($n5>10) {
 						$hold2=0;$hold3=0;$hold4=0;$hold5=1;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 			}
 		}
 
-		if (dobitak==0) {
+        if (dobitak==0) {
 
 			if ($n2==0) {
 				$hold2=1;
 				if ($n1>10) {
 					$hold1=1;$hold3=0;$hold4=0;$hold5=0;
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 
 				if (dobitak==0) {
@@ -766,7 +802,7 @@ let cetiriboje = 0;
 					if ($n3>10) {
 						$hold1=0;$hold3=1;$hold4=0;$hold5=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -775,7 +811,7 @@ let cetiriboje = 0;
 					if ($n4>10) {
 						$hold1=0;$hold3=0;$hold4=1;$hold5=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -784,7 +820,7 @@ let cetiriboje = 0;
 					if ($n5>10) {
 						$hold1=0;$hold3=0;$hold4=0;$hold5=1;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 			}
@@ -797,7 +833,7 @@ let cetiriboje = 0;
 				if ($n1>10) {
 					$hold1=1;$hold2=0;$hold4=0;$hold5=0;
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 
 				if (dobitak==0) {
@@ -805,7 +841,7 @@ let cetiriboje = 0;
 					if ($n2>10) {
 						$hold1=0;$hold2=1;$hold4=0;$hold5=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -814,7 +850,7 @@ let cetiriboje = 0;
 					if ($n4>10) {
 						$hold1=0;$hold2=0;$hold4=1;$hold5=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -823,7 +859,7 @@ let cetiriboje = 0;
 					if ($n5>10) {
 						$hold2=1;$hold2=0;$hold4=0;$hold5=1;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 			}
@@ -836,7 +872,7 @@ let cetiriboje = 0;
 				if ($n1>10) {
 					$hold1=1;$hold2=0;$hold3=0;$hold5=0;
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 
 				if (dobitak==0) {
@@ -844,7 +880,7 @@ let cetiriboje = 0;
 					if ($n2>10) {
 						$hold1=0;$hold2=1;$hold3=0;$hold5=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -853,7 +889,7 @@ let cetiriboje = 0;
 					if ($n3>10) {
 						$hold1=0;$hold2=0;$hold3=1;$hold5=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -862,7 +898,7 @@ let cetiriboje = 0;
 					if ($n5>10) {
 						$hold1=0;$hold2=0;$hold3=0;$hold5=1;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 			}
@@ -875,7 +911,7 @@ let cetiriboje = 0;
 				if ($n1>10) {
 					$hold1=1;$hold2=0;$hold3=0;$hold4=0;
 					dobitak++;
-					new Highpair();
+					$Highpair = 1;
 				}
 
 				if (dobitak==0) {
@@ -883,7 +919,7 @@ let cetiriboje = 0;
 					if ($n2>10) {
 						$hold1=0;$hold2=1;$hold3=0;$hold4=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -892,7 +928,7 @@ let cetiriboje = 0;
 					if ($n3>10) {
 						$hold1=0;$hold2=0;$hold3=1;$hold4=0;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 
@@ -901,14 +937,14 @@ let cetiriboje = 0;
 					if ($n4>10) {
 						$hold1=0;$hold2=0;$hold3=0;$hold4=1;
 						dobitak++;
-						new Highpair();
+						$Highpair = 1;
 					}
 				}
 			}
 
 		}
 
-		// 4 BOJE
+        // 4 BOJE
 
 		if (dobitak==0&&dveiste==0) {
 
@@ -919,8 +955,6 @@ let cetiriboje = 0;
 					(($b1==0)&&($b2==$b3)&&($b3==$b4))) {
 				$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=0;
 				cetiriboje++;
-				new Hold();
-
 			}
 
 			if ((($b1==$b2)&&($b2==$b3)&&($b3==$b5)) ||
@@ -930,8 +964,6 @@ let cetiriboje = 0;
 					(($b1==0)&&($b2==$b3)&&($b3==$b5))) {
 				$hold1=1;$hold2=1;$hold3=1;$hold4=0;$hold5=1;
 				cetiriboje++;
-				new Hold();
-
 			}
 
 			if ((($b1==$b2)&&($b2==$b4)&&($b4==$b5)) ||
@@ -941,8 +973,6 @@ let cetiriboje = 0;
 					(($b1==0)&&($b2==$b4)&&($b4==$b5))) {
 				$hold1=1;$hold2=1;$hold3=0;$hold4=1;$hold5=1;
 				cetiriboje++;
-				new Hold();
-
 			}
 
 			if ((($b1==$b3)&&($b3==$b4)&&($b4==$b5)) ||
@@ -952,8 +982,6 @@ let cetiriboje = 0;
 					(($b1==0)&&($b3==$b4)&&($b4==$b5))) {
 				$hold1=1;$hold2=0;$hold3=1;$hold4=1;$hold5=1;
 				cetiriboje++;
-				new Hold();
-
 			}
 
 			if ((($b2==$b3)&&($b3==$b4)&&($b4==$b5)) ||
@@ -963,30 +991,27 @@ let cetiriboje = 0;
 					(($b2==0)&&($b3==$b4)&&($b4==$b5))) {
 				$hold1=0;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 				cetiriboje++;
-				new Hold();
-
 			}
 
 			//JOKER
 
 			if (cetiriboje==0&&$n1==0) {
 				$hold1=1;$hold2=0;$hold3=0;$hold4=0;$hold5=0;
-				new Hold();
 			}
 			if (cetiriboje==0&&$n2==0) {
 				$hold1=0;$hold2=1;$hold3=0;$hold4=0;$hold5=0;
-				new Hold();
 			}
 			if (cetiriboje==0&&$n3==0) {
 				$hold1=0;$hold2=0;$hold3=1;$hold4=0;$hold5=0;
-				new Hold();
 			}
 			if (cetiriboje==0&&$n4==0) {
 				$hold1=0;$hold2=0;$hold3=0;$hold4=1;$hold5=0;
-				new Hold();
 			}
 			if (cetiriboje==0&&$n5==0) {
 				$hold1=0;$hold2=0;$hold3=0;$hold4=0;$hold5=1;
-				new Hold();
 			}
 		}
+    
+    }
+
+}

@@ -1,3 +1,6 @@
+let $n2;
+let $b2;
+
 if($deljenje==0) {
 
     if($deljenje==0) {
@@ -388,5 +391,8 @@ if($deljenje==0) {
             $n2 = 13;
             $b2 = 4;
         }
+
+        console.log($n2);
+        console.log($b2);
     }
 }

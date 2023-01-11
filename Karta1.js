@@ -1,3 +1,6 @@
+let $n1;
+let $b1;
+
 if($deljenje==0) {
 
     if($deljenje==0) {
@@ -390,6 +393,9 @@ if($deljenje==0) {
             $n1 = 13;
             $b1 = 4;
         }
+
+        console.log($n1);
+        console.log($b1);
     }   
 
 }
