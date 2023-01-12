@@ -516,7 +516,7 @@ if($deljenje==0) {
 
 				$hold1=1;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 				dobitak++;
-				Flush = 1;
+				$Flush = 1;
 			}
 		}
 
@@ -1010,6 +1010,57 @@ if($deljenje==0) {
 			if (cetiriboje==0&&$n5==0) {
 				$hold1=0;$hold2=0;$hold3=0;$hold4=0;$hold5=1;
 			}
+		}
+
+		if($Fiveofakind==1) {
+			$rucno.style.top = "5px";
+			$rucno.style.visibility = "visible";
+			$Fiveofakind = 0;
+		}
+		if($Royalflush==1) {
+			$rucno.style.top = "34px";
+			$rucno.style.visibility = "visible";
+			$Royalflush = 0;
+		}
+		if($Streetflush==1) {
+			$rucno.style.top = "63px";
+			$rucno.style.visibility = "visible";
+			$Streetflush = 0;
+		}
+		if($Poker==1) {
+			$rucno.style.top = "91px";
+			$rucno.style.visibility = "visible";
+			$Poker = 0;
+		}
+		if($Fullhouse==1) {
+			$rucno.style.top = "120px";
+			$rucno.style.visibility = "visible";
+			$Fullhouse = 0;
+		}
+		if($Flush==1) {
+			$rucno.style.top = "149px";
+			$rucno.style.visibility = "visible";
+			$Flush = 0;
+		}
+		if($Street==1) {
+			$rucno.style.top = "178px";
+			$rucno.style.visibility = "visible";
+			$Street = 0;
+		}
+		if($Threeofakind==1) {
+			$rucno.style.top = "207px";
+			$rucno.style.visibility = "visible";
+			$Threeofakind = 0;
+		}
+		if($Twopairs==1) {
+			$rucno.style.top = "236px";
+			$rucno.style.visibility = "visible";
+			$Twopairs = 0;
+		}
+		if($Highpair==1) {
+			$rucno.style.top = "265px";
+			$rucno.style.visibility = "visible";
+			$Highpair = 0;
 		}
     
     }

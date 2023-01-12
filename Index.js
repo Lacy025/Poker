@@ -35,3 +35,8 @@ $polje4.style.top = "320px";
 $polje5.style.position = "absolute";
 $polje5.style.left = "1530px";
 $polje5.style.top = "320px";
+
+$rucno.style.position = "absolute";
+$rucno.style.left = "0px";
+$rucno.style.top = "5px";
+$rucno.style.visibility = "hidden";

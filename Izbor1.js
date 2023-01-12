@@ -118,6 +118,7 @@ if($deljenje==0) {
                 timerStop5 = setInterval($Stop5,stop);
                 stop+=50;
             }
+            poruka5.style.visibility = "visible";
             
             console.log($deljenje);
             timerCekanje9 = setInterval(Izbor1, 500);

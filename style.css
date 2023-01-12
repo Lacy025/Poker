@@ -82,7 +82,7 @@
 #dobit0{
     position: absolute;
     text-align: right;
-    top: 0px;
+    top: 3px;
     right: 600px;
     font-size: 32px;
     color:yellow;
@@ -91,7 +91,7 @@
 #dobit1{
     position: absolute;
     text-align: right;
-    top: 28px;
+    top: 33px;
     right: 600px;
     font-size: 32px;
     color:red;
@@ -100,7 +100,7 @@
 #dobit2{
     position: absolute;
     text-align: right;
-    top: 56px;
+    top: 61px;
     right: 600px;
     font-size: 32px;
     color:burlywood;
@@ -109,7 +109,7 @@
 #dobit3{
     position: absolute;
     text-align: right;
-    top: 84px;
+    top: 90px;
     right: 600px;
     font-size: 32px;
     color:burlywood;
@@ -118,7 +118,7 @@
 #dobit4{
     position: absolute;
     text-align: right;
-    top: 112px;
+    top: 118px;
     right: 600px;
     font-size: 32px;
     color:burlywood;
@@ -127,7 +127,7 @@
 #dobit5{
     position: absolute;
     text-align: right;
-    top: 140px;
+    top: 148px;
     right: 600px;
     font-size: 32px;
     color:burlywood;
@@ -136,7 +136,7 @@
 #dobit6{
     position: absolute;
     text-align: right;
-    top: 168px;
+    top: 176px;
     right: 600px;
     font-size: 32px;
     color:burlywood;
@@ -145,7 +145,7 @@
 #dobit7{
     position: absolute;
     text-align: right;
-    top: 196px;
+    top: 205px;
     right: 600px;
     font-size: 32px;
     color:burlywood;
@@ -154,7 +154,7 @@
 #dobit8{
     position: absolute;
     text-align: right;
-    top: 224px;
+    top: 234px;
     right: 600px;
     font-size: 32px;
     color:burlywood;
@@ -163,7 +163,7 @@
 #dobit9{
     position: absolute;
     text-align: right;
-    top: 252px;
+    top: 264px;
     right: 600px;
     font-size: 32px;
     color:burlywood;
