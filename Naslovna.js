@@ -1,4 +1,5 @@
 if($deljenje==0) {
+    
     let timerImaReklame;
     let timerNemaReklame;
     let timerLevo;

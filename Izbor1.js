@@ -1,22 +1,22 @@
-var poruka3 = document.getElementById("poruka3");
+let poruka3 = document.getElementById("poruka3");
 poruka3.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  STOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 poruka3.style.left = "734px";
-var poruka4 = document.getElementById("poruka4");
+let poruka4 = document.getElementById("poruka4");
 poruka4.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  DELJENJE&nbsp;&nbsp;&nbsp;&nbsp;";
 poruka4.style.left = "735px";
-var poruka5 = document.getElementById("poruka5");
+let poruka5 = document.getElementById("poruka5");
 poruka5.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  PONIŠTAVANJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 poruka5.style.left = "700px";
 
-var stop1 = document.getElementById("stop1");
+let $stop1 = document.getElementById("stop1");
 stop1.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
-var stop2 = document.getElementById("stop2");
+let $stop2 = document.getElementById("stop2");
 stop2.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
-var stop3 = document.getElementById("stop3");
+let $stop3 = document.getElementById("stop3");
 stop3.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
-var stop4 = document.getElementById("stop4");
+let $stop4 = document.getElementById("stop4");
 stop4.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
-var stop5 = document.getElementById("stop5");
+let stop5 = document.getElementById("stop5");
 stop5.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
 
 stop1.style.visibility = "hidden";
@@ -121,8 +121,8 @@ if($deljenje==0) {
             poruka5.style.visibility = "visible";
             
             console.log($deljenje);
-            timerCekanje9 = setInterval(Izbor1, 500);
-            $deljenje=9;
+            Izbor1();
+            
 
             window.addEventListener("keydown", IzborKarata);
         }
@@ -176,7 +176,41 @@ if($deljenje==0) {
                 Ponistavanje();
                 break;
             case 13 :
-                // Deljenje2
+                document.getElementById("audioDeljenje2").play();
+                audioDeljenje1.currentTime = 0;
+                poruka3.style.visibility = "hidden";
+                poruka4.style.visibility = "hidden";
+                poruka5.style.visibility = "hidden";
+                clearInterval(timerPoruka3);
+                clearInterval(timerPoruka4);
+                clearInterval(timerPoruka5);
+                stop1.style.visibility = "hidden";
+                stop2.style.visibility = "hidden";
+                stop3.style.visibility = "hidden";
+                stop4.style.visibility = "hidden";
+                stop5.style.visibility = "hidden";
+
+                if($hold1==0) {
+                    document.getElementById("$polje1").src="/Karte/53.png";
+                    $polje1.style.visibility = "visible";
+                }
+                if($hold2==0) {
+                    document.getElementById("$polje2").src="/Karte/53.png";
+                    $polje2.style.visibility = "visible";
+                }
+                if($hold3==0) {
+                    document.getElementById("$polje3").src="/Karte/53.png";
+                    $polje3.style.visibility = "visible";
+                }
+                if($hold4==0) {
+                    document.getElementById("$polje4").src="/Karte/53.png";
+                    $polje4.style.visibility = "visible";
+                }
+                if($hold5==0) {
+                    document.getElementById("$polje5").src="/Karte/53.png";
+                    $polje5.style.visibility = "visible";
+                }
+                $deljenje=9;
         }   
     }
 
