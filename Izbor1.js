@@ -173,6 +173,7 @@ if($deljenje==0) {
                 Ponistavanje();
                 break;
             case 13 :
+                $rucno.style.visibility = "hidden";
                 window.removeEventListener("keydown", IzborKarata);
                 document.getElementById("audioDeljenje2").play();
                 audioDeljenje1.currentTime = 0;
@@ -228,6 +229,11 @@ if($deljenje==0) {
                     document.getElementById("audioKarta5").play();
                     audioKarta5.currentTime = 0;
                 }
+                function Pauza1() {
+                    $deljenje=9;
+                    console.log($deljenje);
+                    clearInterval(timerPauza1);
+                }
                 stop = 0;
 
                 if($hold1==0) {
@@ -275,9 +281,8 @@ if($deljenje==0) {
                     timerAudiokarta5 = setInterval(audioKarta5,stop);
                     timerCekanje7 = setInterval($Karta5,stop);
                 }
-    
-                $deljenje=9;
-                console.log($deljenje);
+                timerPauza1 = setInterval(Pauza1,stop);
+                
         }   
     }
 

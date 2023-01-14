@@ -1053,12 +1053,12 @@ if($deljenje==0) {
 			$Threeofakind = 0;
 		}
 		if($Twopairs==1) {
-			$rucno.style.top = "236px";
+			$rucno.style.top = "237px";
 			$rucno.style.visibility = "visible";
 			$Twopairs = 0;
 		}
 		if($Highpair==1) {
-			$rucno.style.top = "265px";
+			$rucno.style.top = "267px";
 			$rucno.style.visibility = "visible";
 			$Highpair = 0;
 		}
