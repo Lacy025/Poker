@@ -41,6 +41,8 @@ $rucno.style.left = "0px";
 $rucno.style.top = "5px";
 $rucno.style.visibility = "hidden";
 
+tabela.style.visibility = "hidden";
+
 /*
 includeJs("Naslovna.js");
 

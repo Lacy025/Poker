@@ -366,3 +366,37 @@
     font-family: Arial;
     background-color: red;
 }
+#tabela{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 1300px;
+    height: 280px;
+    text-align: center;
+    color: yellow;
+    border: 8px solid;
+    border-radius: 25px;
+    background-color: red;
+}
+#dobitak{
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    font-family: Arial;
+    font-size: 128px;
+}
+#nazivdobitka{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-family: Arial;
+    font-size: 128px;
+}
+#vrednostdobitka{
+    position: absolute;
+    text-align: right;
+    top: 140px;
+    right: 20px;
+    font-family: Arial;
+    font-size: 128px;
+}
