@@ -22,14 +22,14 @@ let $hold5 = 0;
 if($deljenje==0) {
 
     if($deljenje==0) {
-        timerCekanje8 = setInterval(cekanje, 500);
+        timerCekanje8 = setInterval(cekanje, 100);
     }    
     function cekanje() {
         console.log($deljenje);
     
         if($deljenje==7) {
             clearInterval(timerCekanje8);
-            timerCekanje8 = setInterval(Dobitak1,800);
+            timerCekanje8 = setInterval(Dobitak1,400);
         }
     
     }

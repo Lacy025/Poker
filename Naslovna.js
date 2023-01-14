@@ -18,12 +18,6 @@ if($deljenje==0) {
     vrednostKredita();
     vrednostUloga();
 
-    $polje1.style.visibility = "hidden";
-    $polje2.style.visibility = "hidden";
-    $polje3.style.visibility = "hidden";
-    $polje4.style.visibility = "hidden";
-    $polje5.style.visibility = "hidden";
-
     imaReklame();
     timerNemaReklame = setInterval(nemaReklame, 6000);
     timerImaReklame = setInterval(imaReklame, 12000);
