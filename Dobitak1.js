@@ -29,7 +29,7 @@ if($deljenje==0) {
     
         if($deljenje==7) {
             clearInterval(timerCekanje8);
-            timerCekanje8 = setInterval(Dobitak1,400);
+            timerCekanje8 = setInterval(Dobitak1,700);
         }
     
     }
@@ -1033,7 +1033,7 @@ if($deljenje==0) {
 			$Poker = 0;
 		}
 		if($Fullhouse==1) {
-			$rucno.style.top = "120px";
+			$rucno.style.top = "121px";
 			$rucno.style.visibility = "visible";
 			$Fullhouse = 0;
 		}

@@ -13,7 +13,7 @@ if($deljenje==0) {
         if($deljenje==3) {
             clearInterval(timerCekanje4);
             console.log($deljenje);
-            timerCekanje4 = setInterval($Karta2, 250);
+            timerCekanje4 = setInterval($Karta2, 350);
             $deljenje=4;
         }
     }
