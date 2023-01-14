@@ -1,5 +1,6 @@
 let $n4;
 let $b4;
+let timerAudiokarta4;
 
 if($deljenje==0) {
 
@@ -12,13 +13,14 @@ if($deljenje==0) {
         if($deljenje==5) {
             clearInterval(timerCekanje6);
             console.log($deljenje);
-            timerCekanje6 = setInterval(Karta4, 600);
+            timerCekanje6 = setInterval($Karta4, 600);
             $deljenje=6;
         }
     }
-    function Karta4() {
+    function $Karta4() {
     
         clearInterval(timerCekanje6);
+        clearInterval(timerAudiokarta4);
     
         if($k4==0) {
             $polje4.style.visibility = "hidden";

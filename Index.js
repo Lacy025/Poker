@@ -40,3 +40,16 @@ $rucno.style.position = "absolute";
 $rucno.style.left = "0px";
 $rucno.style.top = "5px";
 $rucno.style.visibility = "hidden";
+
+/*
+includeJs("Naslovna.js");
+
+function includeJs(jsFilePath) {
+    var js = document.createElement("script");
+
+    js.type = "text/javascript";
+    js.src = jsFilePath;
+
+    document.body.appendChild(js);
+}
+*/

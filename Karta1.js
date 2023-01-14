@@ -1,7 +1,13 @@
 let $n1;
 let $b1;
+let timerAudiokarta1;
 
 if($deljenje==0) {
+
+    function Audiokarta12345() {
+        document.getElementById("audioKarta-1-5").play();
+        audioDeljenje1.currentTime = 0;
+    }
 
     if($deljenje==0) {
         timerCekanje2 = setInterval(cekanje, 500);
@@ -12,15 +18,16 @@ if($deljenje==0) {
         if($deljenje==2) {
             clearInterval(timerCekanje2);
             console.log($deljenje);
-            timerCekanje3 = setInterval(Karta1, 300);
+            timerAudiokarta12345 = setInterval(Audiokarta12345,300);
+            timerCekanje3 = setInterval($Karta1, 300);
             $deljenje=3;
         }
     }
-    function Karta1() {
-    
-        document.getElementById("audioKarta-1-5").play();
-        audioDeljenje1.currentTime = 0;
+    function $Karta1() {
+
         clearInterval(timerCekanje3);
+        clearInterval(timerAudiokarta12345);
+        clearInterval(timerAudiokarta1);
     
         if($k1==0) {
             $polje1.style.visibility = "hidden";

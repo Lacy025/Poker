@@ -119,11 +119,8 @@ if($deljenje==0) {
                 stop+=50;
             }
             poruka5.style.visibility = "visible";
-            
             console.log($deljenje);
             Izbor1();
-            
-
             window.addEventListener("keydown", IzborKarata);
         }
     }
@@ -176,6 +173,7 @@ if($deljenje==0) {
                 Ponistavanje();
                 break;
             case 13 :
+                window.removeEventListener("keydown", IzborKarata);
                 document.getElementById("audioDeljenje2").play();
                 audioDeljenje1.currentTime = 0;
                 poruka3.style.visibility = "hidden";
@@ -210,7 +208,76 @@ if($deljenje==0) {
                     document.getElementById("$polje5").src="/Karte/53.png";
                     $polje5.style.visibility = "visible";
                 }
+                function audioKarta1() {
+                    document.getElementById("audioKarta1").play();
+                    audioKarta1.currentTime = 0;
+                }
+                function audioKarta2() {
+                    document.getElementById("audioKarta2").play();
+                    audioKarta2.currentTime = 0;
+                }
+                function audioKarta3() {
+                    document.getElementById("audioKarta3").play();
+                    audioKarta3.currentTime = 0;
+                }
+                function audioKarta4() {
+                    document.getElementById("audioKarta4").play();
+                    audioKarta4.currentTime = 0;
+                }
+                function audioKarta5() {
+                    document.getElementById("audioKarta5").play();
+                    audioKarta5.currentTime = 0;
+                }
+                stop = 0;
+
+                if($hold1==0) {
+                    $k1 = Math.floor(Math.random() * 52);
+                    while($k1==$k2||$k1==$k3||$k1==$k4||$k1==$k5) {
+                        $k1 = Math.floor(Math.random() * 52);
+                    }
+                    stop+=300;
+                    timerAudiokarta1 = setInterval(audioKarta1,stop);
+                    timerCekanje3 = setInterval($Karta1,stop);
+                }
+                if($hold2==0) {
+                    $k2 = Math.floor(Math.random() * 52);
+                    while($k2==$k1||$k2==$k3||$k2==$k4||$k2==$k5) {
+                        $k2 = Math.floor(Math.random() * 52);
+                    }
+                    stop+=300;
+                    timerAudiokarta2 = setInterval(audioKarta2,stop);
+                    timerCekanje4 = setInterval($Karta2,stop);
+                }
+                if($hold3==0) {
+                    $k3 = Math.floor(Math.random() * 52);
+                    while($k3==$k1||$k3==$k2||$k3==$k4||$k3==$k5) {
+                        $k3 = Math.floor(Math.random() * 52);
+                    }
+                    stop+=300;
+                    timerAudiokarta3 = setInterval(audioKarta3,stop);
+                    timerCekanje5 = setInterval($Karta3,stop);
+                }
+                if($hold4==0) {
+                    $k4 = Math.floor(Math.random() * 52);
+                    while($k4==$k1||$k4==$k2||$k4==$k3||$k4==$k5) {
+                        $k4 = Math.floor(Math.random() * 52);
+                    }
+                    stop+=300;
+                    timerAudiokarta4 = setInterval(audioKarta4,stop);
+                    timerCekanje6 = setInterval($Karta4,stop);
+                }
+                if($hold5==0) {
+                    $k5 = Math.floor(Math.random() * 52);
+                    while($k5==$k1||$k5==$k2||$k5==$k3||$k5==$k4) {
+                        $k5 = Math.floor(Math.random() * 52);
+                    }
+                    stop+=300;
+                    timerAudiokarta5 = setInterval(audioKarta5,stop);
+                    timerCekanje7 = setInterval($Karta5,stop);
+                }
+    
                 $deljenje=9;
+                console.log($deljenje);
         }   
     }
 
