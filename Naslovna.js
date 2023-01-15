@@ -14,8 +14,18 @@ if($deljenje==0) {
 
     clearInterval($timerNemadobitka);
 
-    intro();
-
+    if($game==0) {
+        intro();
+    }
+    
+    if($c>0&&$u>$c) {
+        $u=$c;
+        vrednostUloga();
+        Dobici();
+    }
+    if($c==0) {
+        $u=1;
+    }
     vrednostDobitka();
     vrednostKredita();
     vrednostUloga();
@@ -202,6 +212,7 @@ if($deljenje==0) {
         switch(event.keyCode) {
             case 81 :
                 if($c==0) {
+                    $game = 1;
                     levo.style.visibility = "hidden";
                     desno.style.visibility = "hidden";
                     clearInterval(timerLevo);
