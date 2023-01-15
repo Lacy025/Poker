@@ -12,6 +12,8 @@ if($deljenje==0) {
     let timerJoker4;
     let timerJoker5;
 
+    clearInterval($timerNemadobitka);
+
     intro();
 
     vrednostDobitka();
@@ -22,7 +24,7 @@ if($deljenje==0) {
     timerNemaReklame = setInterval(nemaReklame, 6000);
     timerImaReklame = setInterval(imaReklame, 12000);
 
-    if($deljenje==0) {
+    if($deljenje==0&&$c==0) {
         desno.style.visibility = "hidden";
         poruka1.style.visibility = "hidden";
         poruka2.style.visibility = "hidden";
@@ -35,6 +37,8 @@ if($deljenje==0) {
     else {
         levo.style.visibility = "hidden";
         desno.style.visibility = "hidden";
+        timerPoruka1 = setInterval(Poruka1,1000);
+        timerPoruka2 = setInterval(Poruka2,2000);
     }
 
     window.addEventListener("keydown", pocetak);

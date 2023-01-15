@@ -1,7 +1,3 @@
-let $n2;
-let $b2;
-let timerAudiokarta2;
-
 if($deljenje==0) {
 
     if($deljenje==0) {
@@ -20,7 +16,7 @@ if($deljenje==0) {
     function $Karta2() {
     
         clearInterval(timerCekanje4);
-        clearInterval(timerAudiokarta2);
+        clearInterval($timerAudiokarta2);
     
         if($k2==0) {
             $polje2.style.visibility = "hidden";
