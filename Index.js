@@ -143,6 +143,10 @@ $rucno.style.visibility = "hidden";
 
 tabela.style.visibility = "hidden";
 
+izborlevo.style.visibility = "hidden";
+izbordesno.style.visibility = "hidden";
+pobeda.style.visibility = "hidden";
+
 $includeJs("Poker.js");
 
 function $includeJs(jsFilePath) {
@@ -150,10 +154,4 @@ function $includeJs(jsFilePath) {
     js1.type = "text/javascript";
     js1.src = jsFilePath;
     document.body.appendChild(js1);
-}
-function $excludeJs(jsFilePath) {
-    let js2 = document.createElement("script");
-    js2.type = "text/javascript";
-    js2.src = jsFilePath;
-    document.body.removeChild(js2);
 }

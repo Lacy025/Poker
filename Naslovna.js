@@ -234,7 +234,7 @@ if($deljenje==0) {
             case 53 :
                 if($c>0) {
                     $u+=1;
-                if($u==41) {
+                if($u==51) {
                     $u=1;
                 }
                 if($u>$c) {

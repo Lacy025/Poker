@@ -400,3 +400,60 @@
     font-family: Arial;
     font-size: 128px;
 }
+#izborlevo{
+    position: absolute;
+    top: 856px;
+    left: 12px;
+    width: 720px;
+    height: 50px;
+    text-align: center;
+    color: yellow;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: red;
+}
+#izbordesno{
+    position: absolute;
+    top: 856px;
+    left: 1150px;
+    width: 725px;
+    height: 50px;
+    text-align: center;
+    color: yellow;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: red;
+}
+#dupliranje{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    font-family: Arial;
+    font-size: 48px;
+}
+#kasiranje{
+    position: absolute;
+    top: 0px;
+    left: 230px;
+    font-family: Arial;
+    font-size: 48px;
+}
+#pobeda{
+    position: absolute;
+    top: 856px;
+    left: 572px;
+    width: 720px;
+    height: 50px;
+    text-align: center;
+    color: yellow;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: red;
+}
+#pobedio{
+    position: absolute;
+    top: -7px;
+    left: 230px;
+    font-family: Arial;
+    font-size: 56px;
+}

@@ -890,8 +890,6 @@ if($deljenje==0) {
 
             document.getElementById("audioDobitak").play();
             audioDobitak.currentTime = 0;
-
-			
         }
 
 		if($Fiveofakind==1) {
@@ -957,13 +955,54 @@ if($deljenje==0) {
         }
 		if($dobitak==0) {
 			$deljenje = 0;
-			//$excludeJs("Poker.js");
 			$timerNemadobitka = setInterval(Nemadobitka,500);
 		}
 		else{
-			$deljenje = 10;
-			console.log($deljenje);
+			izborlevo.style.visibility = "visible"
+			izbordesno.style.visibility = "hidden"
+			timerIzbor1 = setInterval(Izbordesno,500);
+			timerIzbor2 = setInterval(Izborlevo,1000);
+
+			window.addEventListener("keydown", DupliranjeKasiranje);
 		}
+		function Izborlevo() {
+			izborlevo.style.visibility = "visible";
+			izbordesno.style.visibility = "hidden";
+		}
+		function Izbordesno() {
+			izborlevo.style.visibility = "hidden";
+			izbordesno.style.visibility = "visible";
+		}
+		function DupliranjeKasiranje(event) {
+			switch(event.keyCode) {
+				case 32 :
+					window.removeEventListener("keydown", DupliranjeKasiranje);
+					clearInterval(timerIzbor1);
+					clearInterval(timerIzbor2);
+					izborlevo.style.visibility = "hidden";
+					izbordesno.style.visibility = "hidden";
+					pobeda.style.visibility = "visible";
+					audioDobitak.currentTime = 5;
+					$deljenje = 10;
+					console.log($deljenje);
+					break;
+					// KASIRANJE
+				case 13 :
+					window.removeEventListener("keydown", DupliranjeKasiranje);
+					clearInterval(timerIzbor1);
+					clearInterval(timerIzbor2);
+					izborlevo.style.visibility = "hidden";
+					izbordesno.style.visibility = "hidden";
+					audioDobitak.currentTime = 5;
+					$deljenje = 11;
+					console.log($deljenje);
+					break;
+					// DUPLIRANJE
+			}
+		}
+			
+
+
 		function Nemadobitka() {
 			$includeJs("Poker.js");
 		}
