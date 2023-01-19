@@ -31,11 +31,11 @@ if($deljenje==0) {
     }
     function Biranjekarata() {
 
-        $k1 = Math.floor(Math.random() * 52);
-        $k2 = Math.floor(Math.random() * 52);
-        $k3 = Math.floor(Math.random() * 52);
-        $k4 = Math.floor(Math.random() * 52);
-        $k5 = Math.floor(Math.random() * 52);
+        $k1 = Math.floor(Math.random() * 53);
+        $k2 = Math.floor(Math.random() * 53);
+        $k3 = Math.floor(Math.random() * 53);
+        $k4 = Math.floor(Math.random() * 53);
+        $k5 = Math.floor(Math.random() * 53);
         /*
         $k1=1;
         $k2=3;

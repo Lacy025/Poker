@@ -14,6 +14,31 @@ if($deljenje==0) {
 
     clearInterval($timerNemadobitka);
 
+    tabela.style.visibility = "hidden";
+    document.getElementById("nazivdobitka").style.visibility = "hidden";
+    document.getElementById("vrednostdobitka").style.visibility = "hidden";
+    document.getElementById("dobitak0").style.visibility = "visible";
+    document.getElementById("dobitak1").style.visibility = "visible";
+    document.getElementById("dobitak2").style.visibility = "visible";
+    document.getElementById("dobitak3").style.visibility = "visible";
+    document.getElementById("dobitak4").style.visibility = "visible";
+    document.getElementById("dobitak5").style.visibility = "visible";
+    document.getElementById("dobitak6").style.visibility = "visible";
+    document.getElementById("dobitak7").style.visibility = "visible";
+    document.getElementById("dobitak8").style.visibility = "visible";
+    document.getElementById("dobitak9").style.visibility = "visible";
+    document.getElementById("dobit0").style.visibility = "visible";
+    document.getElementById("dobit1").style.visibility = "visible";
+    document.getElementById("dobit2").style.visibility = "visible";
+    document.getElementById("dobit3").style.visibility = "visible";
+    document.getElementById("dobit4").style.visibility = "visible";
+    document.getElementById("dobit5").style.visibility = "visible";
+    document.getElementById("dobit6").style.visibility = "visible";
+    document.getElementById("dobit7").style.visibility = "visible";
+    document.getElementById("dobit8").style.visibility = "visible";
+    document.getElementById("dobit9").style.visibility = "visible";
+    pobeda.style.visibility = "hidden";
+
     if($game==0) {
         intro();
     }
@@ -27,7 +52,7 @@ if($deljenje==0) {
         $u=1;
     }
     vrednostDobitka();
-    vrednostKredita();
+    $vrednostKredita();
     vrednostUloga();
 
     imaReklame();
@@ -78,7 +103,7 @@ if($deljenje==0) {
         document.getElementById("dobit8").innerHTML = $d8;
         document.getElementById("dobit9").innerHTML = $d9;
     }
-    function vrednostKredita() {
+    function $vrednostKredita() {
         document.getElementById("credit").innerHTML = $c;
     }
     function vrednostUloga() {
@@ -222,7 +247,7 @@ if($deljenje==0) {
                 }
                 if($c<4901) {
                     $c = $c + 100;
-                    vrednostKredita();
+                    $vrednostKredita();
                     document.getElementById("audioKredit").play();
                     audioKredit.currentTime = 0;
                     audioIntro.currentTime = 5;
@@ -252,7 +277,7 @@ if($deljenje==0) {
             case 13 :
                 if($c>0) {
                     $c = $c - $u;
-                    vrednostKredita();
+                    $vrednostKredita();
                     document.getElementById("audioDeljenje1").play();
                     audioDeljenje1.currentTime = 0;
                     clearInterval(timerPoruka1);

@@ -68,6 +68,8 @@ let $Threeofakind;
 let $Twopairs;
 let $Highpair;
 
+let $d;
+
 let $hold1;
 let $hold2;
 let $hold3;

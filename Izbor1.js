@@ -202,45 +202,45 @@ if($deljenje==0) {
                 $stop = 0;
 
                 if($hold1==0) {
-                    $k1 = Math.floor(Math.random() * 52);
+                    $k1 = Math.floor(Math.random() * 53);
                     while($k1==$k2||$k1==$k3||$k1==$k4||$k1==$k5) {
-                        $k1 = Math.floor(Math.random() * 52);
+                        $k1 = Math.floor(Math.random() * 53);
                     }
                     $stop+=300;
                     $timerAudiokarta1 = setInterval(audioKarta1,$stop);
                     timerCekanje3 = setInterval($Karta1,$stop);
                 }
                 if($hold2==0) {
-                    $k2 = Math.floor(Math.random() * 52);
+                    $k2 = Math.floor(Math.random() * 53);
                     while($k2==$k1||$k2==$k3||$k2==$k4||$k2==$k5) {
-                        $k2 = Math.floor(Math.random() * 52);
+                        $k2 = Math.floor(Math.random() * 53);
                     }
                     $stop+=300;
                     $timerAudiokarta2 = setInterval(audioKarta2,$stop);
                     timerCekanje4 = setInterval($Karta2,$stop);
                 }
                 if($hold3==0) {
-                    $k3 = Math.floor(Math.random() * 52);
+                    $k3 = Math.floor(Math.random() * 53);
                     while($k3==$k1||$k3==$k2||$k3==$k4||$k3==$k5) {
-                        $k3 = Math.floor(Math.random() * 52);
+                        $k3 = Math.floor(Math.random() * 53);
                     }
                     $stop+=300;
                     $timerAudiokarta3 = setInterval(audioKarta3,$stop);
                     timerCekanje5 = setInterval($Karta3,$stop);
                 }
                 if($hold4==0) {
-                    $k4 = Math.floor(Math.random() * 52);
+                    $k4 = Math.floor(Math.random() * 53);
                     while($k4==$k1||$k4==$k2||$k4==$k3||$k4==$k5) {
-                        $k4 = Math.floor(Math.random() * 52);
+                        $k4 = Math.floor(Math.random() * 53);
                     }
                     $stop+=300;
                     $timerAudiokarta4 = setInterval(audioKarta4,$stop);
                     timerCekanje6 = setInterval($Karta4,$stop);
                 }
                 if($hold5==0) {
-                    $k5 = Math.floor(Math.random() * 52);
+                    $k5 = Math.floor(Math.random() * 53);
                     while($k5==$k1||$k5==$k2||$k5==$k3||$k5==$k4) {
-                        $k5 = Math.floor(Math.random() * 52);
+                        $k5 = Math.floor(Math.random() * 53);
                     }
                     $stop+=300;
                     $timerAudiokarta5 = setInterval(audioKarta5,$stop);

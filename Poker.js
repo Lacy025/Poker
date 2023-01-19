@@ -18,3 +18,6 @@ $includeJs("Izbor1.js");
 
 $includeJs("Dobitak2.js");
 
+$includeJs("Dupliranje.js");
+
+$includeJs("Kasiranje.js");

@@ -863,9 +863,6 @@ if($deljenje==0) {
 
 		}
         if($dobitak>0) {
-
-			$deljenje = 10;
-
             document.getElementById("dobitak0").style.visibility = "hidden";
             document.getElementById("dobitak1").style.visibility = "hidden";
             document.getElementById("dobitak2").style.visibility = "hidden";
@@ -891,67 +888,77 @@ if($deljenje==0) {
             document.getElementById("audioDobitak").play();
             audioDobitak.currentTime = 0;
         }
+		$d = 0;
 
 		if($Fiveofakind==1) {
             document.getElementById("nazivdobitka").innerHTML = "FIVE OF A KIND";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d0;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d0;
 		}
 		if($Royalflush==1) {
             document.getElementById("nazivdobitka").innerHTML = "ROYAL FLUSH";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d1;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d1;
 		}
 		if($Streetflush==1) {
-			console.log("");
             document.getElementById("nazivdobitka").innerHTML = "STREET FLUSH";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d2;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d2;
 		}
 		if($Poker==1) {
             document.getElementById("nazivdobitka").innerHTML = "POKER";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d3;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d3;
 		}
 		if($Fullhouse==1) {
             document.getElementById("nazivdobitka").innerHTML = "FULL HOUSE";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d4;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d4;
 		}
 		if($Flush==1) {
             document.getElementById("nazivdobitka").innerHTML = "FLUSH";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d5;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d5;
 		}
 		if($Street==1) {
             document.getElementById("nazivdobitka").innerHTML = "STREET";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d6;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d6;
 		}
 		if($Threeofakind==1) {
             document.getElementById("nazivdobitka").innerHTML = "THREE OF A KIND";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d7;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d7;
 		}
 		if($Twopairs==1) {
             document.getElementById("nazivdobitka").innerHTML = "2 PAIRS";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d8;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d8;
 		}
 		if($Highpair==1) {
             document.getElementById("nazivdobitka").innerHTML = "HIGH PAIR";
             document.getElementById("nazivdobitka").style.visibility = "visible";
             document.getElementById("vrednostdobitka").innerHTML = $d9;
             document.getElementById("vrednostdobitka").style.visibility = "visible";
+			$d = $d9;
         }
 		if($dobitak==0) {
 			$deljenje = 0;
@@ -975,6 +982,18 @@ if($deljenje==0) {
 		}
 		function DupliranjeKasiranje(event) {
 			switch(event.keyCode) {
+				
+				case 13 :
+					window.removeEventListener("keydown", DupliranjeKasiranje);
+					clearInterval(timerIzbor1);
+					clearInterval(timerIzbor2);
+					izborlevo.style.visibility = "hidden";
+					izbordesno.style.visibility = "hidden";
+					audioDobitak.currentTime = 5;
+					$deljenje = 10;
+					console.log($deljenje);
+					break;
+					// DUPLIRANJE
 				case 32 :
 					window.removeEventListener("keydown", DupliranjeKasiranje);
 					clearInterval(timerIzbor1);
@@ -983,26 +1002,12 @@ if($deljenje==0) {
 					izbordesno.style.visibility = "hidden";
 					pobeda.style.visibility = "visible";
 					audioDobitak.currentTime = 5;
-					$deljenje = 10;
-					console.log($deljenje);
-					break;
-					// KASIRANJE
-				case 13 :
-					window.removeEventListener("keydown", DupliranjeKasiranje);
-					clearInterval(timerIzbor1);
-					clearInterval(timerIzbor2);
-					izborlevo.style.visibility = "hidden";
-					izbordesno.style.visibility = "hidden";
-					audioDobitak.currentTime = 5;
 					$deljenje = 11;
 					console.log($deljenje);
 					break;
-					// DUPLIRANJE
+					// KASIRANJE
+				}
 			}
-		}
-			
-
-
 		function Nemadobitka() {
 			$includeJs("Poker.js");
 		}
