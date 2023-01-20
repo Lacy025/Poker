@@ -1,7 +1,7 @@
 if($deljenje==0) {
 
     if($deljenje==0) {
-        timerCekanje12 = setInterval(cekanje, 400);
+        timerCekanje12 = setInterval(cekanje, 500);
     }    
     function cekanje() {
         console.log($deljenje);
@@ -29,7 +29,7 @@ if($deljenje==0) {
         document.getElementById("audioCount1").play();
         audioCount1.currentTime = 0;
 
-        timerProvera = setInterval(Provera,50);
+        timerProvera = setInterval(Provera,60);
 
         function Provera() {
             if((Math.round($d/100) != $d/100) && $d>0) {
@@ -80,7 +80,6 @@ if($deljenje==0) {
                 pobeda.style.visibility = "visible";
                 clearInterval(timerPobeda1);
                 clearInterval(timerPobeda2);
-                $deljenje = 0;
                 timerOdbrojano = setInterval(Odbrojano,1000);
                 timerNula = setInterval(Nula,100);
             }
@@ -92,6 +91,7 @@ if($deljenje==0) {
         }
         function Odbrojano() {
             clearInterval(timerOdbrojano);
+            $deljenje = 0;
             $includeJs("Poker.js");
 		}
     }  

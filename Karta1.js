@@ -14,9 +14,8 @@ if($deljenje==0) {
         if($deljenje==2) {
             clearInterval(timerCekanje2);
             console.log($deljenje);
-            timerAudiokarta12345 = setInterval(Audiokarta12345,250);
-            timerCekanje3 = setInterval($Karta1, 250);
-            $deljenje=3;
+            timerAudiokarta12345 = setInterval(Audiokarta12345,200);
+            timerCekanje3 = setInterval($Karta1, 200);
         }
     }
     function $Karta1() {
@@ -396,9 +395,9 @@ if($deljenje==0) {
             $n1 = 13;
             $b1 = 4;
         }
-
         console.log($n1);
         console.log($b1);
+        $deljenje=3;
     }   
 
 }

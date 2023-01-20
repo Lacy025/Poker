@@ -85,12 +85,13 @@ if($deljenje==0) {
             }
             $poruka5.style.visibility = "visible";
             console.log($deljenje);
-            Izbor1();
-            window.addEventListener("keydown", IzborKarata);
+            timerIzbor1 = setInterval(Izbor1,($stop+200));              ;
         }
     }
     function Izbor1() {
+        clearInterval(timerIzbor1);
         clearInterval(timerCekanje9);
+        window.addEventListener("keydown", IzborKarata);
         $timerPoruka3 = setInterval(Poruka3, 1000);
         $timerPoruka4 = setInterval(Poruka4, 2000);
         $timerPoruka5 = setInterval(Poruka5, 3000);
@@ -195,9 +196,9 @@ if($deljenje==0) {
                     audioKarta5.currentTime = 0;
                 }
                 function Pauza1() {
-                    $deljenje=9;
                     console.log($deljenje);
                     clearInterval(timerPauza1);
+                    $deljenje=9;
                 }
                 $stop = 0;
 

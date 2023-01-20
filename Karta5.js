@@ -9,8 +9,7 @@ if($deljenje==0) {
         if($deljenje==6) {
             clearInterval(timerCekanje7);
             console.log($deljenje);
-            timerCekanje7 = setInterval($Karta5, 650);
-            $deljenje=7;
+            timerCekanje7 = setInterval($Karta5, 50);
         }
     }
     function $Karta5() {
@@ -389,8 +388,8 @@ if($deljenje==0) {
             $n5 = 13;
             $b5 = 4;
         }
-
         console.log($n5);
         console.log($b5);
+        $deljenje=7;
     }
 }

@@ -8,7 +8,7 @@ if($deljenje==0) {
     
         if($deljenje==7) {
             clearInterval(timerCekanje8);
-            timerCekanje8 = setInterval($dobitak1,700);
+            timerCekanje8 = setInterval($dobitak1,100);
         }
     
     }
@@ -36,7 +36,6 @@ if($deljenje==0) {
 		$hold5 = 0;
 
         clearInterval(timerCekanje8);
-        $deljenje = 8;
     
         console.log($n1);
         console.log($n2);
@@ -1060,7 +1059,7 @@ if($deljenje==0) {
 			$rucno.style.visibility = "visible";
 			$Highpair = 0;
 		}
-    
+		$deljenje = 8;
     }
 
 }

@@ -961,7 +961,6 @@ if($deljenje==0) {
 			$d = $d9;
         }
 		if($dobitak==0) {
-			$deljenje = 0;
 			$timerNemadobitka = setInterval(Nemadobitka,500);
 		}
 		else{
@@ -1009,6 +1008,7 @@ if($deljenje==0) {
 				}
 			}
 		function Nemadobitka() {
+			$deljenje = 0;
 			$includeJs("Poker.js");
 		}
     }
