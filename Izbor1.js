@@ -247,8 +247,7 @@ if($deljenje==0) {
                     timerCekanje7 = setInterval($Karta5,$stop);
                 }
                 timerPauza1 = setInterval(Pauza1,$stop);
-                
+      
         }   
     }
-
 }

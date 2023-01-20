@@ -69,6 +69,7 @@ let $Twopairs;
 let $Highpair;
 
 let $d;
+let $biodobitak;
 
 let $hold1;
 let $hold2;

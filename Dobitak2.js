@@ -860,7 +860,6 @@ if($deljenje==0) {
 					}
 				}
 			}
-
 		}
         if($dobitak>0) {
             document.getElementById("dobitak0").style.visibility = "hidden";
@@ -887,6 +886,7 @@ if($deljenje==0) {
 
             document.getElementById("audioDobitak").play();
             audioDobitak.currentTime = 0;
+			$biodobitak = 1;
         }
 		$d = 0;
 
@@ -1012,5 +1012,4 @@ if($deljenje==0) {
 			$includeJs("Poker.js");
 		}
     }
-
 }
