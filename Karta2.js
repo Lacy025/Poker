@@ -1,20 +1,20 @@
 if($deljenje==0) {
 
     if($deljenje==0) {
-        timerCekanje4 = setInterval(cekanje, 100);
+        timerCekanje2 = setInterval(Cekanje2, 100);
     }
-    function cekanje() {
+    function Cekanje2() {
         console.log($deljenje);
     
         if($deljenje==3) {
-            clearInterval(timerCekanje4);
+            clearInterval(timerCekanje2);
             console.log($deljenje);
-            timerCekanje4 = setInterval($Karta2, 50);
+            timerCekanje2 = setInterval($Karta2, 50);
         }
     }
     function $Karta2() {
     
-        clearInterval(timerCekanje4);
+        clearInterval(timerCekanje2);
         clearInterval($timerAudiokarta2);
     
         if($k2==0) {

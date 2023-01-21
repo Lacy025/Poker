@@ -1,27 +1,26 @@
 if($deljenje==0) {
 
+    if($deljenje==0) {
+        timerCekanje1 = setInterval(Cekanje1, 100);
+    }
+    function Cekanje1() {
+        console.log($deljenje);
+    
+        if($deljenje==2) {
+            clearInterval(timerCekanje1);
+            console.log($deljenje);
+            $timerAudiokarta12345 = setInterval(Audiokarta12345,200);
+            timerCekanje1 = setInterval($Karta1, 200);
+        }
+    }
     function Audiokarta12345() {
         document.getElementById("audioKarta-1-5").play();
         audioDeljenje1.currentTime = 0;
     }
-
-    if($deljenje==0) {
-        timerCekanje2 = setInterval(cekanje, 100);
-    }
-    function cekanje() {
-        console.log($deljenje);
-    
-        if($deljenje==2) {
-            clearInterval(timerCekanje2);
-            console.log($deljenje);
-            timerAudiokarta12345 = setInterval(Audiokarta12345,200);
-            timerCekanje3 = setInterval($Karta1, 200);
-        }
-    }
     function $Karta1() {
 
-        clearInterval(timerCekanje3);
-        clearInterval(timerAudiokarta12345);
+        clearInterval(timerCekanje1);
+        clearInterval($timerAudiokarta12345);
         clearInterval($timerAudiokarta1);
     
         if($k1==0) {
@@ -399,7 +398,6 @@ if($deljenje==0) {
         console.log($b1);
         $deljenje=3;
     }   
-
 }
 
 

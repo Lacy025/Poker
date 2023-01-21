@@ -1,18 +1,20 @@
 if($deljenje==0) {
 
     if($deljenje==0) {
-        timerCekanje8 = setInterval(cekanje, 100);
+        timerCekanje6 = setInterval(cekanje, 100);
     }    
     function cekanje() {
         console.log($deljenje);
     
         if($deljenje==7) {
-            clearInterval(timerCekanje8);
-            timerCekanje8 = setInterval($dobitak1,100);
+            clearInterval(timerCekanje6);
+            timerCekanje6 = setInterval($dobitak1,100);
         }
     
     }
     function $dobitak1() {
+
+		clearInterval(timerCekanje6);
 
 		$dobitak = 0;
 		$dveiste = 0;
@@ -34,8 +36,6 @@ if($deljenje==0) {
 		$hold3 = 0;
 		$hold4 = 0;
 		$hold5 = 0;
-
-        clearInterval(timerCekanje8);
     
         console.log($n1);
         console.log($n2);

@@ -1,13 +1,13 @@
 if($deljenje==0) {
 
     if($deljenje==0) {
-        timerCekanje10 = setInterval(cekanje, 500);
+        timerCekanje8 = setInterval(cekanje, 500);
     }    
     function cekanje() {
         console.log($deljenje);
     
         if($deljenje==9) {
-            clearInterval(timerCekanje10);
+            clearInterval(timerCekanje8);
             $Fiveofakind = 0;
             $Royalflush = 0;
             $Streetflush = 0;
@@ -19,13 +19,13 @@ if($deljenje==0) {
             $Twopairs = 0;
             $Highpair = 0;
             $dobitak = 0;
-            timerCekanje10 = setInterval(Dobitak2,200);
+            timerCekanje8 = setInterval(Dobitak2,200);
         }
     
     }
     function Dobitak2() {
 
-        clearInterval(timerCekanje10);
+        clearInterval(timerCekanje8);
     
         console.log($n1);
         console.log($n2);

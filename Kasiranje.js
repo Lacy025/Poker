@@ -1,13 +1,13 @@
 if($deljenje==0) {
 
     if($deljenje==0) {
-        timerCekanje12 = setInterval(cekanje, 500);
+        timerCekanje10 = setInterval(cekanje, 200);
     }    
     function cekanje() {
         console.log($deljenje);
     
         if($deljenje==11) {
-            clearInterval(timerCekanje12);
+            clearInterval(timerCekanje10);
             $deljenje=12;
             timerPobeda1 = setInterval($Pobeda1,500);
             timerPobeda2 = setInterval(Pobeda2,1000);

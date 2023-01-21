@@ -1,61 +1,16 @@
-function $Stop1() {
-    stop1.style.visibility = "visible";
-    $hold1 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
-    clearInterval($timerStop1);
-}
-function $Stop2() {
-    stop2.style.visibility = "visible";
-    $hold2 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
-    clearInterval($timerStop2);
-}
-function $Stop3() {
-    stop3.style.visibility = "visible";
-    $hold3 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
-    clearInterval($timerStop3);
-}
-function $Stop4() {
-    stop4.style.visibility = "visible";
-    $hold4 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
-    clearInterval($timerStop4);
-}
-function $Stop5() {
-    stop5.style.visibility = "visible";
-    $hold5 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
-    clearInterval($timerStop5);
-}
-function Ponistavanje() {
-    $stop1.style.visibility = "hidden";
-    $stop2.style.visibility = "hidden";
-    $stop3.style.visibility = "hidden";
-    $stop4.style.visibility = "hidden";
-    $stop5.style.visibility = "hidden";
-    $hold1 = 0;
-    $hold2 = 0;
-    $hold3 = 0;
-    $hold4 = 0;
-    $hold5 = 0;
-    document.getElementById("audioPonistavanje").play();
-    audioPonistavanje.currentTime = 0;
-}
-
 if($deljenje==0) {
+
     if($deljenje==0) {
-        timerCekanje9 = setInterval(cekanje, 500);
+
+        timerCekanje7 = setInterval(cekanje, 100);
     }
     function cekanje() {
+
         console.log($deljenje);
+
         if($deljenje==8) {
-            clearInterval(timerCekanje9);
+            
+            clearInterval(timerCekanje7);
             $stop = 1;
             console.log($hold1);
             console.log($hold2);
@@ -88,9 +43,57 @@ if($deljenje==0) {
             timerIzbor1 = setInterval(Izbor1,($stop+200));              ;
         }
     }
+    function $Stop1() {
+        stop1.style.visibility = "visible";
+        $hold1 = 1;
+        document.getElementById("audioStop").play();
+        audioStop.currentTime = 0;
+        clearInterval($timerStop1);
+    }
+    function $Stop2() {
+        stop2.style.visibility = "visible";
+        $hold2 = 1;
+        document.getElementById("audioStop").play();
+        audioStop.currentTime = 0;
+        clearInterval($timerStop2);
+    }
+    function $Stop3() {
+        stop3.style.visibility = "visible";
+        $hold3 = 1;
+        document.getElementById("audioStop").play();
+        audioStop.currentTime = 0;
+        clearInterval($timerStop3);
+    }
+    function $Stop4() {
+        stop4.style.visibility = "visible";
+        $hold4 = 1;
+        document.getElementById("audioStop").play();
+        audioStop.currentTime = 0;
+        clearInterval($timerStop4);
+    }
+    function $Stop5() {
+        stop5.style.visibility = "visible";
+        $hold5 = 1;
+        document.getElementById("audioStop").play();
+        audioStop.currentTime = 0;
+        clearInterval($timerStop5);
+    }
+    function Ponistavanje() {
+        $stop1.style.visibility = "hidden";
+        $stop2.style.visibility = "hidden";
+        $stop3.style.visibility = "hidden";
+        $stop4.style.visibility = "hidden";
+        $stop5.style.visibility = "hidden";
+        $hold1 = 0;
+        $hold2 = 0;
+        $hold3 = 0;
+        $hold4 = 0;
+        $hold5 = 0;
+        document.getElementById("audioPonistavanje").play();
+        audioPonistavanje.currentTime = 0;
+    }
     function Izbor1() {
         clearInterval(timerIzbor1);
-        clearInterval(timerCekanje9);
         window.addEventListener("keydown", IzborKarata);
         $timerPoruka3 = setInterval(Poruka3, 1000);
         $timerPoruka4 = setInterval(Poruka4, 2000);
@@ -209,7 +212,7 @@ if($deljenje==0) {
                     }
                     $stop+=300;
                     $timerAudiokarta1 = setInterval(audioKarta1,$stop);
-                    timerCekanje3 = setInterval($Karta1,$stop);
+                    timerCekanje1 = setInterval($Karta1,$stop);
                 }
                 if($hold2==0) {
                     $k2 = Math.floor(Math.random() * 53);
@@ -218,7 +221,7 @@ if($deljenje==0) {
                     }
                     $stop+=300;
                     $timerAudiokarta2 = setInterval(audioKarta2,$stop);
-                    timerCekanje4 = setInterval($Karta2,$stop);
+                    timerCekanje2 = setInterval($Karta2,$stop);
                 }
                 if($hold3==0) {
                     $k3 = Math.floor(Math.random() * 53);
@@ -227,7 +230,7 @@ if($deljenje==0) {
                     }
                     $stop+=300;
                     $timerAudiokarta3 = setInterval(audioKarta3,$stop);
-                    timerCekanje5 = setInterval($Karta3,$stop);
+                    timerCekanje3 = setInterval($Karta3,$stop);
                 }
                 if($hold4==0) {
                     $k4 = Math.floor(Math.random() * 53);
@@ -236,7 +239,7 @@ if($deljenje==0) {
                     }
                     $stop+=300;
                     $timerAudiokarta4 = setInterval(audioKarta4,$stop);
-                    timerCekanje6 = setInterval($Karta4,$stop);
+                    timerCekanje4 = setInterval($Karta4,$stop);
                 }
                 if($hold5==0) {
                     $k5 = Math.floor(Math.random() * 53);
@@ -245,7 +248,7 @@ if($deljenje==0) {
                     }
                     $stop+=300;
                     $timerAudiokarta5 = setInterval(audioKarta5,$stop);
-                    timerCekanje7 = setInterval($Karta5,$stop);
+                    timerCekanje5 = setInterval($Karta5,$stop);
                 }
                 timerPauza1 = setInterval(Pauza1,$stop);
       

@@ -1,25 +1,19 @@
 if($deljenje==0) {
 
     if($deljenje==0) {
-        timerCekanje1 = setInterval(cekanje, 500);
+        timerCekanje0 = setInterval(Cekanje1, 200);
     }    
-    function cekanje() {
+    function Cekanje1() {
         console.log($deljenje);
     
         if($deljenje==1) {
-            clearInterval(timerCekanje1);
-            prvoDeljenje();
-            console.log($k1);
-            console.log($k2);
-            console.log($k3);
-            console.log($k4);
-            console.log($k5);
-            $deljenje = 2;
+            clearInterval(timerCekanje0);
+            $timerPrvodeljenje = setInterval(Prvodeljenje,100);
         }
     
     }
-    function prvoDeljenje() {
-
+    function Prvodeljenje() {
+        clearInterval($timerPrvodeljenje);
         Biranjekarata();
     
         while($k1==$k2||$k1==$k3||$k1==$k4||$k1==$k5||$k2==$k3||
@@ -27,10 +21,15 @@ if($deljenje==0) {
              
             Biranjekarata();
         }
-    
+        console.log($k1);
+        console.log($k2);
+        console.log($k3);
+        console.log($k4);
+        console.log($k5);
+        $deljenje = 2;
     }
     function Biranjekarata() {
-
+        
         $k1 = Math.floor(Math.random() * 53);
         $k2 = Math.floor(Math.random() * 53);
         $k3 = Math.floor(Math.random() * 53);
@@ -40,7 +39,7 @@ if($deljenje==0) {
         $k1=1;
         $k2=3;
         $k3=6;
-        $k4=15;
+        $k4=27;
         $k5=14;
         */
     }
