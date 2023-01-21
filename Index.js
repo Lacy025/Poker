@@ -29,15 +29,26 @@ let $timer10;
 
 let $timerPrvodeljenje;
 let $timerAudiokarta12345;
-//let $timerKarta1;
-//let $timerKarta2;
-//let $timerKarta3;
-//let $timerKarta4;
-//let $timerKarta5;
 
-//let $timerCekanje1;
-//let $timerCekanje2;
-//let $timerCekanje3;
+let $timerKarta1;
+let $timerKarta2;
+let $timerKarta3;
+let $timerKarta4;
+let $timerKarta5;
+let $timerDobitak1;
+let $timerIzbor1;
+let $timerDobitak2;
+
+let $timerCekanje1;
+let $timerCekanje2;
+let $timerCekanje3;
+let $timerCekanje4;
+let $timerCekanje5;
+let $timerCekanje6;
+let $timerCekanje7;
+let $timerCekanje8;
+let $timerCekanje9;
+let $timerCekanje10;
 
 let $k1;
 let $k2;
