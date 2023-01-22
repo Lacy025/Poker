@@ -16,19 +16,19 @@ function Cekanje7() {
 
         if($hold1==1&&$a==1) {
             $Stop1();
-            $stop+=220;
+            $stop+=250;
         }
         if($hold2==1&&$a==1) {
             $timerStop2 = setInterval($Stop2,$stop);
-            $stop+=220;
+            $stop+=250;
         }
         if($hold3==1&&$a==1) {
             $timerStop3 = setInterval($Stop3,$stop);
-            $stop+=220;
+            $stop+=250;
         }
         if($hold4==1&&$a==1) {
             $timerStop4 = setInterval($Stop4,$stop);
-            $stop+=220;
+            $stop+=250;
         }
         if($hold5==1&&$a==1) {
             $timerStop5 = setInterval($Stop5,$stop);
@@ -36,7 +36,7 @@ function Cekanje7() {
         }
         $poruka5.style.visibility = "visible";
         console.log($deljenje);
-        $timerIzbor1 = setInterval(Izbor1,($stop+200));              ;
+        $timerIzbor1 = setInterval(Izbor1,($stop+200));
     }
 }
 function $Stop1() {

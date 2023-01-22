@@ -1,5 +1,6 @@
 let $deljenje = 0;
 let $game = 0;
+let $isplata = 0;
 
 let $c = 0;
 let $u = 1;
@@ -15,6 +16,15 @@ let $d6;
 let $d7;
 let $d8;
 let $d9;
+
+let $timerProvera1;
+let $timerProvera2;
+let $timerMinussto1;
+let $timerMinussto2;
+let $timerOdbrojano1;
+let $timerOdbrojano2;
+let $timerNula1;
+let $timerNula2;
 
 let $timer1;
 let $timer2;
@@ -99,6 +109,9 @@ let $hold2;
 let $hold3;
 let $hold4;
 let $hold5;
+
+let $timerPobeda1;
+let $timerPobeda2;
 
 let $poruka3 = document.getElementById("poruka3");
 $poruka3.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  STOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
