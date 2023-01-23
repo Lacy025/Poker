@@ -150,6 +150,9 @@ let $timerNemadobitka;
 
 let $stop;
 
+let $timerVeca;
+let $timerManja;
+
 $polje1.style.position = "absolute";
 $polje1.style.left = "10px";
 $polje1.style.top = "320px";
@@ -185,6 +188,69 @@ tabela.style.visibility = "hidden";
 izborlevo.style.visibility = "hidden";
 izbordesno.style.visibility = "hidden";
 pobeda.style.visibility = "hidden";
+
+veca.style.visibility = "hidden";
+manja.style.visibility = "hidden";
+
+$polje01.style.position = "absolute";
+$polje01.style.left = "10px";
+$polje01.style.top = "320px";
+$polje01.style.visibility = "hidden";
+
+$polje02.style.position = "absolute";
+$polje02.style.left = "80px";
+$polje02.style.top = "320px";
+$polje02.style.visibility = "hidden";
+
+$polje03.style.position = "absolute";
+$polje03.style.left = "150px";
+$polje03.style.top = "320px";
+$polje03.style.visibility = "hidden";
+
+$polje04.style.position = "absolute";
+$polje04.style.left = "220px";
+$polje04.style.top = "320px";
+$polje04.style.visibility = "hidden";
+
+$polje05.style.position = "absolute";
+$polje05.style.left = "290px";
+$polje05.style.top = "320px";
+$polje05.style.visibility = "hidden";
+
+$polje06.style.position = "absolute";
+$polje06.style.left = "360px";
+$polje06.style.top = "320px";
+$polje06.style.visibility = "hidden";
+
+$polje07.style.position = "absolute";
+$polje07.style.left = "430px";
+$polje07.style.top = "320px";
+$polje07.style.visibility = "hidden";
+
+$polje08.style.position = "absolute";
+$polje08.style.left = "500px";
+$polje08.style.top = "320px";
+$polje08.style.visibility = "hidden";
+
+$polje09.style.position = "absolute";
+$polje09.style.left = "570px";
+$polje09.style.top = "320px";
+$polje09.style.visibility = "hidden";
+
+$polje10.style.position = "absolute";
+$polje10.style.left = "640px";
+$polje10.style.top = "320px";
+$polje10.style.visibility = "hidden";
+
+$polje11.style.position = "absolute";
+$polje11.style.left = "710px";
+$polje11.style.top = "320px";
+$polje11.style.visibility = "hidden";
+
+$polje12.style.position = "absolute";
+$polje12.style.left = "780px";
+$polje12.style.top = "320px";
+$polje12.style.visibility = "hidden";
 
 $includeJs("Poker.js");
 

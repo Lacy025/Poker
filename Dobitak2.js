@@ -979,16 +979,21 @@ function Dobitak2() {
 	function DupliranjeKasiranje(event) {
 		switch(event.keyCode) {
 			
-			case 13 : /*
+			case 13 : 
 				window.removeEventListener("keydown", DupliranjeKasiranje);
 				clearInterval(timerIzbor1);
 				clearInterval(timerIzbor2);
 				izborlevo.style.visibility = "hidden";
 				izbordesno.style.visibility = "hidden";
 				audioDobitak.currentTime = 5;
+				$polje1.style.visibility = "hidden";
+				$polje2.style.visibility = "hidden";
+				$polje3.style.visibility = "hidden";
+				$polje4.style.visibility = "hidden";
+				$polje5.style.visibility = "hidden";
 				$deljenje = 10;
 				console.log($deljenje);
-				break; */
+				break;
 				// DUPLIRANJE
 			case 32 :
 				window.removeEventListener("keydown", DupliranjeKasiranje);

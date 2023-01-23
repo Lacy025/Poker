@@ -457,3 +457,19 @@
     font-family: Arial;
     font-size: 56px;
 }
+#veca{
+    position: absolute;
+    top: 843px;
+    left: 780px;
+    font-size: 32px;
+    color:yellow;
+    font-family: Arial;
+}
+#manja{
+    position: absolute;
+    top: 880px;
+    left: 800px;
+    font-size: 32px;
+    color:yellow;
+    font-family: Arial;
+}
