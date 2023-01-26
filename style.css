@@ -473,3 +473,27 @@
     color:yellow;
     font-family: Arial;
 }
+#izbormanja{
+    position: absolute;
+    top: 500px;
+    left: 580px;
+    font-size: 128px;
+    color:yellow;
+    font-family: Arial;
+}
+#izborveca{
+    position: absolute;
+    top: 500px;
+    left: 580px;
+    font-size: 128px;
+    color:yellow;
+    font-family: Arial;
+}
+#kartaxx{
+    position: absolute;
+    top: 40px;
+    left: 1780px;
+    font-size: 28px;
+    color:yellow;
+    font-family: Arial;
+}

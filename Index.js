@@ -153,6 +153,24 @@ let $stop;
 let $timerVeca;
 let $timerManja;
 
+let $k00;
+let $k01;
+let $k02;
+let $k03;
+let $k04;
+let $k05;
+let $k06;
+let $k07;
+let $k08;
+let $k09;
+let $k10;
+let $k11;
+
+let $pauzaManja;
+let $pauzaVeca;
+
+let $karta;
+
 $polje1.style.position = "absolute";
 $polje1.style.left = "10px";
 $polje1.style.top = "320px";
@@ -191,6 +209,11 @@ pobeda.style.visibility = "hidden";
 
 veca.style.visibility = "hidden";
 manja.style.visibility = "hidden";
+
+$polje00.style.position = "absolute";
+$polje00.style.left = "10px";
+$polje00.style.top = "320px";
+$polje00.style.visibility = "hidden";
 
 $polje01.style.position = "absolute";
 $polje01.style.left = "10px";
@@ -251,6 +274,11 @@ $polje12.style.position = "absolute";
 $polje12.style.left = "780px";
 $polje12.style.top = "320px";
 $polje12.style.visibility = "hidden";
+
+izbormanja.style.visibility = "hidden";
+izborveca.style.visibility = "hidden";
+
+let $timerPogodio;
 
 $includeJs("Poker.js");
 
