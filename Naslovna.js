@@ -65,8 +65,26 @@ if($deljenje==0) {
         }
         
     }
+    function Brisanje1_12() {
+        $polje00.style.visibility = "hidden";
+        $polje01.style.visibility = "hidden";
+        $polje02.style.visibility = "hidden";
+        $polje03.style.visibility = "hidden";
+        $polje04.style.visibility = "hidden";
+        $polje05.style.visibility = "hidden";
+        $polje06.style.visibility = "hidden";
+        $polje07.style.visibility = "hidden";
+        $polje08.style.visibility = "hidden";
+        $polje09.style.visibility = "hidden";
+        $polje10.style.visibility = "hidden";
+        $polje11.style.visibility = "hidden";
+        $polje12.style.visibility = "hidden";
+        izbormanja.style.visibility = "hidden";
+        izborveca.style.visibility = "hidden";
+    }
+
     function Prviekran() {
-        
+        Brisanje1_12();
         Ispis();
         clearInterval(timerPoruka1);
         clearInterval(timerPoruka2);
@@ -321,7 +339,7 @@ if($deljenje==0) {
             case 13 :
 
                 if($c>0) {
-
+                    Brisanje1_12();
                     Ispis();
                     $isplata = 0;
                     pobeda.style.visibility = "hidden";
@@ -357,6 +375,7 @@ if($deljenje==0) {
                     break;
                     }
                 else {
+                    Brisanje1_12();
                     break;
                 }
 

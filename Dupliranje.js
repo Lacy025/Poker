@@ -24,22 +24,24 @@ function Dupliranje() {
     pobeda.style.visibility = "hidden";
     manja.style.visibility = "hidden";
     veca.style.visibility = "hidden";
-    if($karta<12) {
-        Karta1_12();
+    Karta1_12();
+
+    if($karta<12&&$d<10000) {
         veca.style.visibility = "visible";
         document.getElementById("audioVeca").play();
         audioCount1.currentTime = 0;
         window.addEventListener("keydown", Kockanje);
     }
     else {
-        $polje12.style.visibility = "visible";
+        clearInterval($timerManja);
+        clearInterval($timerVeca);
+        manja.style.visibility = "hidden";
+        veca.style.visibility = "hidden";
         window.removeEventListener("keydown", Kockanje);
         pobeda.style.visibility = "visible";
         $deljenje = 11;
     }
 }
-
-
 function Karta1_12() {
 
     if($karta==1) {
@@ -141,6 +143,9 @@ function Karta1_12() {
         $polje11.style.visibility = "visible";
         $timerManja = setInterval(Manja, $pauzaManja);
         $timerVeca = setInterval(Veca, $pauzaVeca);
+    }
+    if($karta==12) {
+        $polje12.style.visibility = "visible";
     }
 
 
@@ -302,7 +307,9 @@ function Promasio() {
     $d = 0;
     document.getElementById("vrednostdobitka").innerHTML = $d;
     document.getElementById("vrednostdobitka").style.visibility = "visible";
-    $karta = 13;
+    //$karta = 13;
+
+    $deljenje = 11;
 }
 
 function Veca() {

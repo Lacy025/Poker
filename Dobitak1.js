@@ -1021,7 +1021,7 @@ function $Dobitak1() {
 		$Streetflush = 0;
 	}
 	if($Poker==1) {
-		$rucno.style.top = "91px";
+		$rucno.style.top = "93px";
 		$rucno.style.visibility = "visible";
 		$Poker = 0;
 	}
