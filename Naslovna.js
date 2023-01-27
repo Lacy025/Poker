@@ -79,6 +79,18 @@ if($deljenje==0) {
         $polje10.style.visibility = "hidden";
         $polje11.style.visibility = "hidden";
         $polje12.style.visibility = "hidden";
+        document.getElementById("$polje00").src="/Karte/53.png";
+        document.getElementById("$polje01").src="/Karte/53.png";
+        document.getElementById("$polje02").src="/Karte/53.png";
+        document.getElementById("$polje03").src="/Karte/53.png";
+        document.getElementById("$polje04").src="/Karte/53.png";
+        document.getElementById("$polje05").src="/Karte/53.png";
+        document.getElementById("$polje06").src="/Karte/53.png";
+        document.getElementById("$polje07").src="/Karte/53.png";
+        document.getElementById("$polje08").src="/Karte/53.png";
+        document.getElementById("$polje09").src="/Karte/53.png";
+        document.getElementById("$polje10").src="/Karte/53.png";
+        document.getElementById("$polje11").src="/Karte/53.png";
         izbormanja.style.visibility = "hidden";
         izborveca.style.visibility = "hidden";
     }

@@ -7,6 +7,7 @@ function Cekanje10() {
         clearInterval($timerCekanje10);
         $deljenje=12;
         if($d>0) {
+            $Pobeda2();
             $timerPobeda1 = setInterval($Pobeda1,500);
             $timerPobeda2 = setInterval($Pobeda2,1000);
             Kasiranje();

@@ -278,6 +278,7 @@ $polje12.style.visibility = "hidden";
 izbormanja.style.visibility = "hidden";
 izborveca.style.visibility = "hidden";
 
+let $poljeKarte = "$polje00";
 let $timerPogodio;
 
 $includeJs("Poker.js");
