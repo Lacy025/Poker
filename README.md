@@ -1,4 +1,4 @@
-# Poker machine with 53 cards in Javascript.
+# Poker machine with 53 cards in HTML/CSS/Javascript.
 
 Q = Credit + 100   
 5 = Bet + 1   
