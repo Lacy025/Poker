@@ -958,6 +958,8 @@ function Dobitak2() {
 		$d = $d9;
 	}
 	if($dobitak==0) {
+		clearInterval($timerCekanje9);
+		clearInterval($timerCekanje10);
 		$timerNemadobitka = setInterval(Nemadobitka,500);
 	}
 	else{

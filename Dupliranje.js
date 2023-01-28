@@ -173,7 +173,7 @@ function Kockanje(event) {
         document.getElementById("vrednostdobitka").innerHTML = $d;
         document.getElementById("vrednostdobitka").style.visibility = "hidden";
 
-        if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {  //MANJA
+        if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {  // MANJA
             
             izborveca.style.visibility = "hidden";
             izbormanja.style.visibility = "visible";
@@ -186,7 +186,7 @@ function Kockanje(event) {
             }
             break;
         }
-        if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {  //VEĆA
+        if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {  // VEĆA
            
             izbormanja.style.visibility = "hidden";
             izborveca.style.visibility = "visible";
@@ -328,7 +328,6 @@ function Promasio() {
     document.getElementById("vrednostdobitka").style.visibility = "visible";
     $deljenje = 11;
 }
-
 function Veca() {
     veca.style.visibility = "visible";
     manja.style.visibility = "hidden";
