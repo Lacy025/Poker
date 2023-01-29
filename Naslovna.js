@@ -393,7 +393,7 @@ if($deljenje==0) {
 
             case 35 : 
 
-                if($c>0) {
+                if($c>0&&$biodobitak==0) {
 
                     window.removeEventListener("keydown", pocetak);
 
