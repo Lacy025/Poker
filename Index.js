@@ -19,8 +19,10 @@ let $d9;
 
 let $timerProvera1;
 let $timerProvera2;
+let $timerProvera3;
 let $timerMinussto1;
 let $timerMinussto2;
+let $timerMinussto3;
 let $timerOdbrojano1;
 let $timerOdbrojano2;
 let $timerNula1;
@@ -112,6 +114,21 @@ let $hold5;
 
 let $timerPobeda1;
 let $timerPobeda2;
+
+function $Pobeda1() {
+    pobeda.style.visibility = "hidden";
+}
+function $Pobeda2() {
+    pobeda.style.visibility = "visible";
+}
+function $audioCount1() {
+    document.getElementById("audioCount1").play();
+    document.getElementById("audioCount1").currentTime = 0;
+}
+function $audioCount2() {
+    document.getElementById("audioCount2").play();
+    document.getElementById("audioCount2").currentTime = 0;
+}
 
 let $poruka3 = document.getElementById("poruka3");
 $poruka3.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  STOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
@@ -280,6 +297,7 @@ izborveca.style.visibility = "hidden";
 
 let $poljeKarte = "$polje00";
 let $timerPogodio;
+let $pola;
 
 $includeJs("Poker.js");
 

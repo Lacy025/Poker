@@ -17,12 +17,6 @@ function Cekanje10() {
         }
     }
 }
-function $Pobeda1() {
-    pobeda.style.visibility = "hidden";
-}
-function $Pobeda2() {
-    pobeda.style.visibility = "visible";
-}
 function Kasiranje() {
     $c = $c + 1;
     document.getElementById("credit").innerHTML = $c;

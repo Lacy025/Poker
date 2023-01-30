@@ -21,6 +21,8 @@ function Dupliranje() {
     clearInterval($timerPogodio);
     clearInterval($timerManja);
     clearInterval($timerVeca);
+    clearInterval($timerPobeda1);
+    clearInterval($timerPobeda2);
     pobeda.style.visibility = "hidden";
     manja.style.visibility = "hidden";
     veca.style.visibility = "hidden";
@@ -208,8 +210,54 @@ function Kockanje(event) {
 
         case 53 :  //TASTER 5 - UZMI POLA
 
+        if($d>1) {
+
+            Brisanje();
+
+            $Pobeda2();
+            $pola = Math.floor($d / 2);
+            $timerPobeda1 = setInterval($Pobeda1,500);
+            $timerPobeda2 = setInterval($Pobeda2,1000);
+            if($d<101) {
+                $timerProvera3 = setInterval(Pola1,60);
+            }
+            
+        }
+
     }
 }
+function Minusjedan3() {
+    $c = $c + 1;
+    document.getElementById("credit").innerHTML = $c;
+    $vrednostKredita();
+    $d = $d - 1;
+    document.getElementById("vrednostdobitka").innerHTML = $d;
+    $audioCount1();
+}
+function Minussto3() {
+    $c = $c + 100;
+    document.getElementById("credit").innerHTML = $c;
+    $vrednostKredita();
+    $d = $d - 100;
+    document.getElementById("vrednostdobitka").innerHTML = $d;
+    $audioCount2();
+}
+
+function Pola1() {
+
+    if($d != $pola) {
+        Minusjedan3();
+    }
+    else {
+        clearInterval($timerProvera3);
+        $audioCount2();
+        $Pobeda1();
+        $timerPogodio = setInterval(Dupliranje, 1000);
+    }
+
+}
+
+
 function Karta() {
 
     if($karta==1) {
