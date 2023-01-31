@@ -213,17 +213,23 @@ function Kockanje(event) {
         if($d>1) {
 
             Brisanje();
-
             $Pobeda2();
+
             $pola = Math.floor($d / 2);
+
             $timerPobeda1 = setInterval($Pobeda1,500);
             $timerPobeda2 = setInterval($Pobeda2,1000);
+
             if($d<101) {
                 $timerProvera3 = setInterval(Pola1,60);
             }
+            if($d>100 && $d<200) {
+                $prviDeo = $d - 100;
+                $drugiDeo = 100 - $pola;
+                Pola2();
+            }
             
         }
-
     }
 }
 function Minusjedan3() {
@@ -242,7 +248,6 @@ function Minussto3() {
     document.getElementById("vrednostdobitka").innerHTML = $d;
     $audioCount2();
 }
-
 function Pola1() {
 
     if($d != $pola) {
@@ -256,8 +261,33 @@ function Pola1() {
     }
 
 }
-
-
+function Pola2() {
+    Prvideo();
+    $timerProvera3 = setInterval(Drugideo,1000);
+}
+function Prvideo() {
+    $Pobeda2();
+    $c = $c + $prviDeo;
+    document.getElementById("credit").innerHTML = $c;
+    $vrednostKredita();
+    $d = $d - $prviDeo;
+    document.getElementById("vrednostdobitka").innerHTML = $d;
+    $audioCount2();
+}
+function Drugideo() {
+    clearInterval($timerProvera3);
+    if($drugiDeo != 0) {
+        Minusjedan3();
+        $timerProvera3 = setInterval(Drugideo, 60);
+        $drugiDeo--;
+    }
+    else {
+        clearInterval($timerProvera3);
+        $Pobeda2();
+        $audioCount2();
+        $timerPogodio = setInterval(Dupliranje, 1000);
+    }
+}
 function Karta() {
 
     if($karta==1) {

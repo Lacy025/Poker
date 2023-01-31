@@ -298,6 +298,8 @@ izborveca.style.visibility = "hidden";
 let $poljeKarte = "$polje00";
 let $timerPogodio;
 let $pola;
+let $prviDeo;
+let $drugiDeo;
 
 $includeJs("Poker.js");
 
