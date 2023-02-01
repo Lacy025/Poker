@@ -228,7 +228,13 @@ function Kockanje(event) {
                 $drugiDeo = 100 - $pola;
                 Pola2();
             }
-            
+            if($d==200) {
+                Minussto3();
+                $timerProvera3 = setInterval(Pola3,1000);
+            }
+            if($d>200) {
+                
+            }
         }
     }
 }
@@ -259,7 +265,6 @@ function Pola1() {
         $Pobeda1();
         $timerPogodio = setInterval(Dupliranje, 1000);
     }
-
 }
 function Pola2() {
     Prvideo();
@@ -288,6 +293,12 @@ function Drugideo() {
         $timerPogodio = setInterval(Dupliranje, 1000);
     }
 }
+function Pola3() {
+    clearInterval($timerProvera3);
+    $audioCount2();
+    $timerPogodio = setInterval(Dupliranje, 1000);
+}
+
 function Karta() {
 
     if($karta==1) {
