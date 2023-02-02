@@ -318,6 +318,7 @@ function Drugideo2() {
         $timerProvera3 = setInterval(Drugideo2, 1000);
     }
     else {
+        
         if($d-$pola == 0) {
             Trecideo3();
         }
