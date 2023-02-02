@@ -151,7 +151,7 @@ function Karta1_12() {
     }
 
 
-    document.getElementById("kartaxx").innerHTML = $k00;
+    //document.getElementById("kartaxx").innerHTML = $k00;  CHEATING MODE
 
 }
 function Brisanje() {
@@ -168,74 +168,74 @@ function Kockanje(event) {
 
         case 17 :  // TASTER CTRL - DUPLIRANJE
 
-        Brisanje();
+            Brisanje();
 
-        Karta();
+            Karta();
 
-        document.getElementById("vrednostdobitka").innerHTML = $d;
-        document.getElementById("vrednostdobitka").style.visibility = "hidden";
+            document.getElementById("vrednostdobitka").innerHTML = $d;
+            document.getElementById("vrednostdobitka").style.visibility = "hidden";
 
-        if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {  // MANJA
+            if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {  // MANJA
+                
+                izborveca.style.visibility = "hidden";
+                izbormanja.style.visibility = "visible";
+
+                if($k00<25) {
+                    Pogodio();
+                }
+                else {
+                    Promasio();
+                }
+                break;
+            }
+            if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {  // VEĆA
             
-            izborveca.style.visibility = "hidden";
-            izbormanja.style.visibility = "visible";
+                izbormanja.style.visibility = "hidden";
+                izborveca.style.visibility = "visible";
 
-            if($k00<25) {
-                Pogodio();
+                if($k00>24) {
+                    Pogodio();
+                }
+                else {
+                    Promasio();
+                }
+                break;
             }
-            else {
-                Promasio();
-            }
-            break;
-        }
-        if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {  // VEĆA
-           
-            izbormanja.style.visibility = "hidden";
-            izborveca.style.visibility = "visible";
 
-            if($k00>24) {
-                Pogodio();
-            }
-            else {
-                Promasio();
-            }
-            break;
-        }
-
-        case 32 :  //TASTER SPACE - KASIRANJE
-
-        Brisanje();
-        $deljenje = 11;
-        break;
-
-        case 53 :  //TASTER 5 - UZMI POLA
-
-        if($d>1) {
+        case 32 :  // TASTER SPACE - KASIRANJE
 
             Brisanje();
-            $Pobeda2();
+            $deljenje = 11;
+            break;
 
-            $pola = Math.floor($d / 2);
+        case 53 :  // TASTER 5 - UZMI POLA
 
-            $timerPobeda1 = setInterval($Pobeda1,500);
-            $timerPobeda2 = setInterval($Pobeda2,1000);
+            if($d>1) {
 
-            if($d<101) {
-                $timerProvera3 = setInterval(Pola1,60);
+                Brisanje();
+                $Pobeda2();
+
+                $pola = Math.floor($d / 2);
+
+                $timerPobeda1 = setInterval($Pobeda1,500);
+                $timerPobeda2 = setInterval($Pobeda2,1000);
+
+                if($d<101) {
+                    $timerProvera3 = setInterval(Pola1,60);
+                }
+                if($d>100 && $d<200) {
+                    $prviDeo = $d - 100;
+                    $drugiDeo = 100 - $pola;
+                    Pola2();
+                }
+                if($d==200) {
+                    Minussto3();
+                    $timerProvera3 = setInterval(Pola3,1000);
+                }
+                if($d>200) {
+                    Pola4();
+                }
             }
-            if($d>100 && $d<200) {
-                $prviDeo = $d - 100;
-                $drugiDeo = 100 - $pola;
-                Pola2();
-            }
-            if($d==200) {
-                Minussto3();
-                $timerProvera3 = setInterval(Pola3,1000);
-            }
-            if($d>200) {
-                
-            }
-        }
     }
 }
 function Minusjedan3() {
@@ -267,10 +267,10 @@ function Pola1() {
     }
 }
 function Pola2() {
-    Prvideo();
-    $timerProvera3 = setInterval(Drugideo,1000);
+    Prvideo1();
+    $timerProvera3 = setInterval(Drugideo1,1000);
 }
-function Prvideo() {
+function Prvideo1() {
     $Pobeda2();
     $c = $c + $prviDeo;
     document.getElementById("credit").innerHTML = $c;
@@ -279,11 +279,11 @@ function Prvideo() {
     document.getElementById("vrednostdobitka").innerHTML = $d;
     $audioCount2();
 }
-function Drugideo() {
+function Drugideo1() {
     clearInterval($timerProvera3);
     if($drugiDeo != 0) {
         Minusjedan3();
-        $timerProvera3 = setInterval(Drugideo, 60);
+        $timerProvera3 = setInterval(Drugideo1, 60);
         $drugiDeo--;
     }
     else {
@@ -298,7 +298,48 @@ function Pola3() {
     $audioCount2();
     $timerPogodio = setInterval(Dupliranje, 1000);
 }
-
+function Pola4() {
+    if((Math.floor($d/100)) != ($d/100)) {
+        Prvideo2();
+        $timerProvera3 = setInterval(Drugideo2, 1000);
+    }
+    else {
+        Drugideo2();
+    }
+}
+function Prvideo2() {
+    $prviDeo = Math.round((($d/100) - (Math.floor($d/100))) * 100);
+    Prvideo1();
+}
+function Drugideo2() {
+    clearInterval($timerProvera3);
+    if($d-$pola>99) {
+        Minussto3();
+        $timerProvera3 = setInterval(Drugideo2, 1000);
+    }
+    else {
+        if($d-$pola == 0) {
+            Trecideo3();
+        }
+        else {
+            clearInterval($timerProvera3);
+            clearInterval($timerPobeda1);
+            clearInterval($timerPobeda2);
+            $Pobeda2();
+            $prviDeo = $d - $pola;
+            Prvideo1();
+            $timerPogodio = setInterval(Trecideo3, 1000);
+        } 
+    }
+}
+function Trecideo3() {
+    clearInterval($timerProvera3);
+    clearInterval($timerPogodio);
+    clearInterval($timerPobeda1);
+    clearInterval($timerPobeda2);
+    $Pobeda2();
+    Dupliranje();
+}
 function Karta() {
 
     if($karta==1) {
