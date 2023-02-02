@@ -348,6 +348,8 @@ function Karta() {
         $poljeKarte = "$polje01"
         Karta00();
         $polje01.style.visibility = "visible";
+        izbormanja.style.left = "580px";
+        izborveca.style.left = "580px";
     }
     if($karta==2) {
         $polje02.style.visibility = "hidden";
