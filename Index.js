@@ -129,6 +129,22 @@ function $audioCount2() {
     document.getElementById("audioCount2").play();
     document.getElementById("audioCount2").currentTime = 0;
 }
+function $Minusjedan() {
+    $c = $c + 1;
+    document.getElementById("credit").innerHTML = $c;
+    $vrednostKredita();
+    $d = $d - 1;
+    document.getElementById("vrednostdobitka").innerHTML = $d;
+    $audioCount1();
+}
+function $Minussto() {
+    $c = $c + 100;
+    document.getElementById("credit").innerHTML = $c;
+    $vrednostKredita();
+    $d = $d - 100;
+    document.getElementById("vrednostdobitka").innerHTML = $d;
+    $audioCount2();
+}
 
 let $poruka3 = document.getElementById("poruka3");
 $poruka3.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  STOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";

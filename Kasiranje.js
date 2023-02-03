@@ -18,22 +18,13 @@ function Cekanje10() {
     }
 }
 function Kasiranje() {
-    $c = $c + 1;
-    document.getElementById("credit").innerHTML = $c;
-    $vrednostKredita();
-    $d = $d - 1;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
-    document.getElementById("audioCount1").play();
-    audioCount1.currentTime = 0;
-
+    $Minusjedan();
     $timerProvera2 = setInterval(Provera2,60);
 }
 function Provera2() {
 
     if((Math.round($d/100) != $d/100) && $d>0) {
-        document.getElementById("audioCount1").play();
-        audioCount1.currentTime = 0;
-        Minusjedan2();
+        $Minusjedan();
     }
     else {
         clearInterval($timerProvera2);
@@ -56,22 +47,9 @@ function Provera2() {
         }
     }
 }
-function Minusjedan2() {
-    $c = $c + 1;
-    document.getElementById("credit").innerHTML = $c;
-    $vrednostKredita();
-    $d = $d - 1;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
-}
 function Minussto2() {
     if($d>99) {
-        $c = $c + 100;
-        document.getElementById("credit").innerHTML = $c;
-        $vrednostKredita();
-        $d = $d - 100;
-        document.getElementById("vrednostdobitka").innerHTML = $d;
-        document.getElementById("audioCount2").play();
-        audioCount2.currentTime = 0;
+        $Minussto();
     }
     else {
         clearInterval($timerMinussto2);

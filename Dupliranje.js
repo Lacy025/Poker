@@ -151,7 +151,7 @@ function Karta1_12() {
     }
 
 
-    //document.getElementById("kartaxx").innerHTML = $k00;  CHEATING MODE
+    // document.getElementById("kartaxx").innerHTML = $k00;  // CHEATING MODE
 
 }
 function Brisanje() {
@@ -229,7 +229,7 @@ function Kockanje(event) {
                     Pola2();
                 }
                 if($d==200) {
-                    Minussto3();
+                    $Minussto();
                     $timerProvera3 = setInterval(Pola3,1000);
                 }
                 if($d>200) {
@@ -238,26 +238,10 @@ function Kockanje(event) {
             }
     }
 }
-function Minusjedan3() {
-    $c = $c + 1;
-    document.getElementById("credit").innerHTML = $c;
-    $vrednostKredita();
-    $d = $d - 1;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
-    $audioCount1();
-}
-function Minussto3() {
-    $c = $c + 100;
-    document.getElementById("credit").innerHTML = $c;
-    $vrednostKredita();
-    $d = $d - 100;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
-    $audioCount2();
-}
 function Pola1() {
 
     if($d != $pola) {
-        Minusjedan3();
+        $Minusjedan();
     }
     else {
         clearInterval($timerProvera3);
@@ -282,7 +266,7 @@ function Prvideo1() {
 function Drugideo1() {
     clearInterval($timerProvera3);
     if($drugiDeo != 0) {
-        Minusjedan3();
+        $Minusjedan();
         $timerProvera3 = setInterval(Drugideo1, 60);
         $drugiDeo--;
     }
@@ -314,11 +298,11 @@ function Prvideo2() {
 function Drugideo2() {
     clearInterval($timerProvera3);
     if($d-$pola>99) {
-        Minussto3();
+        $Minussto();
         $timerProvera3 = setInterval(Drugideo2, 1000);
     }
     else {
-        
+
         if($d-$pola == 0) {
             Trecideo3();
         }
@@ -453,7 +437,7 @@ function Pogodio() {
     $karta++;
     $pauzaManja = $pauzaManja - 30;
     $pauzaVeca = $pauzaVeca - 60;
-    $timerPogodio = setInterval(Dupliranje, 1500);
+    $timerPogodio = setInterval(Dupliranje, 1400);
 }
 function Promasio() {
     $d = 0;
