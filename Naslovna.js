@@ -296,6 +296,15 @@ if($deljenje==0) {
             }
         }
     }
+    function Reset() {
+        clearInterval($timerOdbrojano1);
+        clearInterval(timerNemaReklame);
+        clearInterval(timerImaReklame);
+        imaReklame();
+        timerNemaReklame = setInterval(nemaReklame, 6000);
+        timerImaReklame = setInterval(imaReklame, 12000);
+        window.addEventListener("keydown", pocetak);
+    }
     function pocetak(event) {
 
         switch(event.keyCode) {
@@ -415,16 +424,14 @@ if($deljenje==0) {
                     $c = $c - 1;
                     document.getElementById("credit").innerHTML = $c;
                     $vrednostKredita();
-                    document.getElementById("audioCount1").play();
-                    audioCount1.currentTime = 0;
+                    $audioCount1();
                 
                     $timerProvera1 = setInterval(Provera1,60);
                 
                     function Provera1() {
                         
                         if((Math.round($c/100) != $c/100) && $c>0) {
-                            document.getElementById("audioCount1").play();
-                            audioCount1.currentTime = 0;
+                            $audioCount1();
                             Minusjedan1();
                         }
                         else {
@@ -453,8 +460,7 @@ if($deljenje==0) {
                             $c = $c - 100;
                             document.getElementById("credit").innerHTML = $c;
                             $vrednostKredita();
-                            document.getElementById("audioCount2").play();
-                            audioCount2.currentTime = 0;
+                            $audioCount2();
                         }
                         else {
                             clearInterval($timerMinussto1);
@@ -475,8 +481,13 @@ if($deljenje==0) {
                         document.getElementById("autohold").style.visibility = "visible";
                         vrednostUloga();
                         vrednostDobitka();
-                        $includeJs("Poker.js");
-                        window.addEventListener("keydown", pocetak);
+                        //$includeJs("Poker.js");
+                        clearInterval(timerJoker1);
+                        clearInterval(timerJoker2);
+                        clearInterval(timerJoker3);
+                        clearInterval(timerJoker4);
+                        clearInterval(timerJoker5);
+                        $timerOdbrojano1 = setInterval(Reset,100);
                     }
                 }
         }   
