@@ -79,18 +79,18 @@ if($deljenje==0) {
         $polje10.style.visibility = "hidden";
         $polje11.style.visibility = "hidden";
         $polje12.style.visibility = "hidden";
-        document.getElementById("$polje00").src="/Karte/53.png";
-        document.getElementById("$polje01").src="/Karte/53.png";
-        document.getElementById("$polje02").src="/Karte/53.png";
-        document.getElementById("$polje03").src="/Karte/53.png";
-        document.getElementById("$polje04").src="/Karte/53.png";
-        document.getElementById("$polje05").src="/Karte/53.png";
-        document.getElementById("$polje06").src="/Karte/53.png";
-        document.getElementById("$polje07").src="/Karte/53.png";
-        document.getElementById("$polje08").src="/Karte/53.png";
-        document.getElementById("$polje09").src="/Karte/53.png";
-        document.getElementById("$polje10").src="/Karte/53.png";
-        document.getElementById("$polje11").src="/Karte/53.png";
+        document.getElementById("$polje00").src="./Karte/53.png";
+        document.getElementById("$polje01").src="./Karte/53.png";
+        document.getElementById("$polje02").src="./Karte/53.png";
+        document.getElementById("$polje03").src="./Karte/53.png";
+        document.getElementById("$polje04").src="./Karte/53.png";
+        document.getElementById("$polje05").src="./Karte/53.png";
+        document.getElementById("$polje06").src="./Karte/53.png";
+        document.getElementById("$polje07").src="./Karte/53.png";
+        document.getElementById("$polje08").src="./Karte/53.png";
+        document.getElementById("$polje09").src="./Karte/53.png";
+        document.getElementById("$polje10").src="./Karte/53.png";
+        document.getElementById("$polje11").src="./Karte/53.png";
         izbormanja.style.visibility = "hidden";
         izborveca.style.visibility = "hidden";
     }
@@ -229,11 +229,11 @@ if($deljenje==0) {
         }
     }
     function prazneKarte() {
-        document.getElementById("$polje1").src="/Karte/53.png";
-        document.getElementById("$polje2").src="/Karte/53.png";
-        document.getElementById("$polje3").src="/Karte/53.png";
-        document.getElementById("$polje4").src="/Karte/53.png";
-        document.getElementById("$polje5").src="/Karte/53.png";
+        document.getElementById("$polje1").src="./Karte/53.png";
+        document.getElementById("$polje2").src="./Karte/53.png";
+        document.getElementById("$polje3").src="./Karte/53.png";
+        document.getElementById("$polje4").src="./Karte/53.png";
+        document.getElementById("$polje5").src="./Karte/53.png";
         $polje1.style.visibility = "visible";
         $polje2.style.visibility = "visible";
         $polje3.style.visibility = "visible";
@@ -242,43 +242,43 @@ if($deljenje==0) {
     }
     function joker1() {
         $polje1.style.visibility = "hidden";
-        document.getElementById("$polje1").src="/Karte/00.png";
+        document.getElementById("$polje1").src="./Karte/00.png";
         $polje1.style.visibility = "visible";
         clearInterval(timerJoker1);
     }
     function joker2() {
         $polje1.style.visibility = "hidden";
-        document.getElementById("$polje1").src="/Karte/53.png";
+        document.getElementById("$polje1").src="./Karte/53.png";
         $polje1.style.visibility = "visible";
         $polje2.style.visibility = "hidden";
-        document.getElementById("$polje2").src="/Karte/00.png";
+        document.getElementById("$polje2").src="./Karte/00.png";
         $polje2.style.visibility = "visible";
         clearInterval(timerJoker2);
     }
     function joker3() {
         $polje2.style.visibility = "hidden";
-        document.getElementById("$polje2").src="/Karte/53.png";
+        document.getElementById("$polje2").src="./Karte/53.png";
         $polje2.style.visibility = "visible";
         $polje3.style.visibility = "hidden";
-        document.getElementById("$polje3").src="/Karte/00.png";
+        document.getElementById("$polje3").src="./Karte/00.png";
         $polje3.style.visibility = "visible";
         clearInterval(timerJoker3);
     }
     function joker4() {
         $polje3.style.visibility = "hidden";
-        document.getElementById("$polje3").src="/Karte/53.png";
+        document.getElementById("$polje3").src="./Karte/53.png";
         $polje3.style.visibility = "visible";
         $polje4.style.visibility = "hidden";
-        document.getElementById("$polje4").src="/Karte/00.png";
+        document.getElementById("$polje4").src="./Karte/00.png";
         $polje4.style.visibility = "visible";
         clearInterval(timerJoker4);
     }
     function joker5() {
         $polje4.style.visibility = "hidden";
-        document.getElementById("$polje4").src="/Karte/53.png";
+        document.getElementById("$polje4").src="./Karte/53.png";
         $polje4.style.visibility = "visible";
         $polje5.style.visibility = "hidden";
-        document.getElementById("$polje5").src="/Karte/00.png";
+        document.getElementById("$polje5").src="./Karte/00.png";
         $polje5.style.visibility = "visible";
         clearInterval(timerJoker5);
     }

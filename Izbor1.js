@@ -155,23 +155,23 @@ function IzborKarata(event) {
             $stop5.style.visibility = "hidden";
 
             if($hold1==0) {
-                document.getElementById("$polje1").src="/Karte/53.png";
+                document.getElementById("$polje1").src="./Karte/53.png";
                 $polje1.style.visibility = "visible";
             }
             if($hold2==0) {
-                document.getElementById("$polje2").src="/Karte/53.png";
+                document.getElementById("$polje2").src="./Karte/53.png";
                 $polje2.style.visibility = "visible";
             }
             if($hold3==0) {
-                document.getElementById("$polje3").src="/Karte/53.png";
+                document.getElementById("$polje3").src="./Karte/53.png";
                 $polje3.style.visibility = "visible";
             }
             if($hold4==0) {
-                document.getElementById("$polje4").src="/Karte/53.png";
+                document.getElementById("$polje4").src="./Karte/53.png";
                 $polje4.style.visibility = "visible";
             }
             if($hold5==0) {
-                document.getElementById("$polje5").src="/Karte/53.png";
+                document.getElementById("$polje5").src="./Karte/53.png";
                 $polje5.style.visibility = "visible";
             }
             function audioKarta1() {

@@ -963,12 +963,18 @@ function Dobitak2() {
 		$timerNemadobitka = setInterval(Nemadobitka,500);
 	}
 	else{
-		izborlevo.style.visibility = "visible"
-		izbordesno.style.visibility = "hidden"
-		timerIzbor1 = setInterval(Izbordesno,500);
-		timerIzbor2 = setInterval(Izborlevo,1000);
+		if($d<10000) {
+			izborlevo.style.visibility = "visible"
+			izbordesno.style.visibility = "hidden"
+			timerIzbor1 = setInterval(Izbordesno,500);
+			timerIzbor2 = setInterval(Izborlevo,1000);
 
-		window.addEventListener("keydown", DupliranjeKasiranje);
+			window.addEventListener("keydown", DupliranjeKasiranje);
+		}
+		else {
+			pobeda.style.visibility = "visible";
+			timerIzbor1 = setInterval(Blokada,3000);
+		}
 	}
 	function Izborlevo() {
 		izborlevo.style.visibility = "visible";
@@ -1014,5 +1020,10 @@ function Dobitak2() {
 	function Nemadobitka() {
 		$deljenje = 0;
 		$includeJs("Poker.js");
+	}
+	function Blokada() {
+		clearInterval(timerIzbor1);
+		$deljenje = 11;
+		console.log($deljenje);
 	}
 }
