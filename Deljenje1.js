@@ -32,11 +32,12 @@ function Biranjekarata() {
     $k3 = Math.floor(Math.random() * 53);
     $k4 = Math.floor(Math.random() * 53);
     $k5 = Math.floor(Math.random() * 53);
-   
+  /* 
     $k1=11;
-    $k2=12;
-    $k3=0;
+    //$k2=15;
+    $k3=12;
     $k4=10;
     $k5=13;
+    */
 }
 
