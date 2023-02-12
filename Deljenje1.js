@@ -33,11 +33,11 @@ function Biranjekarata() {
     $k4 = Math.floor(Math.random() * 53);
     $k5 = Math.floor(Math.random() * 53);
 /* 
-    $k1=4;
-    $k2=0;
-    $k3=20;
-    $k4=1;
-    $k5=18;
+    $k1=8;
+    $k2=6;
+    $k3=18;
+    $k4=0;
+    $k5=15;
 */   
 }
 

@@ -187,7 +187,7 @@ function $Dobitak1() {
 			if($n3==0||$n3==2||$n3==3||$n3==4||$n3==5||$n3==6) {$hold3=1}
 			if($n4==0||$n4==2||$n4==3||$n4==4||$n4==5||$n4==6) {$hold4=1}
 			if($n5==0||$n5==2||$n5==3||$n5==4||$n5==5||$n5==6) {$hold5=1}
-
+			
 			DveIste();
 		}
 	}
@@ -207,7 +207,7 @@ function $Dobitak1() {
 		if(STRFL3==5) {
 			ProveraBoje2();
 		}
-		if(STRFL3==4&&STRFL2<4) {
+		if(STRFL3==4&&STRFL2<4&&STRFL1<4) {
 
 			if($n1==0||$n1==3||$n1==4||$n1==5||$n1==6||$n1==7) {$hold1=1}
 			if($n2==0||$n2==3||$n2==4||$n2==5||$n2==6||$n2==7) {$hold2=1}
@@ -234,7 +234,7 @@ function $Dobitak1() {
 		if(STRFL4==5) {
 			ProveraBoje2();
 		}
-		if(STRFL4==4&&STRFL3<4) {
+		if(STRFL4==4&&STRFL3<4&&STRFL2<4) {
 
 			if($n1==0||$n1==4||$n1==5||$n1==6||$n1==7||$n1==8) {$hold1=1}
 			if($n2==0||$n2==4||$n2==5||$n2==6||$n2==7||$n2==8) {$hold2=1}
@@ -245,7 +245,7 @@ function $Dobitak1() {
 			DveIste();
 		}
 	}
-
+	
 	// STREET FLUSH OR STREET
 	// 5-9
 
@@ -261,7 +261,7 @@ function $Dobitak1() {
 		if(STRFL5==5) {
 			ProveraBoje2();
 		}
-		if(STRFL5==4&&STRFL4<4) {
+		if(STRFL5==4&&STRFL4<4&&STRFL3<4) {
 
 			if($n1==0||$n1==5||$n1==6||$n1==7||$n1==8||$n1==9) {$hold1=1}
 			if($n2==0||$n2==5||$n2==6||$n2==7||$n2==8||$n2==9) {$hold2=1}
@@ -272,7 +272,7 @@ function $Dobitak1() {
 			DveIste();
 		}
 	}
-
+	
 	// STREET FLUSH OR STREET
 	// 6-10
 
@@ -288,7 +288,7 @@ function $Dobitak1() {
 		if(STRFL6==5) {
 			ProveraBoje2();
 		}
-		if(STRFL6==4&&STRFL5<4) {
+		if(STRFL6==4&&STRFL5<4&&STRFL4<4) {
 
 			if($n1==0||$n1==6||$n1==7||$n1==8||$n1==9||$n1==10) {$hold1=1}
 			if($n2==0||$n2==6||$n2==7||$n2==8||$n2==9||$n2==10) {$hold2=1}
@@ -299,7 +299,7 @@ function $Dobitak1() {
 			DveIste();
 		}
 	}
-
+	
 	// STREET FLUSH OR STREET
 	// 7-11
 
@@ -315,7 +315,7 @@ function $Dobitak1() {
 		if(STRFL7==5) {
 			ProveraBoje2();
 		}
-		if(STRFL7==4&&STRFL6<4) {
+		if(STRFL7==4&&STRFL6<4&&STRFL5<4&&ROYAL<4) {
 
 			if($n1==0||$n1==7||$n1==8||$n1==9||$n1==10||$n1==11) {$hold1=1}
 			if($n2==0||$n2==7||$n2==8||$n2==9||$n2==10||$n2==11) {$hold2=1}
@@ -342,7 +342,7 @@ function $Dobitak1() {
 		if(STRFL8==5) {
 			ProveraBoje2();
 		}
-		if(STRFL8==4&&STRFL7<4) {
+		if(STRFL8==4&&STRFL7<4&&STRFL6<4&&ROYAL<4) {
 
 			if($n1==0||$n1==8||$n1==9||$n1==10||$n1==11||$n1==12) {$hold1=1}
 			if($n2==0||$n2==8||$n2==9||$n2==10||$n2==11||$n2==12) {$hold2=1}
@@ -588,7 +588,7 @@ function $Dobitak1() {
 			$Twopairs = 1;
 		}
 	}
-
+	
 	//HIGH PAIR
 
 	if($dobitak==0) {
@@ -720,299 +720,214 @@ function $Dobitak1() {
 	
 	if($dobitak==0) {
 
-		if($n1==0) {
-			$hold1=1;
-			if($n2>10) {
-				$dobitak++;
-				$Highpair = 1;
+		if(HALFSTREET==1) {
 
-				if(HALFSTREET==0) {
+			if($n1==0) {
+				if($n2>10||$n3>10||$n4>10||$n5>10) {
+					$dobitak++;
+					$Highpair = 1;
+				}
+			}
+			if($n2==0) {
+				if($n1>10||$n3>10||$n4>10||$n5>10) {
+					$dobitak++;
+					$Highpair = 1;
+				}
+			}
+			if($n3==0) {
+				if($n1>10||$n2>10||$n4>10||$n5>10) {
+					$dobitak++;
+					$Highpair = 1;
+				}
+			}
+			if($n4==0) {
+				if($n1>10||$n2>10||$n3>10||$n5>10) {
+					$dobitak++;
+					$Highpair = 1;
+				}
+			}
+			if($n5==0) {
+				if($n1>10||$n2>10||$n3>10||$n4>10) {
+					$dobitak++;
+					$Highpair = 1;
+				}
+			}
+		}
+		else {
+
+			if($n1==0) {
+				$hold1=1;
+				if($n2>10) {
+					$dobitak++;
+					$Highpair = 1;
 					$hold2=1;
 				}
-				else {
-					$hold2=0;
-				}
-			}
-			if($dobitak==0) {
-
-				if($n3>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
+				if($dobitak==0) {
+	
+					if($n3>10) {
+						$dobitak++;
+						$Highpair = 1;
 						$hold3=1;
 					}
-					else {
-						$hold3=0;
-					}
 				}
-			}
-			if($dobitak==0) {
-
-				if($n4>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
+				if($dobitak==0) {
+	
+					if($n4>10) {
+						$dobitak++;
+						$Highpair = 1;
 						$hold4=1;
 					}
-					else {
-						$hold4=0;
-					}
 				}
-			}
-			if($dobitak==0) {
-
-				if($n5>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
+				if($dobitak==0) {
+	
+					if($n5>10) {
+						$dobitak++;
+						$Highpair = 1;
 						$hold5=1;
 					}
-					else {
-						$hold5=0;
+				}
+			}
+			if($dobitak==0) {
+	
+				if($n2==0) {
+					$hold2=1;
+					if($n1>10) {
+						$dobitak++;
+						$Highpair = 1;
+						$hold1=1;
+					}
+					if($dobitak==0) {
+		
+						if($n3>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold3=1;
+						}
+					}
+					if($dobitak==0) {
+		
+						if($n4>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold4=1;
+						}
+					}
+					if($dobitak==0) {
+		
+						if($n5>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold5=1;
+						}
+					}
+				}
+			}
+			if($dobitak==0) {
+	
+				if($n3==0) {
+					$hold3=1;
+					if($n1>10) {
+						$dobitak++;
+						$Highpair = 1;
+						$hold1=1;
+					}
+					if($dobitak==0) {
+		
+						if($n2>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold2=1;
+						}
+					}
+					if($dobitak==0) {
+		
+						if($n4>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold4=1;
+						}
+					}
+					if($dobitak==0) {
+		
+						if($n5>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold5=1;
+						}
+					}
+				}
+			}
+			if($dobitak==0) {
+	
+				if($n4==0) {
+					$hold4=1;
+					if($n1>10) {
+						$dobitak++;
+						$Highpair = 1;
+						$hold1=1;
+					}
+					if($dobitak==0) {
+		
+						if($n2>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold2=1;
+						}
+					}
+					if($dobitak==0) {
+		
+						if($n3>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold3=1;
+						}
+					}
+					if($dobitak==0) {
+		
+						if($n5>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold5=1;
+						}
+					}
+				}
+			}
+			if($dobitak==0) {
+	
+				if($n5==0) {
+					$hold5=1;
+					if($n1>10) {
+						$dobitak++;
+						$Highpair = 1;
+						$hold1=1;
+					}
+					if($dobitak==0) {
+		
+						if($n2>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold2=1;
+						}
+					}
+					if($dobitak==0) {
+		
+						if($n3>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold3=1;
+						}
+					}
+					if($dobitak==0) {
+		
+						if($n4>10) {
+							$dobitak++;
+							$Highpair = 1;
+							$hold4=1;
+						}
 					}
 				}
 			}
 		}
-	}
-	if($dobitak==0) {
-
-		if($n2==0) {
-			$hold2=1;
-			if($n1>10) {
-				$dobitak++;
-				$Highpair = 1;
-
-				if(HALFSTREET==0) {
-					$hold1=1;
-				}
-				else {
-					$hold1=0;
-				}
-			}
-			if($dobitak==0) {
-
-				if($n3>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold3=1;
-					}
-					else {
-						$hold3=0;
-					}
-				}
-			}
-			if($dobitak==0) {
-
-				if($n4>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold4=1;
-					}
-					else {
-						$hold4=0;
-					}
-				}
-			}
-			if($dobitak==0) {
-
-				if($n5>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold5=1;
-					}
-					else {
-						$hold5=0;
-					}
-				}
-			}
-		}
-	}
-	if($dobitak==0) {
-
-		if($n3==0) {
-			$hold3=1;
-			if($n1>10) {
-				$dobitak++;
-				$Highpair = 1;
-
-				if(HALFSTREET==0) {
-					$hold1=1;
-				}
-				else {
-					$hold1=0;
-				}
-			}
-			if($dobitak==0) {
-
-				if($n2>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold2=1;
-					}
-					else {
-						$hold2=0;
-					}
-				}
-			}
-			if($dobitak==0) {
-
-				if($n4>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold4=1;
-					}
-					else {
-						$hold4=0;
-					}
-				}
-			}
-			if($dobitak==0) {
-
-				if($n5>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold5=1;
-					}
-					else {
-						$hold5=0;
-					}
-				}
-			}
-		}
-	}
-	if($dobitak==0) {
-
-		if($n4==0) {
-			$hold4=1;
-			if($n1>10) {
-				$dobitak++;
-				$Highpair = 1;
-
-				if(HALFSTREET==0) {
-					$hold1=1;
-				}
-				else {
-					$hold1=0;
-				}
-			}
-			if($dobitak==0) {
-
-				if($n2>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold2=1;
-					}
-					else {
-						$hold2=0;
-					}
-				}
-			}
-			if($dobitak==0) {
-
-				if($n3>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold3=1;
-					}
-					else {
-						$hold3=0;
-					}
-				}
-			}
-			if($dobitak==0) {
-
-				if($n5>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold5=1;
-					}
-					else {
-						$hold5=0;
-					}
-				}
-			}
-		}
-	}
-	if($dobitak==0) {
-
-		if($n5==0) {
-			$hold5=1;
-			if($n1>10) {
-				$dobitak++;
-				$Highpair = 1;
-
-				if(HALFSTREET==0) {
-					$hold1=1;
-				}
-				else {
-					$hold1=0;
-				}
-			}
-			if($dobitak==0) {
-
-				if($n2>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold2=1;
-					}
-					else {
-						$hold2=0;
-					}
-				}
-			}
-			if($dobitak==0) {
-
-				if($n3>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold3=1;
-					}
-					else {
-						$hold3=0;
-					}
-				}
-			}
-			if($dobitak==0) {
-
-				if($n4>10) {
-					$dobitak++;
-					$Highpair = 1;
-
-					if(HALFSTREET==0) {
-						$hold4=1;
-					}
-					else {
-						$hold4=0;
-					}
-				}
-			}
-		}
-
 	}
 	
 	// 4 BOJE
@@ -1063,26 +978,26 @@ function $Dobitak1() {
 			$hold1=0;$hold2=1;$hold3=1;$hold4=1;$hold5=1;
 			$cetiriboje++;
 		}
-
+		
 		//JOKER
-
-		if($cetiriboje==0&&$n1==0) {
+		
+		if(HALFSTREET==0&&$cetiriboje==0&&$n1==0) {
 			$hold1=1;$hold2=0;$hold3=0;$hold4=0;$hold5=0;
 		}
-		if($cetiriboje==0&&$n2==0) {
+		if(HALFSTREET==0&&$cetiriboje==0&&$n2==0) {
 			$hold1=0;$hold2=1;$hold3=0;$hold4=0;$hold5=0;
 		}
-		if($cetiriboje==0&&$n3==0) {
+		if(HALFSTREET==0&&$cetiriboje==0&&$n3==0) {
 			$hold1=0;$hold2=0;$hold3=1;$hold4=0;$hold5=0;
 		}
-		if($cetiriboje==0&&$n4==0) {
+		if(HALFSTREET==0&&$cetiriboje==0&&$n4==0) {
 			$hold1=0;$hold2=0;$hold3=0;$hold4=1;$hold5=0;
 		}
-		if($cetiriboje==0&&$n5==0) {
+		if(HALFSTREET==0&&$cetiriboje==0&&$n5==0) {
 			$hold1=0;$hold2=0;$hold3=0;$hold4=0;$hold5=1;
 		}
 	}
-
+	
 	if($Fiveofakind==1) {
 		$rucno.style.top = "5px";
 		$rucno.style.visibility = "visible";
