@@ -729,8 +729,10 @@ function $Dobitak1() {
 				if(HALFSTREET==0) {
 					$hold2=1;
 				}
+				else {
+					$hold2=0;
+				}
 			}
-
 			if($dobitak==0) {
 
 				if($n3>10) {
@@ -740,9 +742,11 @@ function $Dobitak1() {
 					if(HALFSTREET==0) {
 						$hold3=1;
 					}
+					else {
+						$hold3=0;
+					}
 				}
 			}
-
 			if($dobitak==0) {
 
 				if($n4>10) {
@@ -752,9 +756,11 @@ function $Dobitak1() {
 					if(HALFSTREET==0) {
 						$hold4=1;
 					}
+					else {
+						$hold4=0;
+					}
 				}
 			}
-
 			if($dobitak==0) {
 
 				if($n5>10) {
@@ -763,6 +769,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold5=1;
+					}
+					else {
+						$hold5=0;
 					}
 				}
 			}
@@ -779,6 +788,9 @@ function $Dobitak1() {
 				if(HALFSTREET==0) {
 					$hold1=1;
 				}
+				else {
+					$hold1=0;
+				}
 			}
 			if($dobitak==0) {
 
@@ -788,6 +800,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold3=1;
+					}
+					else {
+						$hold3=0;
 					}
 				}
 			}
@@ -800,6 +815,9 @@ function $Dobitak1() {
 					if(HALFSTREET==0) {
 						$hold4=1;
 					}
+					else {
+						$hold4=0;
+					}
 				}
 			}
 			if($dobitak==0) {
@@ -810,6 +828,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold5=1;
+					}
+					else {
+						$hold5=0;
 					}
 				}
 			}
@@ -826,8 +847,10 @@ function $Dobitak1() {
 				if(HALFSTREET==0) {
 					$hold1=1;
 				}
+				else {
+					$hold1=0;
+				}
 			}
-
 			if($dobitak==0) {
 
 				if($n2>10) {
@@ -836,6 +859,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold2=1;
+					}
+					else {
+						$hold2=0;
 					}
 				}
 			}
@@ -848,6 +874,9 @@ function $Dobitak1() {
 					if(HALFSTREET==0) {
 						$hold4=1;
 					}
+					else {
+						$hold4=0;
+					}
 				}
 			}
 			if($dobitak==0) {
@@ -858,6 +887,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold5=1;
+					}
+					else {
+						$hold5=0;
 					}
 				}
 			}
@@ -874,6 +906,9 @@ function $Dobitak1() {
 				if(HALFSTREET==0) {
 					$hold1=1;
 				}
+				else {
+					$hold1=0;
+				}
 			}
 			if($dobitak==0) {
 
@@ -883,6 +918,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold2=1;
+					}
+					else {
+						$hold2=0;
 					}
 				}
 			}
@@ -895,6 +933,9 @@ function $Dobitak1() {
 					if(HALFSTREET==0) {
 						$hold3=1;
 					}
+					else {
+						$hold3=0;
+					}
 				}
 			}
 			if($dobitak==0) {
@@ -905,6 +946,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold5=1;
+					}
+					else {
+						$hold5=0;
 					}
 				}
 			}
@@ -921,6 +965,9 @@ function $Dobitak1() {
 				if(HALFSTREET==0) {
 					$hold1=1;
 				}
+				else {
+					$hold1=0;
+				}
 			}
 			if($dobitak==0) {
 
@@ -930,6 +977,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold2=1;
+					}
+					else {
+						$hold2=0;
 					}
 				}
 			}
@@ -942,6 +992,9 @@ function $Dobitak1() {
 					if(HALFSTREET==0) {
 						$hold3=1;
 					}
+					else {
+						$hold3=0;
+					}
 				}
 			}
 			if($dobitak==0) {
@@ -952,6 +1005,9 @@ function $Dobitak1() {
 
 					if(HALFSTREET==0) {
 						$hold4=1;
+					}
+					else {
+						$hold4=0;
 					}
 				}
 			}
