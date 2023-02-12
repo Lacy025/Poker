@@ -369,7 +369,7 @@ function $Dobitak1() {
 		if(STRFL9==5) {
 			ProveraBoje2();
 		}
-		if(STRFL9==4&&STRFL8!=4&&ROYAL<4) {
+		if(STRFL9==4&&STRFL8<4&&STRFL7<4&&ROYAL<4) {
 
 			if($n1==0||$n1==9||$n1==10||$n1==11||$n1==12||$n1==13) {$hold1=1}
 			if($n2==0||$n2==9||$n2==10||$n2==11||$n2==12||$n2==13) {$hold2=1}
