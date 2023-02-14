@@ -366,10 +366,10 @@ function $Dobitak1() {
 		if($n1==4||$n2==4||$n3==4||$n4==4||$n5==4) {STRFL1++;}
 		if($n1==5||$n2==5||$n3==5||$n4==5||$n5==5) {STRFL1++;}
 
-		if(STRFL1==5&&STRFL2<4&&STRFL3<4&&STRFL4<4) {
+		if(STRFL1==5) {
 			ProveraBoje2();
 		}
-		if(STRFL1==4) {
+		if(STRFL1==4&&STRFL2<4&&STRFL3<4&&STRFL4<4) {
 
 			if($n1==0||$n1==14||$n1==2||$n1==3||$n1==4||$n1==5) {$hold1=1}
 			if($n2==0||$n2==14||$n2==2||$n2==3||$n2==4||$n2==5) {$hold2=1}
