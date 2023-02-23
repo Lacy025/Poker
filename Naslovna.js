@@ -337,7 +337,7 @@ if($deljenje==0) {
 
                 if($c>0&&$biodobitak==0) {
                     $u+=1;
-                if($u==51) {
+                if($u==99) {
                     $u=1;
                 }
                 if($u>$c) {
