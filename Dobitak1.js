@@ -932,7 +932,7 @@ function $Dobitak1() {
 	
 	// 4 BOJE
 
-	if(($dobitak==0&&$Highpair==0) || ($dobitak==0&&$Highpair==1)) {
+	if(($dobitak==0&&$Highpair==0) || ($dobitak==1&&$Highpair==1)) {
 
 		if ((($b1==$b2)&&($b2==$b3)&&($b3==$b4)) ||
 				(($b1==$b2)&&($b2==$b3)&&($b4==0)) ||
@@ -982,19 +982,19 @@ function $Dobitak1() {
 		//JOKER
 		
 		if(HALFSTREET==0&&$cetiriboje==0&&$n1==0) {
-			$hold1=1;$hold2=0;$hold3=0;$hold4=0;$hold5=0;
+			$hold1=1;
 		}
 		if(HALFSTREET==0&&$cetiriboje==0&&$n2==0) {
-			$hold1=0;$hold2=1;$hold3=0;$hold4=0;$hold5=0;
+			$hold2=1;
 		}
 		if(HALFSTREET==0&&$cetiriboje==0&&$n3==0) {
-			$hold1=0;$hold2=0;$hold3=1;$hold4=0;$hold5=0;
+			$hold3=1;
 		}
 		if(HALFSTREET==0&&$cetiriboje==0&&$n4==0) {
-			$hold1=0;$hold2=0;$hold3=0;$hold4=1;$hold5=0;
+			$hold4=1;
 		}
 		if(HALFSTREET==0&&$cetiriboje==0&&$n5==0) {
-			$hold1=0;$hold2=0;$hold3=0;$hold4=0;$hold5=1;
+			$hold5=1;
 		}
 	}
 	
@@ -1034,7 +1034,7 @@ function $Dobitak1() {
 		$Street = 0;
 	}
 	if($Threeofakind==1) {
-		$rucno.style.top = "207px";
+		$rucno.style.top = "209px";
 		$rucno.style.visibility = "visible";
 		$Threeofakind = 0;
 	}
