@@ -8,7 +8,7 @@ if($isplata==0) {
     $includeJs("Karta4.js");
     $includeJs("Karta5.js");
     $includeJs("Dobitak1.js");
-    $includeJs("Izbor1.js");
+    $includeJs("Izbor.js");
     $includeJs("Dobitak2.js");
     $includeJs("Dupliranje.js");
     $includeJs("Kasiranje.js");
