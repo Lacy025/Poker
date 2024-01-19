@@ -1,10 +1,10 @@
-timerCekanje0 = setInterval(Cekanje1, 200);
+waiting_0 = setInterval(Cekanje1, 200);
   
 function Cekanje1() {
     console.log($deal);
 
     if($deal==1) {
-        clearInterval(timerCekanje0);
+        clearInterval(waiting_0);
         $First_Deal = setInterval(First_Deal,100);
     }
 

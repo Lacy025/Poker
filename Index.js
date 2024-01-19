@@ -42,25 +42,27 @@ let $timer10;
 let $First_Deal;
 let $Audio_Cards;
 
-let $timerKarta1;
-let $timerKarta2;
-let $timerKarta3;
-let $timerKarta4;
-let $timerKarta5;
-let $timerDobitak1;
-let $timerIzbor1;
-let $timerDobitak2;
+let $card_1;
+let $card_2;
+let $card_3;
+let $card_4;
+let $card_5;
 
-let $timerCekanje1;
-let $timerCekanje2;
-let $timerCekanje3;
-let $timerCekanje4;
-let $timerCekanje5;
-let $timerCekanje6;
-let $timerCekanje7;
-let $timerCekanje8;
-let $timerCekanje9;
-let $timerCekanje10;
+let $choice_1;
+
+let $win_1;
+let $win_2;
+
+let $waiting_1;
+let $waiting_2;
+let $waiting_3;
+let $waiting_4;
+let $waiting_5;
+let $waiting_6;
+let $waiting_7;
+let $waiting_8;
+let $waiting_9;
+let $waiting_10;
 
 let $k1;
 let $k2;

@@ -1,4 +1,4 @@
-$timerCekanje7 = setInterval(Cekanje7, 100);
+$waiting_7 = setInterval(Cekanje7, 100);
 
 function Cekanje7() {
 
@@ -6,7 +6,7 @@ function Cekanje7() {
 
     if($deal == 8) {
         
-        clearInterval($timerCekanje7);
+        clearInterval($waiting_7);
         $stop = 1;
         console.log($hold1);
         console.log($hold2);
@@ -36,7 +36,7 @@ function Cekanje7() {
         }
         $poruka5.style.visibility = "visible";
         console.log($deal);
-        $timerIzbor1 = setInterval(Izbor1,($stop+200));
+        $choice_1 = setInterval(Izbor1,($stop+200));
     }
 }
 function $Stop1() {
@@ -89,7 +89,7 @@ function Ponistavanje() {
     audioPonistavanje.currentTime = 0;
 }
 function Izbor1() {
-    clearInterval($timerIzbor1);
+    clearInterval($choice_1);
     window.addEventListener("keydown", IzborKarata);
     $timerPoruka3 = setInterval(Poruka3, 1000);
     $timerPoruka4 = setInterval(Poruka4, 2000);
@@ -208,7 +208,7 @@ function IzborKarata(event) {
                 }
                 $stop+=300;
                 $Audio_Card_1 = setInterval(Audio_Card_1,$stop);
-                $timerKarta1 = setInterval($Karta1,$stop);
+                $card_1 = setInterval($Karta1,$stop);
             }
             if($hold2==0) {
                 $k2 = Math.floor(Math.random() * 53);
@@ -217,7 +217,7 @@ function IzborKarata(event) {
                 }
                 $stop+=300;
                 $Audio_Card_2 = setInterval(Audio_Card_2,$stop);
-                $timerKarta2 = setInterval($Karta2,$stop);
+                $card_2 = setInterval($Karta2,$stop);
             }
             if($hold3==0) {
                 $k3 = Math.floor(Math.random() * 53);
@@ -226,7 +226,7 @@ function IzborKarata(event) {
                 }
                 $stop+=300;
                 $Audio_Card_3 = setInterval(Audio_Card_3,$stop);
-                $timerKarta3 = setInterval($Karta3,$stop);
+                $card_3 = setInterval($Karta3,$stop);
             }
             if($hold4==0) {
                 $k4 = Math.floor(Math.random() * 53);
@@ -235,7 +235,7 @@ function IzborKarata(event) {
                 }
                 $stop+=300;
                 $Audio_Card_4 = setInterval(Audio_Card_4,$stop);
-                $timerKarta4 = setInterval($Karta4,$stop);
+                $card_4 = setInterval($Karta4,$stop);
             }
             if($hold5==0) {
                 $k5 = Math.floor(Math.random() * 53);
@@ -244,7 +244,7 @@ function IzborKarata(event) {
                 }
                 $stop+=300;
                 $Audio_Card_5 = setInterval(Audio_Card_5,$stop);
-                $timerKarta5 = setInterval($Karta5,$stop);
+                $card_5 = setInterval($Karta5,$stop);
             }
             timerPauza1 = setInterval(Pauza1,$stop);
     

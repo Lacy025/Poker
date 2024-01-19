@@ -1,11 +1,11 @@
-$timerCekanje8 = setInterval(Cekanje8, 500);
+$waiting_8 = setInterval(Cekanje8, 500);
   
 function Cekanje8() {
 	console.log($deal);
 
 	if($deal==9) {
 
-		clearInterval($timerCekanje8);
+		clearInterval($waiting_8);
 		$Fiveofakind = 0;
 		$Royalflush = 0;
 		$Streetflush = 0;
@@ -17,12 +17,12 @@ function Cekanje8() {
 		$Twopairs = 0;
 		$Highpair = 0;
 		$dobitak = 0;
-		$timerDobitak2 = setInterval(Dobitak2,200);
+		$win_2 = setInterval(Dobitak2,200);
 	}
 }
 function Dobitak2() {
 
-	clearInterval($timerDobitak2);
+	clearInterval($win_2);
 
 	console.log($n1);
 	console.log($n2);
@@ -958,22 +958,22 @@ function Dobitak2() {
 		$d = $d9;
 	}
 	if($dobitak==0) {
-		clearInterval($timerCekanje9);
-		clearInterval($timerCekanje10);
+		clearInterval($waiting_9);
+		clearInterval($waiting_10);
 		$timerNemadobitka = setInterval(Nemadobitka,500);
 	}
 	else{
 		if($d<10000) {
 			izborlevo.style.visibility = "visible"
 			izbordesno.style.visibility = "hidden"
-			timerIzbor1 = setInterval(Izbordesno,500);
-			timerIzbor2 = setInterval(Izborlevo,1000);
+			choice_1 = setInterval(Izbordesno,500);
+			choice_2 = setInterval(Izborlevo,1000);
 
 			window.addEventListener("keydown", DupliranjeKasiranje);
 		}
 		else {
 			pobeda.style.visibility = "visible";
-			timerIzbor1 = setInterval(Blokada,3000);
+			choice_1 = setInterval(Blokada,3000);
 		}
 	}
 	function Izborlevo() {
@@ -989,8 +989,8 @@ function Dobitak2() {
 			
 			case 13 : 
 				window.removeEventListener("keydown", DupliranjeKasiranje);
-				clearInterval(timerIzbor1);
-				clearInterval(timerIzbor2);
+				clearInterval(choice_1);
+				clearInterval(choice_2);
 				izborlevo.style.visibility = "hidden";
 				izbordesno.style.visibility = "hidden";
 				audioDobitak.currentTime = 5;
@@ -1005,8 +1005,8 @@ function Dobitak2() {
 				// DUPLIRANJE
 			case 32 :
 				window.removeEventListener("keydown", DupliranjeKasiranje);
-				clearInterval(timerIzbor1);
-				clearInterval(timerIzbor2);
+				clearInterval(choice_1);
+				clearInterval(choice_2);
 				izborlevo.style.visibility = "hidden";
 				izbordesno.style.visibility = "hidden";
 				pobeda.style.visibility = "visible";
@@ -1022,7 +1022,7 @@ function Dobitak2() {
 		$includeJs("Poker.js");
 	}
 	function Blokada() {
-		clearInterval(timerIzbor1);
+		clearInterval(choice_1);
 		$deal = 11;
 		console.log($deal);
 	}

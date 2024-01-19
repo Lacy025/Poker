@@ -1,10 +1,10 @@
-$timerCekanje10 = setInterval(Cekanje10, 200);
+$waiting_10 = setInterval(Cekanje10, 200);
    
 function Cekanje10() {
     console.log($deal);
 
     if($deal == 11) {
-        clearInterval($timerCekanje10);
+        clearInterval($waiting_10);
         $deal = 12;
         if($d>0) {
             $Pobeda2();

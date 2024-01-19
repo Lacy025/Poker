@@ -1,16 +1,16 @@
-$timerCekanje6 = setInterval(Cekanje6, 100);
+$waiting_6 = setInterval(Cekanje6, 100);
   
 function Cekanje6() {
 	console.log($deal);
 
 	if($deal == 7) {
-		clearInterval($timerCekanje6);
-		$timerDobitak1 = setInterval($Dobitak1,100);
+		clearInterval($waiting_6);
+		$win_1 = setInterval($Dobitak1,100);
 	}
 }
 function $Dobitak1() {
 
-	clearInterval($timerDobitak1);
+	clearInterval($win_1);
 
 	$dobitak = 0;
 	$dveiste = 0;

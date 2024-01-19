@@ -1,17 +1,17 @@
-$timerCekanje2 = setInterval(Cekanje2, 100);
+$waiting_2 = setInterval(Cekanje2, 100);
 
 function Cekanje2() {
     console.log($deal);
 
     if($deal == 3) {
-        clearInterval($timerCekanje2);
+        clearInterval($waiting_2);
         console.log($deal);
-        $timerKarta2 = setInterval($Karta2, 50);
+        $card_2 = setInterval($Karta2, 50);
     }
 }
 function $Karta2() {
 
-    clearInterval($timerKarta2);
+    clearInterval($card_2);
     clearInterval($Audio_Card_2);
 
     if($k2==0) {

@@ -1,10 +1,10 @@
-$timerCekanje1 = setInterval(Cekanje1, 100);
+$waiting_1 = setInterval(Cekanje1, 100);
 
 function Cekanje1() {
     console.log($deal);
 
     if($deal == 2) {
-        clearInterval($timerCekanje1);
+        clearInterval($waiting_1);
         console.log($deal);
         $Audio_Cards = setInterval(Audio_Cards,200);
         $Audio_Card_1 = setInterval($Karta1, 200);
@@ -16,7 +16,7 @@ function Audio_Cards() {
 }
 function $Karta1() {
 
-    clearInterval($timerKarta1);
+    clearInterval($card_1);
     clearInterval($Audio_Cards);
     clearInterval($Audio_Card_1);
 

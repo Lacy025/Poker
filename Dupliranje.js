@@ -1,10 +1,10 @@
-$timerCekanje9 = setInterval(Cekanje9, 500);
+$waiting_9 = setInterval(Cekanje9, 500);
  
 function Cekanje9() {
     console.log($deal);
 
     if($deal == 10) {
-        clearInterval($timerCekanje9);
+        clearInterval($waiting_9);
         $deal = 12;
         $pauzaManja = 400;
         $pauzaVeca = 800;
