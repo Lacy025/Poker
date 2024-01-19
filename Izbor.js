@@ -174,23 +174,23 @@ function IzborKarata(event) {
                 document.getElementById("$polje5").src="./Karte/53.png";
                 $polje5.style.visibility = "visible";
             }
-            function audioKarta1() {
+            function Audio_Card_1() {
                 document.getElementById("audioKarta1").play();
                 audioKarta1.currentTime = 0;
             }
-            function audioKarta2() {
+            function Audio_Card_2() {
                 document.getElementById("audioKarta2").play();
                 audioKarta2.currentTime = 0;
             }
-            function audioKarta3() {
+            function Audio_Card_3() {
                 document.getElementById("audioKarta3").play();
                 audioKarta3.currentTime = 0;
             }
-            function audioKarta4() {
+            function Audio_Card_4() {
                 document.getElementById("audioKarta4").play();
                 audioKarta4.currentTime = 0;
             }
-            function audioKarta5() {
+            function Audio_Card_5() {
                 document.getElementById("audioKarta5").play();
                 audioKarta5.currentTime = 0;
             }
@@ -207,7 +207,7 @@ function IzborKarata(event) {
                     $k1 = Math.floor(Math.random() * 53);
                 }
                 $stop+=300;
-                $timerAudiokarta1 = setInterval(audioKarta1,$stop);
+                $Audio_Card_1 = setInterval(Audio_Card_1,$stop);
                 $timerKarta1 = setInterval($Karta1,$stop);
             }
             if($hold2==0) {
@@ -216,7 +216,7 @@ function IzborKarata(event) {
                     $k2 = Math.floor(Math.random() * 53);
                 }
                 $stop+=300;
-                $timerAudiokarta2 = setInterval(audioKarta2,$stop);
+                $Audio_Card_2 = setInterval(Audio_Card_2,$stop);
                 $timerKarta2 = setInterval($Karta2,$stop);
             }
             if($hold3==0) {
@@ -225,7 +225,7 @@ function IzborKarata(event) {
                     $k3 = Math.floor(Math.random() * 53);
                 }
                 $stop+=300;
-                $timerAudiokarta3 = setInterval(audioKarta3,$stop);
+                $Audio_Card_3 = setInterval(Audio_Card_3,$stop);
                 $timerKarta3 = setInterval($Karta3,$stop);
             }
             if($hold4==0) {
@@ -234,7 +234,7 @@ function IzborKarata(event) {
                     $k4 = Math.floor(Math.random() * 53);
                 }
                 $stop+=300;
-                $timerAudiokarta4 = setInterval(audioKarta4,$stop);
+                $Audio_Card_4 = setInterval(Audio_Card_4,$stop);
                 $timerKarta4 = setInterval($Karta4,$stop);
             }
             if($hold5==0) {
@@ -243,7 +243,7 @@ function IzborKarata(event) {
                     $k5 = Math.floor(Math.random() * 53);
                 }
                 $stop+=300;
-                $timerAudiokarta5 = setInterval(audioKarta5,$stop);
+                $Audio_Card_5 = setInterval(Audio_Card_5,$stop);
                 $timerKarta5 = setInterval($Karta5,$stop);
             }
             timerPauza1 = setInterval(Pauza1,$stop);

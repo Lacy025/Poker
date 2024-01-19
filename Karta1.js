@@ -6,19 +6,19 @@ function Cekanje1() {
     if($deal == 2) {
         clearInterval($timerCekanje1);
         console.log($deal);
-        $timerAudiokarta12345 = setInterval(Audiokarta12345,200);
-        $timerKarta1 = setInterval($Karta1, 200);
+        $Audio_Cards = setInterval(Audio_Cards,200);
+        $Audio_Card_1 = setInterval($Karta1, 200);
     }
 }
-function Audiokarta12345() {
+function Audio_Cards() {
     document.getElementById("audioKarta-1-5").play();
     audioDeljenje1.currentTime = 0;
 }
 function $Karta1() {
 
     clearInterval($timerKarta1);
-    clearInterval($timerAudiokarta12345);
-    clearInterval($timerAudiokarta1);
+    clearInterval($Audio_Cards);
+    clearInterval($Audio_Card_1);
 
     if($k1==0) {
         $polje1.style.visibility = "hidden";

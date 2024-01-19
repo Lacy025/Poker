@@ -12,7 +12,7 @@ function Cekanje5() {
 function $Karta5() {
 
     clearInterval($timerKarta5);
-    clearInterval($timerAudiokarta5);
+    clearInterval($Audio_Card_5);
 
     if($k5==0) {
         $polje5.style.visibility = "hidden";

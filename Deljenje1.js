@@ -5,12 +5,12 @@ function Cekanje1() {
 
     if($deal==1) {
         clearInterval(timerCekanje0);
-        $timerPrvodeljenje = setInterval(Prvodeljenje,100);
+        $First_Deal = setInterval(First_Deal,100);
     }
 
 }
-function Prvodeljenje() {
-    clearInterval($timerPrvodeljenje);
+function First_Deal() {
+    clearInterval($First_Deal);
     Biranjekarata();
 
     while($k1==$k2||$k1==$k3||$k1==$k4||$k1==$k5||$k2==$k3||

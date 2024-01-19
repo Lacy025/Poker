@@ -39,8 +39,8 @@ let $timer8;
 let $timer9;
 let $timer10;
 
-let $timerPrvodeljenje;
-let $timerAudiokarta12345;
+let $First_Deal;
+let $Audio_Cards;
 
 let $timerKarta1;
 let $timerKarta2;
@@ -70,23 +70,23 @@ let $k5;
 
 let $n1;
 let $b1;
-let $timerAudiokarta1;
+let $Audio_Card_1;
 
 let $n2;
 let $b2;
-let $timerAudiokarta2;
+let $Audio_Card_2;
 
 let $n3;
 let $b3;
-let $timerAudiokarta3;
+let $Audio_Card_3;
 
 let $n4;
 let $b4;
-let $timerAudiokarta4;
+let $Audio_Card_4;
 
 let $n5;
 let $b5;
-let $timerAudiokarta5;
+let $Audio_Card_5;
 
 let $dobitak;
 let $dveiste;
