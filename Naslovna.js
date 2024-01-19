@@ -297,7 +297,7 @@ if($deal == 0) {
         }
     }
     function Reset() {
-        clearInterval($timerOdbrojano1);
+        clearInterval($Countdown_1);
         clearInterval(timerNemaReklame);
         clearInterval(timerImaReklame);
         imaReklame();
@@ -317,30 +317,30 @@ if($deal == 0) {
             
             if((Math.round($c/100) != $c/100) && $c > 0) {
                 $audioCount1();
-                Minusjedan1();
+                Minus_1_1();
             }
             else {
                 clearInterval($Check_1);
                 if($c > 0) {
-                    Minussto1();
+                    Minus_100_1();
                 }
                 if($c > 0) {
-                    $timerMinussto1 = setInterval(Minussto1,1000);
+                    $Minus_100_1 = setInterval(Minus_100_1,1000);
                 }
                 else {
                     document.getElementById("audioCount2").play();
                     audioCount2.currentTime = 0;
-                    $timerOdbrojano1 = setInterval(Odbrojano1,1000);
-                    $timerNula1 = setInterval(Nula1,1000);
+                    $Countdown_1 = setInterval(Countdown_1,1000);
+                    $Zero_1 = setInterval(Zero_1,1000);
                 }
             }
         }
-        function Minusjedan1() {
+        function Minus_1_1() {
             $c = $c - 1;
             document.getElementById("credit").innerHTML = $c;
             $vrednostKredita();
         }
-        function Minussto1() {
+        function Minus_100_1() {
             if($c > 99) {
                 $c = $c - 100;
                 document.getElementById("credit").innerHTML = $c;
@@ -348,18 +348,18 @@ if($deal == 0) {
                 $audioCount2();
             }
             else {
-                clearInterval($timerMinussto1);
-                $timerOdbrojano1 = setInterval(Odbrojano1,100);
-                $timerNula1 = setInterval(Nula1,100);
+                clearInterval($Minus_100_1);
+                $Countdown_1 = setInterval(Countdown_1,100);
+                $Zero_1 = setInterval(Zero_1,100);
             }
         }
-        function Nula1() {
-            clearInterval($timerNula1);
+        function Zero_1() {
+            clearInterval($Zero_1);
             document.getElementById("audioIntro").play();
             audioIntro.currentTime = 0;
         }
-        function Odbrojano1() {
-            clearInterval($timerOdbrojano1);
+        function Countdown_1() {
+            clearInterval($Countdown_1);
             $deal = 0;
             $u = 1;
             $a = 1;
@@ -371,7 +371,7 @@ if($deal == 0) {
             clearInterval(timerJoker3);
             clearInterval(timerJoker4);
             clearInterval(timerJoker5);
-            $timerOdbrojano1 = setInterval(Reset,100);
+            $Countdown_1 = setInterval(Reset,100);
         }
     }
     function pocetak(event) {

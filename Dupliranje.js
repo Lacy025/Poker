@@ -229,7 +229,7 @@ function Kockanje(event) {
                     Pola2();
                 }
                 if($d==200) {
-                    $Minussto();
+                    $Minus_100();
                     $Check_3 = setInterval(Pola3,1000);
                 }
                 if($d>200) {
@@ -241,7 +241,7 @@ function Kockanje(event) {
 function Pola1() {
 
     if($d != $pola) {
-        $Minusjedan();
+        $Minus_1();
     }
     else {
         clearInterval($Check_3);
@@ -266,7 +266,7 @@ function Prvideo1() {
 function Drugideo1() {
     clearInterval($Check_3);
     if($drugiDeo != 0) {
-        $Minusjedan();
+        $Minus_1();
         $Check_3 = setInterval(Drugideo1, 60);
         $drugiDeo--;
     }
@@ -298,7 +298,7 @@ function Prvideo2() {
 function Drugideo2() {
     clearInterval($Check_3);
     if($d-$pola>99) {
-        $Minussto();
+        $Minus_100();
         $Check_3 = setInterval(Drugideo2, 1000);
     }
     else {

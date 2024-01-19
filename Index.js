@@ -20,13 +20,13 @@ let $d9;
 let $Check_1;
 let $Check_2;
 let $Check_3;
-let $timerMinussto1;
-let $timerMinussto2;
-let $timerMinussto3;
-let $timerOdbrojano1;
-let $timerOdbrojano2;
-let $timerNula1;
-let $timerNula2;
+let $Minus_100_1;
+let $Minus_100_2;
+let $Minus_100_3;
+let $Countdown_1;
+let $Countdown_2;
+let $Zero_1;
+let $Zero_2;
 
 let $timer1;
 let $timer2;
@@ -129,7 +129,7 @@ function $audioCount2() {
     document.getElementById("audioCount2").play();
     document.getElementById("audioCount2").currentTime = 0;
 }
-function $Minusjedan() {
+function $Minus_1() {
     $c = $c + 1;
     document.getElementById("credit").innerHTML = $c;
     $vrednostKredita();
@@ -137,7 +137,7 @@ function $Minusjedan() {
     document.getElementById("vrednostdobitka").innerHTML = $d;
     $audioCount1();
 }
-function $Minussto() {
+function $Minus_100() {
     $c = $c + 100;
     document.getElementById("credit").innerHTML = $c;
     $vrednostKredita();

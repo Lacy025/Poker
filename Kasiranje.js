@@ -13,27 +13,27 @@ function Cekanje10() {
             Kasiranje();
         }
         else {
-            Odbrojano2();
+            Countdown_2();
         }
     }
 }
 function Kasiranje() {
-    $Minusjedan();
+    $Minus_1();
     $Check_2 = setInterval(Check_2,60);
 }
 function Check_2() {
 
     if((Math.round($d/100) != $d/100) && $d>0) {
-        $Minusjedan();
+        $Minus_1();
     }
     else {
         clearInterval($Check_2);
         if($d>0) {
-            Minussto2();
+            Minus_100_2();
         }
         if($d>0) {
 
-            $timerMinussto2 = setInterval(Minussto2,1000);
+            $Minus_100_2 = setInterval(Minus_100_2,1000);
         }
         else {
             pobeda.style.visibility = "visible";
@@ -42,31 +42,31 @@ function Check_2() {
             document.getElementById("audioCount2").play();
             audioCount2.currentTime = 0;
             $deal = 0;
-            $timerOdbrojano2 = setInterval(Odbrojano2,1000);
-            $timerNula2 = setInterval(Nula2,1000);
+            $Countdown_2 = setInterval(Countdown_2,1000);
+            $Zero_2 = setInterval(Zero_2,1000);
         }
     }
 }
-function Minussto2() {
+function Minus_100_2() {
     if($d>99) {
-        $Minussto();
+        $Minus_100();
     }
     else {
-        clearInterval($timerMinussto2);
+        clearInterval($Minus_100_2);
         pobeda.style.visibility = "visible";
         clearInterval($timerPobeda1);
         clearInterval($timerPobeda2);
-        $timerOdbrojano2 = setInterval(Odbrojano2,1000);
-        $timerNula2 = setInterval(Nula2,100);
+        $Countdown_2 = setInterval(Countdown_2,1000);
+        $Zero_2 = setInterval(Zero_2,100);
     }
 }
-function Nula2() {
-    clearInterval($timerNula2);
+function Zero_2() {
+    clearInterval($Zero_2);
     document.getElementById("audioIntro").play();
     audioIntro.currentTime = 0;
 }
-function Odbrojano2() {
-    clearInterval($timerOdbrojano2);
+function Countdown_2() {
+    clearInterval($Countdown_2);
     $deal = 0;
     $includeJs("Poker.js");
 }
