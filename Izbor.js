@@ -2,9 +2,9 @@ $timerCekanje7 = setInterval(Cekanje7, 100);
 
 function Cekanje7() {
 
-    console.log($deljenje);
+    console.log($deal);
 
-    if($deljenje==8) {
+    if($deal == 8) {
         
         clearInterval($timerCekanje7);
         $stop = 1;
@@ -35,7 +35,7 @@ function Cekanje7() {
             $stop+=50;
         }
         $poruka5.style.visibility = "visible";
-        console.log($deljenje);
+        console.log($deal);
         $timerIzbor1 = setInterval(Izbor1,($stop+200));
     }
 }
@@ -195,9 +195,9 @@ function IzborKarata(event) {
                 audioKarta5.currentTime = 0;
             }
             function Pauza1() {
-                console.log($deljenje);
+                console.log($deal);
                 clearInterval(timerPauza1);
-                $deljenje=9;
+                $deal = 9;
             }
             $stop = 0;
 

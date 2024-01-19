@@ -1,9 +1,9 @@
 $timerCekanje8 = setInterval(Cekanje8, 500);
   
 function Cekanje8() {
-	console.log($deljenje);
+	console.log($deal);
 
-	if($deljenje==9) {
+	if($deal==9) {
 
 		clearInterval($timerCekanje8);
 		$Fiveofakind = 0;
@@ -999,8 +999,8 @@ function Dobitak2() {
 				$polje3.style.visibility = "hidden";
 				$polje4.style.visibility = "hidden";
 				$polje5.style.visibility = "hidden";
-				$deljenje = 10;
-				console.log($deljenje);
+				$deal = 10;
+				console.log($deal);
 				break;
 				// DUPLIRANJE
 			case 32 :
@@ -1011,19 +1011,19 @@ function Dobitak2() {
 				izbordesno.style.visibility = "hidden";
 				pobeda.style.visibility = "visible";
 				audioDobitak.currentTime = 5;
-				$deljenje = 11;
-				console.log($deljenje);
+				$deal = 11;
+				console.log($deal);
 				break;
 				// KASIRANJE
 			}
 		}
 	function Nemadobitka() {
-		$deljenje = 0;
+		$deal = 0;
 		$includeJs("Poker.js");
 	}
 	function Blokada() {
 		clearInterval(timerIzbor1);
-		$deljenje = 11;
-		console.log($deljenje);
+		$deal = 11;
+		console.log($deal);
 	}
 }

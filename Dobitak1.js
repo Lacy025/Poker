@@ -1,9 +1,9 @@
 $timerCekanje6 = setInterval(Cekanje6, 100);
   
 function Cekanje6() {
-	console.log($deljenje);
+	console.log($deal);
 
-	if($deljenje==7) {
+	if($deal == 7) {
 		clearInterval($timerCekanje6);
 		$timerDobitak1 = setInterval($Dobitak1,100);
 	}
@@ -1048,5 +1048,5 @@ function $Dobitak1() {
 		$rucno.style.visibility = "visible";
 		$Highpair = 0;
 	}
-	$deljenje = 8;
+	$deal = 8;
 }

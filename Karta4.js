@@ -1,11 +1,11 @@
 $timerCekanje4 = setInterval(Cekanje4, 100);
 
 function Cekanje4() {
-    console.log($deljenje);
+    console.log($deal);
 
-    if($deljenje==5) {
+    if($deal == 5) {
         clearInterval($timerCekanje4);
-        console.log($deljenje);
+        console.log($deal);
         $timerKarta4 = setInterval($Karta4, 50);
     }
 }
@@ -387,5 +387,5 @@ function $Karta4() {
     }
     console.log($n4);
     console.log($b4);
-    $deljenje=6;
+    $deal = 6;
 }

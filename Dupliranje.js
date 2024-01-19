@@ -1,11 +1,11 @@
 $timerCekanje9 = setInterval(Cekanje9, 500);
  
 function Cekanje9() {
-    console.log($deljenje);
+    console.log($deal);
 
-    if($deljenje==10) {
+    if($deal == 10) {
         clearInterval($timerCekanje9);
-        $deljenje = 12;
+        $deal = 12;
         $pauzaManja = 400;
         $pauzaVeca = 800;
         $karta = 1;
@@ -41,7 +41,7 @@ function Dupliranje() {
         veca.style.visibility = "hidden";
         window.removeEventListener("keydown", Kockanje);
         pobeda.style.visibility = "visible";
-        $deljenje = 11;
+        $deal = 11;
     }
 }
 function Karta1_12() {
@@ -205,7 +205,7 @@ function Kockanje(event) {
         case 32 :  // TASTER SPACE - KASIRANJE
 
             Brisanje();
-            $deljenje = 11;
+            $deal = 11;
             break;
 
         case 53 :  // TASTER 5 - UZMI POLA
@@ -221,7 +221,7 @@ function Kockanje(event) {
                 $timerPobeda2 = setInterval($Pobeda2,1000);
 
                 if($d<101) {
-                    $timerProvera3 = setInterval(Pola1,60);
+                    $Check_3 = setInterval(Pola1,60);
                 }
                 if($d>100 && $d<200) {
                     $prviDeo = $d - 100;
@@ -230,7 +230,7 @@ function Kockanje(event) {
                 }
                 if($d==200) {
                     $Minussto();
-                    $timerProvera3 = setInterval(Pola3,1000);
+                    $Check_3 = setInterval(Pola3,1000);
                 }
                 if($d>200) {
                     Pola4();
@@ -244,7 +244,7 @@ function Pola1() {
         $Minusjedan();
     }
     else {
-        clearInterval($timerProvera3);
+        clearInterval($Check_3);
         $audioCount2();
         $Pobeda1();
         $timerPogodio = setInterval(Dupliranje, 1000);
@@ -252,7 +252,7 @@ function Pola1() {
 }
 function Pola2() {
     Prvideo1();
-    $timerProvera3 = setInterval(Drugideo1,1000);
+    $Check_3 = setInterval(Drugideo1,1000);
 }
 function Prvideo1() {
     $Pobeda2();
@@ -264,28 +264,28 @@ function Prvideo1() {
     $audioCount2();
 }
 function Drugideo1() {
-    clearInterval($timerProvera3);
+    clearInterval($Check_3);
     if($drugiDeo != 0) {
         $Minusjedan();
-        $timerProvera3 = setInterval(Drugideo1, 60);
+        $Check_3 = setInterval(Drugideo1, 60);
         $drugiDeo--;
     }
     else {
-        clearInterval($timerProvera3);
+        clearInterval($Check_3);
         $Pobeda2();
         $audioCount2();
         $timerPogodio = setInterval(Dupliranje, 1000);
     }
 }
 function Pola3() {
-    clearInterval($timerProvera3);
+    clearInterval($Check_3);
     $audioCount2();
     $timerPogodio = setInterval(Dupliranje, 1000);
 }
 function Pola4() {
     if((Math.floor($d/100)) != ($d/100)) {
         Prvideo2();
-        $timerProvera3 = setInterval(Drugideo2, 1000);
+        $Check_3 = setInterval(Drugideo2, 1000);
     }
     else {
         Drugideo2();
@@ -296,10 +296,10 @@ function Prvideo2() {
     Prvideo1();
 }
 function Drugideo2() {
-    clearInterval($timerProvera3);
+    clearInterval($Check_3);
     if($d-$pola>99) {
         $Minussto();
-        $timerProvera3 = setInterval(Drugideo2, 1000);
+        $Check_3 = setInterval(Drugideo2, 1000);
     }
     else {
 
@@ -307,7 +307,7 @@ function Drugideo2() {
             Trecideo3();
         }
         else {
-            clearInterval($timerProvera3);
+            clearInterval($Check_3);
             clearInterval($timerPobeda1);
             clearInterval($timerPobeda2);
             $Pobeda2();
@@ -318,7 +318,7 @@ function Drugideo2() {
     }
 }
 function Trecideo3() {
-    clearInterval($timerProvera3);
+    clearInterval($Check_3);
     clearInterval($timerPogodio);
     clearInterval($timerPobeda1);
     clearInterval($timerPobeda2);
@@ -443,7 +443,7 @@ function Promasio() {
     $d = 0;
     document.getElementById("vrednostdobitka").innerHTML = $d;
     document.getElementById("vrednostdobitka").style.visibility = "visible";
-    $deljenje = 11;
+    $deal = 11;
 }
 function Veca() {
     veca.style.visibility = "visible";

@@ -1,11 +1,11 @@
 $timerCekanje1 = setInterval(Cekanje1, 100);
 
 function Cekanje1() {
-    console.log($deljenje);
+    console.log($deal);
 
-    if($deljenje==2) {
+    if($deal == 2) {
         clearInterval($timerCekanje1);
-        console.log($deljenje);
+        console.log($deal);
         $timerAudiokarta12345 = setInterval(Audiokarta12345,200);
         $timerKarta1 = setInterval($Karta1, 200);
     }
@@ -393,7 +393,7 @@ function $Karta1() {
     }
     console.log($n1);
     console.log($b1);
-    $deljenje=3;
+    $deal = 3;
 }   
 
 

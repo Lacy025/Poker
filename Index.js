@@ -1,6 +1,6 @@
-let $deljenje = 0;
+let $deal = 0;
 let $game = 0;
-let $isplata = 0;
+let $money = 0;
 
 let $c = 0;
 let $u = 1;
@@ -17,9 +17,9 @@ let $d7;
 let $d8;
 let $d9;
 
-let $timerProvera1;
-let $timerProvera2;
-let $timerProvera3;
+let $Check_1;
+let $Check_2;
+let $Check_3;
 let $timerMinussto1;
 let $timerMinussto2;
 let $timerMinussto3;

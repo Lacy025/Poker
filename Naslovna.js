@@ -1,4 +1,4 @@
-if($deljenje==0) {
+if($deal == 0) {
     
     let timerImaReklame;
     let timerNemaReklame;
@@ -13,30 +13,30 @@ if($deljenje==0) {
     let timerJoker5;
     let timerPrviekran;
 
-    if($c>0&&$u>$c) {
-        $u=$c;
+    if($c > 0 && $u > $c) {
+        $u = $c;
         vrednostUloga();
         vrednostDobitka();
     }
-    if($c==0) {
-        $u=1;
+    if($c == 0) {
+        $u = 1;
     }
 
     clearInterval($timerNemadobitka);
 
     window.addEventListener("keydown", pocetak);
 
-    if($biodobitak==1) {
+    if($biodobitak == 1) {
         window.removeEventListener("keydown", pocetak);
         window.addEventListener("keydown", pocetak);
         timerPrviekran = setInterval(Prviekran,3000);
 
     }
-    if($biodobitak==0&&$game==1) {
+    if($biodobitak == 0 && $game == 1) {
         
         timerPrviekran = setInterval(Prviekran,1000);
     }
-    if($game==0) {
+    if($game == 0) {
         intro();
         window.addEventListener("keydown", pocetak);
         imaReklame();
@@ -46,7 +46,7 @@ if($deljenje==0) {
         timerNemaReklame = setInterval(nemaReklame, 6000);
         timerImaReklame = setInterval(imaReklame, 12000);
     }
-    if($deljenje==0&&$c==0) {
+    if($deal == 0 && $c == 0) {
         desno.style.visibility = "hidden";
         poruka1.style.visibility = "hidden";
         poruka2.style.visibility = "hidden";
@@ -59,7 +59,7 @@ if($deljenje==0) {
     else {
         levo.style.visibility = "hidden";
         desno.style.visibility = "hidden";
-        if($biodobitak==0) {
+        if($biodobitak == 0) {
             timerPoruka1 = setInterval(Poruka1,1000);
             timerPoruka2 = setInterval(Poruka2,2000);
         }
@@ -109,7 +109,7 @@ if($deljenje==0) {
         timerImaReklame = setInterval(imaReklame, 12000);
         window.removeEventListener("keydown", pocetak);
         window.addEventListener("keydown", pocetak);
-        if($c>0) {
+        if($c > 0) {
             timerPoruka1 = setInterval(Poruka1,1000);
             timerPoruka2 = setInterval(Poruka2,2000);
         }
@@ -197,33 +197,33 @@ if($deljenje==0) {
         timerJoker5 = setInterval(joker5, 5000);
     }
     function levoDole() {
-        var levo = document.getElementById("levo");
+        let levo = document.getElementById("levo");
         levo.innerHTML = ' ' + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LACIKA BAČI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         levo.style.visibility = "visible";
         desno.style.visibility = "hidden";
     }
     function desnoDole() {
-        var desno = document.getElementById("desno");
+        let desno = document.getElementById("desno");
         desno.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRBIJA  2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         levo.style.visibility = "hidden";
         desno.style.visibility = "visible";
     }
     function Poruka1() {
-        var poruka1 = document.getElementById("poruka1");
+        let poruka1 = document.getElementById("poruka1");
         poruka1.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIRAJTE  ULOG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         poruka1.style.left = "734px";
         poruka1.style.visibility = "visible";
         poruka2.style.visibility = "hidden";
     }
     function Poruka2() {
-        var poruka2 = document.getElementById("poruka2");
+        let poruka2 = document.getElementById("poruka2");
         poruka2.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  DELJENJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         poruka2.style.left = "735px";
         poruka2.style.visibility = "visible";
         poruka1.style.visibility = "hidden";
     }
     function intro() {
-        if($c==0) {
+        if($c == 0) {
             document.getElementById("audioIntro").play();
             audioIntro.currentTime = 0;
         }
@@ -283,10 +283,10 @@ if($deljenje==0) {
         clearInterval(timerJoker5);
     }
     function autohold() {
-        if($c>0) {
+        if($c > 0) {
             document.getElementById("audioAutohold").play();
             audioAutohold.currentTime = 0;
-            if($a==1) {
+            if($a == 1) {
                 $a = 0;
                 document.getElementById("autohold").style.visibility = "hidden";
             }
@@ -305,13 +305,82 @@ if($deljenje==0) {
         timerImaReklame = setInterval(imaReklame, 12000);
         window.addEventListener("keydown", pocetak);
     }
+    function Money() {
+        $c = $c - 1;
+        document.getElementById("credit").innerHTML = $c;
+        $vrednostKredita();
+        $audioCount1();
+    
+        $Check_1 = setInterval(Check_1,60);
+    
+        function Check_1() {
+            
+            if((Math.round($c/100) != $c/100) && $c > 0) {
+                $audioCount1();
+                Minusjedan1();
+            }
+            else {
+                clearInterval($Check_1);
+                if($c > 0) {
+                    Minussto1();
+                }
+                if($c > 0) {
+                    $timerMinussto1 = setInterval(Minussto1,1000);
+                }
+                else {
+                    document.getElementById("audioCount2").play();
+                    audioCount2.currentTime = 0;
+                    $timerOdbrojano1 = setInterval(Odbrojano1,1000);
+                    $timerNula1 = setInterval(Nula1,1000);
+                }
+            }
+        }
+        function Minusjedan1() {
+            $c = $c - 1;
+            document.getElementById("credit").innerHTML = $c;
+            $vrednostKredita();
+        }
+        function Minussto1() {
+            if($c > 99) {
+                $c = $c - 100;
+                document.getElementById("credit").innerHTML = $c;
+                $vrednostKredita();
+                $audioCount2();
+            }
+            else {
+                clearInterval($timerMinussto1);
+                $timerOdbrojano1 = setInterval(Odbrojano1,100);
+                $timerNula1 = setInterval(Nula1,100);
+            }
+        }
+        function Nula1() {
+            clearInterval($timerNula1);
+            document.getElementById("audioIntro").play();
+            audioIntro.currentTime = 0;
+        }
+        function Odbrojano1() {
+            clearInterval($timerOdbrojano1);
+            $deal = 0;
+            $u = 1;
+            $a = 1;
+            document.getElementById("autohold").style.visibility = "visible";
+            vrednostUloga();
+            vrednostDobitka();
+            clearInterval(timerJoker1);
+            clearInterval(timerJoker2);
+            clearInterval(timerJoker3);
+            clearInterval(timerJoker4);
+            clearInterval(timerJoker5);
+            $timerOdbrojano1 = setInterval(Reset,100);
+        }
+    }
     function pocetak(event) {
 
         switch(event.keyCode) {
 
             case 81 :
 
-                if($c==0) {
+                if($c == 0) {
                     $biodobitak = 0;
                     $game = 1;
                     levo.style.visibility = "hidden";
@@ -321,7 +390,7 @@ if($deljenje==0) {
                     timerPoruka1 = setInterval(Poruka1,1000);
                     timerPoruka2 = setInterval(Poruka2,2000);
                 }
-                if($c<4901&&$biodobitak==0) {
+                if($c < 4901 && $biodobitak == 0) {
                     $c = $c + 100;
                     $vrednostKredita();
                     document.getElementById("audioKredit").play();
@@ -335,12 +404,12 @@ if($deljenje==0) {
 
             case 53 :
 
-                if($c>0&&$biodobitak==0) {
-                    $u+=1;
-                if($u==99) {
-                    $u=1;
+                if($c > 0 && $biodobitak == 0) {
+                    $u += 1;
+                if($u == 99) {
+                    $u = 1;
                 }
-                if($u>$c) {
+                if($u > $c) {
                     $u = 1;
                 }
                 vrednostUloga();
@@ -352,17 +421,17 @@ if($deljenje==0) {
 
             case 32 :
 
-                if($biodobitak==0) {
+                if($biodobitak == 0) {
                     autohold();
                 }
                 break;
 
             case 13 :
 
-                if($c>0) {
+                if($c > 0) {
                     Brisanje1_12();
                     Ispis();
-                    $isplata = 0;
+                    $money = 0;
                     pobeda.style.visibility = "hidden";
                     clearInterval(timerPrviekran);
                     audioIntro.currentTime = 5;
@@ -392,7 +461,7 @@ if($deljenje==0) {
                     reklama2.style.visibility = "hidden";
                     prazneKarte();
                     window.removeEventListener("keydown", pocetak);
-                    $deljenje = 1;
+                    $deal = 1;
                     break;
                     }
                 else {
@@ -402,11 +471,11 @@ if($deljenje==0) {
 
             case 35 : 
 
-                if($c>0&&$biodobitak==0) {
+                if($c > 0 && $biodobitak == 0) {
 
                     window.removeEventListener("keydown", pocetak);
 
-                    $isplata = 1;
+                    $money = 1;
                     clearInterval(timerPoruka1);
                     clearInterval(timerPoruka2);
                     poruka1.style.visibility = "hidden";
@@ -414,82 +483,13 @@ if($deljenje==0) {
                     levo.style.visibility = "visible";
                     timerDesno = setInterval(desnoDole, 500);
                     timerLevo = setInterval(levoDole, 1000);
-                    Isplata();
+                    Money();
                     break;
                 }
                 else {
                     break;
                 }
-                function Isplata() {
-                    $c = $c - 1;
-                    document.getElementById("credit").innerHTML = $c;
-                    $vrednostKredita();
-                    $audioCount1();
                 
-                    $timerProvera1 = setInterval(Provera1,60);
-                
-                    function Provera1() {
-                        
-                        if((Math.round($c/100) != $c/100) && $c>0) {
-                            $audioCount1();
-                            Minusjedan1();
-                        }
-                        else {
-                            clearInterval($timerProvera1);
-                            if($c>0) {
-                                Minussto1();
-                            }
-                            if($c>0) {
-                                $timerMinussto1 = setInterval(Minussto1,1000);
-                            }
-                            else {
-                                document.getElementById("audioCount2").play();
-                                audioCount2.currentTime = 0;
-                                $timerOdbrojano1 = setInterval(Odbrojano1,1000);
-                                $timerNula1 = setInterval(Nula1,1000);
-                            }
-                        }
-                    }
-                    function Minusjedan1() {
-                        $c = $c - 1;
-                        document.getElementById("credit").innerHTML = $c;
-                        $vrednostKredita();
-                    }
-                    function Minussto1() {
-                        if($c>99) {
-                            $c = $c - 100;
-                            document.getElementById("credit").innerHTML = $c;
-                            $vrednostKredita();
-                            $audioCount2();
-                        }
-                        else {
-                            clearInterval($timerMinussto1);
-                            $timerOdbrojano1 = setInterval(Odbrojano1,100);
-                            $timerNula1 = setInterval(Nula1,100);
-                        }
-                    }
-                    function Nula1() {
-                        clearInterval($timerNula1);
-                        document.getElementById("audioIntro").play();
-                        audioIntro.currentTime = 0;
-                    }
-                    function Odbrojano1() {
-                        clearInterval($timerOdbrojano1);
-                        $deljenje = 0;
-                        $u = 1;
-                        $a = 1;
-                        document.getElementById("autohold").style.visibility = "visible";
-                        vrednostUloga();
-                        vrednostDobitka();
-                        //$includeJs("Poker.js");
-                        clearInterval(timerJoker1);
-                        clearInterval(timerJoker2);
-                        clearInterval(timerJoker3);
-                        clearInterval(timerJoker4);
-                        clearInterval(timerJoker5);
-                        $timerOdbrojano1 = setInterval(Reset,100);
-                    }
-                }
         }   
     }
 }

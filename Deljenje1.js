@@ -1,9 +1,9 @@
 timerCekanje0 = setInterval(Cekanje1, 200);
   
 function Cekanje1() {
-    console.log($deljenje);
+    console.log($deal);
 
-    if($deljenje==1) {
+    if($deal==1) {
         clearInterval(timerCekanje0);
         $timerPrvodeljenje = setInterval(Prvodeljenje,100);
     }
@@ -23,7 +23,7 @@ function Prvodeljenje() {
     console.log($k3);
     console.log($k4);
     console.log($k5);
-    $deljenje = 2;
+    $deal = 2;
 }
 function Biranjekarata() {
     

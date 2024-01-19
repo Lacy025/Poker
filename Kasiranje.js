@@ -1,11 +1,11 @@
 $timerCekanje10 = setInterval(Cekanje10, 200);
    
 function Cekanje10() {
-    console.log($deljenje);
+    console.log($deal);
 
-    if($deljenje==11) {
+    if($deal == 11) {
         clearInterval($timerCekanje10);
-        $deljenje=12;
+        $deal = 12;
         if($d>0) {
             $Pobeda2();
             $timerPobeda1 = setInterval($Pobeda1,500);
@@ -19,15 +19,15 @@ function Cekanje10() {
 }
 function Kasiranje() {
     $Minusjedan();
-    $timerProvera2 = setInterval(Provera2,60);
+    $Check_2 = setInterval(Check_2,60);
 }
-function Provera2() {
+function Check_2() {
 
     if((Math.round($d/100) != $d/100) && $d>0) {
         $Minusjedan();
     }
     else {
-        clearInterval($timerProvera2);
+        clearInterval($Check_2);
         if($d>0) {
             Minussto2();
         }
@@ -41,7 +41,7 @@ function Provera2() {
             clearInterval($timerPobeda2);
             document.getElementById("audioCount2").play();
             audioCount2.currentTime = 0;
-            $deljenje = 0;
+            $deal = 0;
             $timerOdbrojano2 = setInterval(Odbrojano2,1000);
             $timerNula2 = setInterval(Nula2,1000);
         }
@@ -67,6 +67,6 @@ function Nula2() {
 }
 function Odbrojano2() {
     clearInterval($timerOdbrojano2);
-    $deljenje = 0;
+    $deal = 0;
     $includeJs("Poker.js");
 }

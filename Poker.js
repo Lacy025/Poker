@@ -1,4 +1,4 @@
-if($isplata==0) {
+if($money == 0) {
 
     $includeJs("Naslovna.js");
     $includeJs("Deljenje1.js");
