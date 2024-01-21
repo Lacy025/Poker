@@ -94,16 +94,16 @@ let $win;
 let $two_of_a_kind;
 let $four_colors;
 
-let $Fiveofakind;
-let $Royalflush;
-let $Streetflush;
+let $Five_of_a_kind;
+let $Royal_flush;
+let $Street_flush;
 let $Poker;
-let $Fullhouse;
+let $Full_house;
 let $Flush;
 let $Street;
-let $Threeofakind;
-let $Twopairs;
-let $Highpair;
+let $Three_of_a_kind;
+let $Two_pairs;
+let $High_pair;
 
 let $d;
 let $biodobitak;

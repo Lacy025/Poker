@@ -6,16 +6,16 @@ function Cekanje8() {
 	if($deal==9) {
 
 		clearInterval($waiting_8);
-		$Fiveofakind = 0;
-		$Royalflush = 0;
-		$Streetflush = 0;
+		$Five_of_a_kind = 0;
+		$Royal_flush = 0;
+		$Street_flush = 0;
 		$Poker = 0;
-		$Fullhouse = 0;
+		$Full_house = 0;
 		$Flush = 0;
 		$Street = 0;
-		$Threeofakind = 0;
-		$Twopairs = 0;
-		$Highpair = 0;
+		$Three_of_a_kind = 0;
+		$Two_pairs = 0;
+		$High_pair = 0;
 		$win = 0;
 		$win_2 = setInterval(Dobitak2,200);
 	}
@@ -41,7 +41,7 @@ function Dobitak2() {
 			(($n1==0)&&($n2==$n3)&&($n3==$n4)&&($n4==$n5))) {
 
 			$win ++;
-			$Fiveofakind = 1;
+			$Five_of_a_kind = 1;
 		}
 
 	}
@@ -69,7 +69,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Royalflush = 1;
+				$Royal_flush = 1;
 			}
 			else {
 				$win ++;
@@ -102,7 +102,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -135,7 +135,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -168,7 +168,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -201,7 +201,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -234,7 +234,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -267,7 +267,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -300,7 +300,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -333,7 +333,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -366,7 +366,7 @@ function Dobitak2() {
 					($b1==$b2)&&($b2==$b3)&&($b3==$b4)&&($b4==$b5)) {
 
 				$win ++;
-				$Streetflush = 1;
+				$Street_flush = 1;
 			}
 			else {
 				$win ++;
@@ -461,7 +461,7 @@ function Dobitak2() {
 				(($n1==0)&&($n2==$n5)&&($n3==$n4))) {
 
 			$win ++;
-			$Fullhouse = 1;
+			$Full_house = 1;
 		}
 	}
 
@@ -487,52 +487,52 @@ function Dobitak2() {
 
 		if ((($n1==$n2)&&($n2==$n3))||(($n1==$n2)&&($n3==0))||(($n1==$n3)&&($n2==0))||(($n2==$n3)&&($n1==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n1==$n2)&&($n2==$n4))||(($n1==$n2)&&($n4==0))||(($n1==$n4)&&($n2==0))||(($n2==$n4)&&($n1==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n1==$n2)&&($n2==$n5))||(($n1==$n2)&&($n5==0))||(($n1==$n5)&&($n2==0))||(($n2==$n5)&&($n1==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n1==$n3)&&($n3==$n4))||(($n1==$n3)&&($n4==0))||(($n1==$n4)&&($n3==0))||(($n3==$n4)&&($n1==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n1==$n3)&&($n3==$n5))||(($n1==$n3)&&($n5==0))||(($n1==$n5)&&($n3==0))||(($n3==$n5)&&($n1==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n1==$n4)&&($n4==$n5))||(($n1==$n4)&&($n5==0))||(($n1==$n5)&&($n4==0))||(($n4==$n5)&&($n1==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n2==$n3)&&($n3==$n4))||(($n2==$n3)&&($n4==0))||(($n2==$n4)&&($n3==0))||(($n3==$n4)&&($n2==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n2==$n3)&&($n3==$n5))||(($n2==$n3)&&($n5==0))||(($n2==$n5)&&($n3==0))||(($n3==$n5)&&($n2==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n2==$n4)&&($n4==$n5))||(($n2==$n4)&&($n5==0))||(($n2==$n5)&&($n4==0))||(($n4==$n5)&&($n2==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 
 		if ((($n3==$n4)&&($n4==$n5))||(($n3==$n4)&&($n5==0))||(($n3==$n5)&&($n4==0))||(($n4==$n5)&&($n3==0))) {
 			$win ++;
-			$Threeofakind = 1;
+			$Three_of_a_kind = 1;
 		}
 	}
 
@@ -542,27 +542,27 @@ function Dobitak2() {
 
 		if ((($n1==$n2)&&($n3==$n4))||(($n1==$n3)&&($n2==$n4))||(($n1==$n4)&&($n2==$n3))) {
 			$win ++;
-			$Twopairs = 1;
+			$Two_pairs = 1;
 		}
 
 		if ((($n1==$n2)&&($n3==$n5))||(($n1==$n3)&&($n2==$n5))||(($n1==$n5)&&($n2==$n3))) {
 			$win ++;
-			$Twopairs = 1;
+			$Two_pairs = 1;
 		}
 
 		if ((($n1==$n2)&&($n4==$n5))||(($n1==$n5)&&($n2==$n4))||(($n1==$n4)&&($n2==$n5))) {
 			$win ++;
-			$Twopairs = 1;
+			$Two_pairs = 1;
 		}
 
 		if ((($n1==$n3)&&($n4==$n5))||(($n1==$n5)&&($n3==$n4))||(($n1==$n4)&&($n3==$n5))) {
 			$win ++;
-			$Twopairs = 1;
+			$Two_pairs = 1;
 		}
 
 		if ((($n2==$n3)&&($n4==$n5))||(($n3==$n5)&&($n2==$n4))||(($n3==$n4)&&($n2==$n5))) {
 			$win ++;
-			$Twopairs = 1;
+			$Two_pairs = 1;
 		}
 	}
 
@@ -574,7 +574,7 @@ function Dobitak2() {
 
 			if ($n1>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 			
 		}
@@ -583,7 +583,7 @@ function Dobitak2() {
 
 			if ($n1>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 			
 		}
@@ -592,7 +592,7 @@ function Dobitak2() {
 
 			if ($n1>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 			
 		}
@@ -601,7 +601,7 @@ function Dobitak2() {
 
 			if ($n1>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 			
 		}
@@ -610,7 +610,7 @@ function Dobitak2() {
 
 			if ($n2>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 			
 		}
@@ -619,7 +619,7 @@ function Dobitak2() {
 
 			if ($n2>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 		
 		}
@@ -628,7 +628,7 @@ function Dobitak2() {
 
 			if ($n2>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 			
 		}
@@ -637,7 +637,7 @@ function Dobitak2() {
 
 			if ($n3>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 		
 		}
@@ -646,7 +646,7 @@ function Dobitak2() {
 
 			if ($n3>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 			
 		}
@@ -655,7 +655,7 @@ function Dobitak2() {
 
 			if ($n4>10) {
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 		
 		}
@@ -671,7 +671,7 @@ function Dobitak2() {
 			if ($n2>10) {
 				
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 
 			if ($win == 0) {
@@ -679,7 +679,7 @@ function Dobitak2() {
 				if ($n3>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -688,7 +688,7 @@ function Dobitak2() {
 				if ($n4>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -697,7 +697,7 @@ function Dobitak2() {
 				if ($n5>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 		}
@@ -710,7 +710,7 @@ function Dobitak2() {
 			if ($n1>10) {
 				
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 
 			if ($win == 0) {
@@ -718,7 +718,7 @@ function Dobitak2() {
 				if ($n3>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -727,7 +727,7 @@ function Dobitak2() {
 				if ($n4>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -736,7 +736,7 @@ function Dobitak2() {
 				if ($n5>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 		}
@@ -749,7 +749,7 @@ function Dobitak2() {
 			if ($n1>10) {
 				
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 
 			if ($win == 0) {
@@ -757,7 +757,7 @@ function Dobitak2() {
 				if ($n2>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -766,7 +766,7 @@ function Dobitak2() {
 				if ($n4>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -775,7 +775,7 @@ function Dobitak2() {
 				if ($n5>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 		}
@@ -788,7 +788,7 @@ function Dobitak2() {
 			if ($n1>10) {
 				
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 
 			if ($win == 0) {
@@ -796,7 +796,7 @@ function Dobitak2() {
 				if ($n2>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -805,7 +805,7 @@ function Dobitak2() {
 				if ($n3>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -814,7 +814,7 @@ function Dobitak2() {
 				if ($n5>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 		}
@@ -827,7 +827,7 @@ function Dobitak2() {
 			if ($n1>10) {
 				
 				$win ++;
-				$Highpair = 1;
+				$High_pair = 1;
 			}
 
 			if ($win == 0) {
@@ -835,7 +835,7 @@ function Dobitak2() {
 				if ($n2>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -844,7 +844,7 @@ function Dobitak2() {
 				if ($n3>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 
@@ -853,7 +853,7 @@ function Dobitak2() {
 				if ($n4>10) {
 					
 					$win ++;
-					$Highpair = 1;
+					$High_pair = 1;
 				}
 			}
 		}
@@ -887,70 +887,70 @@ function Dobitak2() {
 	}
 	$d = 0;
 
-	if($Fiveofakind==1) {
+	if($Five_of_a_kind == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "FIVE OF A KIND";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d0;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d0;
 	}
-	if($Royalflush==1) {
+	if($Royal_flush == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "ROYAL FLUSH";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d1;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d1;
 	}
-	if($Streetflush==1) {
+	if($Street_flush == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "STREET FLUSH";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d2;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d2;
 	}
-	if($Poker==1) {
+	if($Poker == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "POKER";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d3;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d3;
 	}
-	if($Fullhouse==1) {
+	if($Full_house == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "FULL HOUSE";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d4;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d4;
 	}
-	if($Flush==1) {
+	if($Flush == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "FLUSH";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d5;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d5;
 	}
-	if($Street==1) {
+	if($Street == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "STREET";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d6;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d6;
 	}
-	if($Threeofakind==1) {
+	if($Three_of_a_kind == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "THREE OF A KIND";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d7;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d7;
 	}
-	if($Twopairs==1) {
+	if($Two_pairs == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "2 PAIRS";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d8;
 		document.getElementById("vrednostdobitka").style.visibility = "visible";
 		$d = $d8;
 	}
-	if($Highpair==1) {
+	if($High_pair == 1) {
 		document.getElementById("nazivdobitka").innerHTML = "HIGH PAIR";
 		document.getElementById("nazivdobitka").style.visibility = "visible";
 		document.getElementById("vrednostdobitka").innerHTML = $d9;
