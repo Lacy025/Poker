@@ -90,9 +90,9 @@ let $n5;
 let $b5;
 let $Audio_Card_5;
 
-let $dobitak;
-let $dveiste;
-let $cetiriboje;
+let $win;
+let $two_of_a_kind;
+let $four_colors;
 
 let $Fiveofakind;
 let $Royalflush;
