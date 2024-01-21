@@ -883,7 +883,7 @@ function Dobitak2() {
 
 		document.getElementById("audioDobitak").play();
 		audioDobitak.currentTime = 0;
-		$biodobitak = 1;
+		$was_win = 1;
 	}
 	$d = 0;
 

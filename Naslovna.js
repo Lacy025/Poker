@@ -26,13 +26,13 @@ if($deal == 0) {
 
     window.addEventListener("keydown", pocetak);
 
-    if($biodobitak == 1) {
+    if($was_win == 1) {
         window.removeEventListener("keydown", pocetak);
         window.addEventListener("keydown", pocetak);
         timerPrviekran = setInterval(Prviekran,3000);
 
     }
-    if($biodobitak == 0 && $game == 1) {
+    if($was_win == 0 && $game == 1) {
         
         timerPrviekran = setInterval(Prviekran,1000);
     }
@@ -59,7 +59,7 @@ if($deal == 0) {
     else {
         levo.style.visibility = "hidden";
         desno.style.visibility = "hidden";
-        if($biodobitak == 0) {
+        if($was_win== 0) {
             timerPoruka1 = setInterval(Poruka1,1000);
             timerPoruka2 = setInterval(Poruka2,2000);
         }
@@ -139,7 +139,7 @@ if($deal == 0) {
         document.getElementById("dobit7").style.visibility = "visible";
         document.getElementById("dobit8").style.visibility = "visible";
         document.getElementById("dobit9").style.visibility = "visible";
-        $biodobitak = 0;
+        $was_win = 0;
     }
     function Dobici() {
         $d0 = $u * 1100;
@@ -381,7 +381,7 @@ if($deal == 0) {
             case 81 :
 
                 if($c == 0) {
-                    $biodobitak = 0;
+                    $was_win = 0;
                     $game = 1;
                     levo.style.visibility = "hidden";
                     desno.style.visibility = "hidden";
@@ -390,7 +390,7 @@ if($deal == 0) {
                     timerPoruka1 = setInterval(Poruka1,1000);
                     timerPoruka2 = setInterval(Poruka2,2000);
                 }
-                if($c < 4901 && $biodobitak == 0) {
+                if($c < 4901 && $was_win == 0) {
                     $c = $c + 100;
                     $vrednostKredita();
                     document.getElementById("audioKredit").play();
@@ -404,7 +404,7 @@ if($deal == 0) {
 
             case 53 :
 
-                if($c > 0 && $biodobitak == 0) {
+                if($c > 0 && $was_win == 0) {
                     $u += 1;
                 if($u == 99) {
                     $u = 1;
@@ -421,7 +421,7 @@ if($deal == 0) {
 
             case 32 :
 
-                if($biodobitak == 0) {
+                if($was_win == 0) {
                     autohold();
                 }
                 break;
@@ -471,7 +471,7 @@ if($deal == 0) {
 
             case 35 : 
 
-                if($c > 0 && $biodobitak == 0) {
+                if($c > 0 && $was_win == 0) {
 
                     window.removeEventListener("keydown", pocetak);
 

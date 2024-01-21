@@ -106,7 +106,7 @@ let $Two_pairs;
 let $High_pair;
 
 let $d;
-let $biodobitak;
+let $was_win;
 
 let $hold1;
 let $hold2;
