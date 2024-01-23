@@ -134,17 +134,17 @@ function $audioCount2() {
 function $Minus_1() {
     $c = $c + 1;
     document.getElementById("credit").innerHTML = $c;
-    $vrednostKredita();
+    $Credit_Value();
     $d = $d - 1;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
+    document.getElementById("win_value").innerHTML = $d;
     $audioCount1();
 }
 function $Minus_100() {
     $c = $c + 100;
     document.getElementById("credit").innerHTML = $c;
-    $vrednostKredita();
+    $Credit_Value();
     $d = $d - 100;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
+    document.getElementById("win_value").innerHTML = $d;
     $audioCount2();
 }
 

@@ -172,8 +172,8 @@ function Kockanje(event) {
 
             Karta();
 
-            document.getElementById("vrednostdobitka").innerHTML = $d;
-            document.getElementById("vrednostdobitka").style.visibility = "hidden";
+            document.getElementById("win_value").innerHTML = $d;
+            document.getElementById("win_value").style.visibility = "hidden";
 
             if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {  // MANJA
                 
@@ -258,9 +258,9 @@ function Prvideo1() {
     $Victory_2();
     $c = $c + $prviDeo;
     document.getElementById("credit").innerHTML = $c;
-    $vrednostKredita();
+    $Credit_Value();
     $d = $d - $prviDeo;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
+    document.getElementById("win_value").innerHTML = $d;
     $audioCount2();
 }
 function Drugideo1() {
@@ -430,8 +430,8 @@ function Karta() {
 function Pogodio() {
     victory.style.visibility = "visible";
     $d = $d * 2;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
-    document.getElementById("vrednostdobitka").style.visibility = "visible";
+    document.getElementById("win_value").innerHTML = $d;
+    document.getElementById("win_value").style.visibility = "visible";
     document.getElementById("audioPogodak").play();
     audioPogodak.currentTime = 0;
     $karta++;
@@ -441,8 +441,8 @@ function Pogodio() {
 }
 function Promasio() {
     $d = 0;
-    document.getElementById("vrednostdobitka").innerHTML = $d;
-    document.getElementById("vrednostdobitka").style.visibility = "visible";
+    document.getElementById("win_value").innerHTML = $d;
+    document.getElementById("win_value").style.visibility = "visible";
     $deal = 11;
 }
 function Veca() {

@@ -41,7 +41,7 @@ if($deal == 0) {
         window.addEventListener("keydown", pocetak);
         imaReklame();
         vrednostDobitka();
-        $vrednostKredita();
+        $Credit_Value();
         vrednostUloga();
         timerNemaReklame = setInterval(nemaReklame, 6000);
         timerImaReklame = setInterval(imaReklame, 12000);
@@ -103,7 +103,7 @@ if($deal == 0) {
         clearInterval(timerPrviekran);
         imaReklame();
         vrednostDobitka();
-        $vrednostKredita();
+        $Credit_Value();
         vrednostUloga();
         timerNemaReklame = setInterval(nemaReklame, 6000);
         timerImaReklame = setInterval(imaReklame, 12000);
@@ -117,7 +117,7 @@ if($deal == 0) {
     function Ispis() {
         tabela.style.visibility = "hidden";
         document.getElementById("nazivdobitka").style.visibility = "hidden";
-        document.getElementById("vrednostdobitka").style.visibility = "hidden";
+        document.getElementById("win_value").style.visibility = "hidden";
         victory.style.visibility = "hidden";
         document.getElementById("dobitak0").style.visibility = "visible";
         document.getElementById("dobitak1").style.visibility = "visible";
@@ -166,7 +166,7 @@ if($deal == 0) {
         document.getElementById("dobit8").innerHTML = $d8;
         document.getElementById("dobit9").innerHTML = $d9;
     }
-    function $vrednostKredita() {
+    function $Credit_Value() {
         document.getElementById("credit").innerHTML = $c;
     }
     function vrednostUloga() {
@@ -308,7 +308,7 @@ if($deal == 0) {
     function Money() {
         $c = $c - 1;
         document.getElementById("credit").innerHTML = $c;
-        $vrednostKredita();
+        $Credit_Value();
         $audioCount1();
     
         $Check_1 = setInterval(Check_1,60);
@@ -338,13 +338,13 @@ if($deal == 0) {
         function Minus_1_1() {
             $c = $c - 1;
             document.getElementById("credit").innerHTML = $c;
-            $vrednostKredita();
+            $Credit_Value();
         }
         function Minus_100_1() {
             if($c > 99) {
                 $c = $c - 100;
                 document.getElementById("credit").innerHTML = $c;
-                $vrednostKredita();
+                $Credit_Value();
                 $audioCount2();
             }
             else {
@@ -392,7 +392,7 @@ if($deal == 0) {
                 }
                 if($c < 4901 && $was_win == 0) {
                     $c = $c + 100;
-                    $vrednostKredita();
+                    $Credit_Value();
                     document.getElementById("audioKredit").play();
                     audioKredit.currentTime = 0;
                     audioIntro.currentTime = 5;
@@ -436,7 +436,7 @@ if($deal == 0) {
                     clearInterval(timerPrviekran);
                     audioIntro.currentTime = 5;
                     $c = $c - $u;
-                    $vrednostKredita();
+                    $Credit_Value();
                     document.getElementById("audioDeljenje1").play();
                     audioDeljenje1.currentTime = 0;
                     clearInterval(timerPoruka1);
