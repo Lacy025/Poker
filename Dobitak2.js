@@ -972,7 +972,7 @@ function Dobitak2() {
 			window.addEventListener("keydown", DupliranjeKasiranje);
 		}
 		else {
-			pobeda.style.visibility = "visible";
+			victory.style.visibility = "visible";
 			choice_1 = setInterval(Blokada,3000);
 		}
 	}
@@ -1009,7 +1009,7 @@ function Dobitak2() {
 				clearInterval(choice_2);
 				izborlevo.style.visibility = "hidden";
 				izbordesno.style.visibility = "hidden";
-				pobeda.style.visibility = "visible";
+				victory.style.visibility = "visible";
 				audioDobitak.currentTime = 5;
 				$deal = 11;
 				console.log($deal);

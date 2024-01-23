@@ -7,9 +7,9 @@ function Cekanje10() {
         clearInterval($waiting_10);
         $deal = 12;
         if($d>0) {
-            $Pobeda2();
-            $timerPobeda1 = setInterval($Pobeda1,500);
-            $timerPobeda2 = setInterval($Pobeda2,1000);
+            $Victory_2();
+            $victory_1 = setInterval($Victory_1,500);
+            $victory_2 = setInterval($Victory_2,1000);
             Kasiranje();
         }
         else {
@@ -36,9 +36,9 @@ function Check_2() {
             $Minus_100_2 = setInterval(Minus_100_2,1000);
         }
         else {
-            pobeda.style.visibility = "visible";
-            clearInterval($timerPobeda1);
-            clearInterval($timerPobeda2);
+            victory.style.visibility = "visible";
+            clearInterval($victory_1);
+            clearInterval($victory_2);
             document.getElementById("audioCount2").play();
             audioCount2.currentTime = 0;
             $deal = 0;
@@ -53,9 +53,9 @@ function Minus_100_2() {
     }
     else {
         clearInterval($Minus_100_2);
-        pobeda.style.visibility = "visible";
-        clearInterval($timerPobeda1);
-        clearInterval($timerPobeda2);
+        victory.style.visibility = "visible";
+        clearInterval($victory_1);
+        clearInterval($victory_2);
         $Countdown_2 = setInterval(Countdown_2,1000);
         $Zero_2 = setInterval(Zero_2,100);
     }

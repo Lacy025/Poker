@@ -114,14 +114,14 @@ let $hold3;
 let $hold4;
 let $hold5;
 
-let $timerPobeda1;
-let $timerPobeda2;
+let $victory_1;
+let $victory_2;
 
-function $Pobeda1() {
-    pobeda.style.visibility = "hidden";
+function $Victory_1() {
+    victory.style.visibility = "hidden";
 }
-function $Pobeda2() {
-    pobeda.style.visibility = "visible";
+function $Victory_2() {
+    victory.style.visibility = "visible";
 }
 function $audioCount1() {
     document.getElementById("audioCount1").play();
@@ -240,7 +240,7 @@ tabela.style.visibility = "hidden";
 
 izborlevo.style.visibility = "hidden";
 izbordesno.style.visibility = "hidden";
-pobeda.style.visibility = "hidden";
+victory.style.visibility = "hidden";
 
 veca.style.visibility = "hidden";
 manja.style.visibility = "hidden";

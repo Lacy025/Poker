@@ -118,7 +118,7 @@ if($deal == 0) {
         tabela.style.visibility = "hidden";
         document.getElementById("nazivdobitka").style.visibility = "hidden";
         document.getElementById("vrednostdobitka").style.visibility = "hidden";
-        pobeda.style.visibility = "hidden";
+        victory.style.visibility = "hidden";
         document.getElementById("dobitak0").style.visibility = "visible";
         document.getElementById("dobitak1").style.visibility = "visible";
         document.getElementById("dobitak2").style.visibility = "visible";
@@ -432,7 +432,7 @@ if($deal == 0) {
                     Brisanje1_12();
                     Ispis();
                     $money = 0;
-                    pobeda.style.visibility = "hidden";
+                    victory.style.visibility = "hidden";
                     clearInterval(timerPrviekran);
                     audioIntro.currentTime = 5;
                     $c = $c - $u;

@@ -21,9 +21,9 @@ function Dupliranje() {
     clearInterval($timerPogodio);
     clearInterval($timerManja);
     clearInterval($timerVeca);
-    clearInterval($timerPobeda1);
-    clearInterval($timerPobeda2);
-    pobeda.style.visibility = "hidden";
+    clearInterval($victory_1);
+    clearInterval($victory_2);
+    victory.style.visibility = "hidden";
     manja.style.visibility = "hidden";
     veca.style.visibility = "hidden";
     Karta1_12();
@@ -40,7 +40,7 @@ function Dupliranje() {
         manja.style.visibility = "hidden";
         veca.style.visibility = "hidden";
         window.removeEventListener("keydown", Kockanje);
-        pobeda.style.visibility = "visible";
+        victory.style.visibility = "visible";
         $deal = 11;
     }
 }
@@ -213,12 +213,12 @@ function Kockanje(event) {
             if($d>1) {
 
                 Brisanje();
-                $Pobeda2();
+                $Victory_2();
 
                 $pola = Math.floor($d / 2);
 
-                $timerPobeda1 = setInterval($Pobeda1,500);
-                $timerPobeda2 = setInterval($Pobeda2,1000);
+                $victory_1 = setInterval($Victory_1,500);
+                $victory_2 = setInterval($Victory_2,1000);
 
                 if($d<101) {
                     $Check_3 = setInterval(Pola1,60);
@@ -246,7 +246,7 @@ function Pola1() {
     else {
         clearInterval($Check_3);
         $audioCount2();
-        $Pobeda1();
+        $Victory_1();
         $timerPogodio = setInterval(Dupliranje, 1000);
     }
 }
@@ -255,7 +255,7 @@ function Pola2() {
     $Check_3 = setInterval(Drugideo1,1000);
 }
 function Prvideo1() {
-    $Pobeda2();
+    $Victory_2();
     $c = $c + $prviDeo;
     document.getElementById("credit").innerHTML = $c;
     $vrednostKredita();
@@ -272,7 +272,7 @@ function Drugideo1() {
     }
     else {
         clearInterval($Check_3);
-        $Pobeda2();
+        $Victory_2();
         $audioCount2();
         $timerPogodio = setInterval(Dupliranje, 1000);
     }
@@ -308,9 +308,9 @@ function Drugideo2() {
         }
         else {
             clearInterval($Check_3);
-            clearInterval($timerPobeda1);
-            clearInterval($timerPobeda2);
-            $Pobeda2();
+            clearInterval($victory_1);
+            clearInterval($victory_2);
+            $Victory_2();
             $prviDeo = $d - $pola;
             Prvideo1();
             $timerPogodio = setInterval(Trecideo3, 1000);
@@ -320,9 +320,9 @@ function Drugideo2() {
 function Trecideo3() {
     clearInterval($Check_3);
     clearInterval($timerPogodio);
-    clearInterval($timerPobeda1);
-    clearInterval($timerPobeda2);
-    $Pobeda2();
+    clearInterval($victory_1);
+    clearInterval($victory_2);
+    $Victory_2();
     Dupliranje();
 }
 function Karta() {
@@ -428,7 +428,7 @@ function Karta() {
     }
 }
 function Pogodio() {
-    pobeda.style.visibility = "visible";
+    victory.style.visibility = "visible";
     $d = $d * 2;
     document.getElementById("vrednostdobitka").innerHTML = $d;
     document.getElementById("vrednostdobitka").style.visibility = "visible";
