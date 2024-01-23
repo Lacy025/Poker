@@ -34,7 +34,7 @@ function Cekanje7() {
             $timerStop5 = setInterval($Stop5,$stop);
             $stop+=50;
         }
-        $poruka5.style.visibility = "visible";
+        $message_5.style.visibility = "visible";
         console.log($deal);
         $choice_1 = setInterval(Izbor1,($stop+200));
     }
@@ -96,19 +96,19 @@ function Izbor1() {
     $timerPoruka5 = setInterval(Poruka5, 3000);
 
     function Poruka3() {
-        $poruka3.style.visibility = "visible";
-        $poruka4.style.visibility = "hidden";
-        $poruka5.style.visibility = "hidden";
+        $message_3.style.visibility = "visible";
+        $message_4.style.visibility = "hidden";
+        $message_5.style.visibility = "hidden";
     }
     function Poruka4() {
-        $poruka4.style.visibility = "visible";
-        $poruka3.style.visibility = "hidden";
-        $poruka5.style.visibility = "hidden";
+        $message_4.style.visibility = "visible";
+        $message_3.style.visibility = "hidden";
+        $message_5.style.visibility = "hidden";
     }
     function Poruka5() {
-        $poruka5.style.visibility = "visible";
-        $poruka3.style.visibility = "hidden";
-        $poruka4.style.visibility = "hidden";
+        $message_5.style.visibility = "visible";
+        $message_3.style.visibility = "hidden";
+        $message_4.style.visibility = "hidden";
         clearInterval($timerPoruka3);
         clearInterval($timerPoruka4);
         clearInterval($timerPoruka5);
@@ -142,9 +142,9 @@ function IzborKarata(event) {
             window.removeEventListener("keydown", IzborKarata);
             document.getElementById("audioDeljenje2").play();
             audioDeljenje1.currentTime = 0;
-            $poruka3.style.visibility = "hidden";
-            $poruka4.style.visibility = "hidden";
-            $poruka5.style.visibility = "hidden";
+            $message_3.style.visibility = "hidden";
+            $message_4.style.visibility = "hidden";
+            $message_5.style.visibility = "hidden";
             clearInterval($timerPoruka3);
             clearInterval($timerPoruka4);
             clearInterval($timerPoruka5);

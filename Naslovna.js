@@ -50,9 +50,9 @@ if($deal == 0) {
         desno.style.visibility = "hidden";
         poruka1.style.visibility = "hidden";
         poruka2.style.visibility = "hidden";
-        poruka3.style.visibility = "hidden";
-        poruka4.style.visibility = "hidden";
-        poruka5.style.visibility = "hidden";
+        message_3.style.visibility = "hidden";
+        message_4.style.visibility = "hidden";
+        $message_5.style.visibility = "hidden";
         timerDesno = setInterval(desnoDole, 500);
         timerLevo = setInterval(levoDole, 1000);
     }

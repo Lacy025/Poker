@@ -148,15 +148,15 @@ function $Minus_100() {
     $audioCount2();
 }
 
-let $poruka3 = document.getElementById("poruka3");
-$poruka3.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  STOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-$poruka3.style.left = "734px";
-let $poruka4 = document.getElementById("poruka4");
-$poruka4.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  DELJENJE&nbsp;&nbsp;&nbsp;&nbsp;";
-$poruka4.style.left = "735px";
-let $poruka5 = document.getElementById("poruka5");
-$poruka5.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  PONIŠTAVANJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-$poruka5.style.left = "700px";
+let $message_3 = document.getElementById("message_3");
+$message_3.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  STOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+$message_3.style.left = "734px";
+let $message_4 = document.getElementById("message_4");
+$message_4.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  DELJENJE&nbsp;&nbsp;&nbsp;&nbsp;";
+$message_4.style.left = "735px";
+let $message_5 = document.getElementById("message_5");
+$message_5.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  PONIŠTAVANJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+$message_5.style.left = "700px";
 
 let $stop1 = document.getElementById("stop1");
 $stop1.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
