@@ -185,8 +185,8 @@ let $no_win;
 
 let $stop;
 
-let $timerVeca;
-let $timerManja;
+let $wait_high;
+let $wait_low;
 
 let $k00;
 let $k01;
@@ -201,8 +201,8 @@ let $k09;
 let $k10;
 let $k11;
 
-let $pauzaManja;
-let $pauzaVeca;
+let $pause_high;
+let $pause_low;
 
 let $karta;
 

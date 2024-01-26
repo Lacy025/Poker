@@ -6,8 +6,8 @@ function Cekanje9() {
     if($deal == 10) {
         clearInterval($waiting_9);
         $deal = 12;
-        $pauzaManja = 400;
-        $pauzaVeca = 800;
+        $pause_low = 400;
+        $pause_high = 800;
         $karta = 1;
         document.getElementById("audioVeca").play();
         audioCount1.currentTime = 0;
@@ -19,8 +19,8 @@ function Cekanje9() {
 function Dupliranje() {
 
     clearInterval($timerPogodio);
-    clearInterval($timerManja);
-    clearInterval($timerVeca);
+    clearInterval($wait_low);
+    clearInterval($wait_high);
     clearInterval($victory_1);
     clearInterval($victory_2);
     victory.style.visibility = "hidden";
@@ -35,8 +35,8 @@ function Dupliranje() {
         window.addEventListener("keydown", Kockanje);
     }
     else {
-        clearInterval($timerManja);
-        clearInterval($timerVeca);
+        clearInterval($wait_low);
+        clearInterval($wait_high);
         manja.style.visibility = "hidden";
         veca.style.visibility = "hidden";
         window.removeEventListener("keydown", Kockanje);
@@ -48,8 +48,8 @@ function Karta1_12() {
 
     if($karta==1) {
         $k00 = Math.floor(Math.random() * 48) + 1;
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==2) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -57,8 +57,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje02.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==3) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -66,8 +66,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje03.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==4) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -75,8 +75,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje04.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==5) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -84,8 +84,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje05.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==6) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -93,8 +93,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje06.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==7) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -103,8 +103,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje07.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==8) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -113,8 +113,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje08.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==9) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -123,8 +123,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje09.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==10) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -133,8 +133,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje10.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==11) {
         $k00 = Math.floor(Math.random() * 48) + 1;
@@ -143,8 +143,8 @@ function Karta1_12() {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
         $polje11.style.visibility = "visible";
-        $timerManja = setInterval(Manja, $pauzaManja);
-        $timerVeca = setInterval(Veca, $pauzaVeca);
+        $wait_low = setInterval(Manja, $pause_low);
+        $wait_high = setInterval(Veca, $pause_high);
     }
     if($karta==12) {
         $polje12.style.visibility = "visible";
@@ -157,8 +157,8 @@ function Karta1_12() {
 function Brisanje() {
 
     window.removeEventListener("keydown", Kockanje);
-    clearInterval($timerManja);
-    clearInterval($timerVeca);
+    clearInterval($wait_low);
+    clearInterval($wait_high);
     manja.style.visibility = "hidden";
     veca.style.visibility = "hidden";
 }
@@ -435,8 +435,8 @@ function Pogodio() {
     document.getElementById("audioPogodak").play();
     audioPogodak.currentTime = 0;
     $karta++;
-    $pauzaManja = $pauzaManja - 30;
-    $pauzaVeca = $pauzaVeca - 60;
+    $pause_low = $pause_low - 30;
+    $pause_high = $pause_high - 60;
     $timerPogodio = setInterval(Dupliranje, 1400);
 }
 function Promasio() {
