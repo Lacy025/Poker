@@ -149,25 +149,25 @@ function $Minus_100() {
 }
 
 let $message_3 = document.getElementById("message_3");
-$message_3.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  STOP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-$message_3.style.left = "734px";
+$message_3.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRESS  HOLD CARDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+$message_3.style.left = "736px";
 let $message_4 = document.getElementById("message_4");
-$message_4.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  DELJENJE&nbsp;&nbsp;&nbsp;&nbsp;";
-$message_4.style.left = "735px";
+$message_4.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRESS  DEAL CARDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+$message_4.style.left = "736px";
 let $message_5 = document.getElementById("message_5");
-$message_5.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  PONIŠTAVANJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-$message_5.style.left = "700px";
+$message_5.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRESS  CLEAR CARDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+$message_5.style.left = "724px";
 
 let $stop1 = document.getElementById("stop1");
-$stop1.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
+$stop1.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
 let $stop2 = document.getElementById("stop2");
-$stop2.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
+$stop2.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
 let $stop3 = document.getElementById("stop3");
-$stop3.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
+$stop3.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
 let $stop4 = document.getElementById("stop4");
-$stop4.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
+$stop4.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
 let $stop5 = document.getElementById("stop5");
-$stop5.innerHTML = "&nbsp;&nbsp;&nbsp;STOP&nbsp;&nbsp;&nbsp;";
+$stop5.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
 
 $stop1.style.visibility = "hidden";
 $stop2.style.visibility = "hidden";
@@ -181,7 +181,7 @@ let $timerStop3;
 let $timerStop4;
 let $timerStop5;
 
-let $timerNemadobitka;
+let $no_win;
 
 let $stop;
 

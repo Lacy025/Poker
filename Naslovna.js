@@ -22,7 +22,7 @@ if($deal == 0) {
         $u = 1;
     }
 
-    clearInterval($timerNemadobitka);
+    clearInterval($no_win);
 
     window.addEventListener("keydown", pocetak);
 
@@ -204,21 +204,21 @@ if($deal == 0) {
     }
     function desnoDole() {
         let desno = document.getElementById("desno");
-        desno.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRBIJA  2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        desno.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SERBIA  2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
         levo.style.visibility = "hidden";
         desno.style.visibility = "visible";
     }
     function Poruka1() {
         let poruka1 = document.getElementById("poruka1");
-        poruka1.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIRAJTE  ULOG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        poruka1.style.left = "734px";
+        poruka1.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHOOSE BET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        poruka1.style.left = "746px";
         poruka1.style.visibility = "visible";
         poruka2.style.visibility = "hidden";
     }
     function Poruka2() {
         let poruka2 = document.getElementById("poruka2");
-        poruka2.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRITISNITE  DELJENJE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        poruka2.style.left = "735px";
+        poruka2.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRESS DEAL CARDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        poruka2.style.left = "744px";
         poruka2.style.visibility = "visible";
         poruka1.style.visibility = "hidden";
     }

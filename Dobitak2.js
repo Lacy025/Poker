@@ -960,7 +960,7 @@ function Dobitak2() {
 	if($win == 0) {
 		clearInterval($waiting_9);
 		clearInterval($waiting_10);
-		$timerNemadobitka = setInterval(Nemadobitka,500);
+		$no_win = setInterval(Nemadobitka,500);
 	}
 	else{
 		if($d<10000) {
