@@ -206,30 +206,30 @@ let $pause_low;
 
 let $card;
 
-$polje1.style.position = "absolute";
-$polje1.style.left = "10px";
-$polje1.style.top = "320px";
-$polje1.style.visibility = "hidden";
+$field_1.style.position = "absolute";
+$field_1.style.left = "10px";
+$field_1.style.top = "320px";
+$field_1.style.visibility = "hidden";
     
-$polje2.style.position = "absolute";
-$polje2.style.left = "390px";
-$polje2.style.top = "320px";
-$polje2.style.visibility = "hidden";
+$field_2.style.position = "absolute";
+$field_2.style.left = "390px";
+$field_2.style.top = "320px";
+$field_2.style.visibility = "hidden";
 
-$polje3.style.position = "absolute";
-$polje3.style.left = "770px";
-$polje3.style.top = "320px";
-$polje3.style.visibility = "hidden";
+$field_3.style.position = "absolute";
+$field_3.style.left = "770px";
+$field_3.style.top = "320px";
+$field_3.style.visibility = "hidden";
 
-$polje4.style.position = "absolute";
-$polje4.style.left = "1150px";
-$polje4.style.top = "320px";
-$polje4.style.visibility = "hidden";
+$field_4.style.position = "absolute";
+$field_4.style.left = "1150px";
+$field_4.style.top = "320px";
+$field_4.style.visibility = "hidden";
 
-$polje5.style.position = "absolute";
-$polje5.style.left = "1530px";
-$polje5.style.top = "320px";
-$polje5.style.visibility = "hidden";
+$field_5.style.position = "absolute";
+$field_5.style.left = "1530px";
+$field_5.style.top = "320px";
+$field_5.style.visibility = "hidden";
 
 $rucno.style.position = "absolute";
 $rucno.style.left = "0px";

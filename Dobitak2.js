@@ -994,11 +994,11 @@ function Dobitak2() {
 				izborlevo.style.visibility = "hidden";
 				izbordesno.style.visibility = "hidden";
 				audioDobitak.currentTime = 5;
-				$polje1.style.visibility = "hidden";
-				$polje2.style.visibility = "hidden";
-				$polje3.style.visibility = "hidden";
-				$polje4.style.visibility = "hidden";
-				$polje5.style.visibility = "hidden";
+				$field_1.style.visibility = "hidden";
+				$field_2.style.visibility = "hidden";
+				$field_3.style.visibility = "hidden";
+				$field_4.style.visibility = "hidden";
+				$field_5.style.visibility = "hidden";
 				$deal = 10;
 				console.log($deal);
 				break;

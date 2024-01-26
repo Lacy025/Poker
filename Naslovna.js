@@ -175,11 +175,11 @@ if($deal == 0) {
     function imaReklame() {
         reklama1.style.visibility = "visible";
         reklama2.style.visibility = "visible";
-        $polje1.style.visibility = "hidden";
-        $polje2.style.visibility = "hidden";
-        $polje3.style.visibility = "hidden";
-        $polje4.style.visibility = "hidden";
-        $polje5.style.visibility = "hidden";
+        $field_1.style.visibility = "hidden";
+        $field_2.style.visibility = "hidden";
+        $field_3.style.visibility = "hidden";
+        $field_4.style.visibility = "hidden";
+        $field_5.style.visibility = "hidden";
         clearInterval(timerJoker1);
         clearInterval(timerJoker2);
         clearInterval(timerJoker3);
@@ -229,57 +229,57 @@ if($deal == 0) {
         }
     }
     function prazneKarte() {
-        document.getElementById("$polje1").src="./Karte/53.png";
-        document.getElementById("$polje2").src="./Karte/53.png";
-        document.getElementById("$polje3").src="./Karte/53.png";
-        document.getElementById("$polje4").src="./Karte/53.png";
-        document.getElementById("$polje5").src="./Karte/53.png";
-        $polje1.style.visibility = "visible";
-        $polje2.style.visibility = "visible";
-        $polje3.style.visibility = "visible";
-        $polje4.style.visibility = "visible";
-        $polje5.style.visibility = "visible";
+        document.getElementById("$field_1").src="./Karte/53.png";
+        document.getElementById("$field_2").src="./Karte/53.png";
+        document.getElementById("$field_3").src="./Karte/53.png";
+        document.getElementById("$field_4").src="./Karte/53.png";
+        document.getElementById("$field_5").src="./Karte/53.png";
+        $field_1.style.visibility = "visible";
+        $field_2.style.visibility = "visible";
+        $field_3.style.visibility = "visible";
+        $field_4.style.visibility = "visible";
+        $field_5.style.visibility = "visible";
     }
     function joker1() {
-        $polje1.style.visibility = "hidden";
-        document.getElementById("$polje1").src="./Karte/00.png";
-        $polje1.style.visibility = "visible";
+        $field_1.style.visibility = "hidden";
+        document.getElementById("$field_1").src="./Karte/00.png";
+        $field_1.style.visibility = "visible";
         clearInterval(timerJoker1);
     }
     function joker2() {
-        $polje1.style.visibility = "hidden";
-        document.getElementById("$polje1").src="./Karte/53.png";
-        $polje1.style.visibility = "visible";
-        $polje2.style.visibility = "hidden";
-        document.getElementById("$polje2").src="./Karte/00.png";
-        $polje2.style.visibility = "visible";
+        $field_1.style.visibility = "hidden";
+        document.getElementById("$field_1").src="./Karte/53.png";
+        $field_1.style.visibility = "visible";
+        $field_2.style.visibility = "hidden";
+        document.getElementById("$field_2").src="./Karte/00.png";
+        $field_2.style.visibility = "visible";
         clearInterval(timerJoker2);
     }
     function joker3() {
-        $polje2.style.visibility = "hidden";
-        document.getElementById("$polje2").src="./Karte/53.png";
-        $polje2.style.visibility = "visible";
-        $polje3.style.visibility = "hidden";
-        document.getElementById("$polje3").src="./Karte/00.png";
-        $polje3.style.visibility = "visible";
+        $field_2.style.visibility = "hidden";
+        document.getElementById("$field_2").src="./Karte/53.png";
+        $field_2.style.visibility = "visible";
+        $field_3.style.visibility = "hidden";
+        document.getElementById("$field_3").src="./Karte/00.png";
+        $field_3.style.visibility = "visible";
         clearInterval(timerJoker3);
     }
     function joker4() {
-        $polje3.style.visibility = "hidden";
-        document.getElementById("$polje3").src="./Karte/53.png";
-        $polje3.style.visibility = "visible";
-        $polje4.style.visibility = "hidden";
-        document.getElementById("$polje4").src="./Karte/00.png";
-        $polje4.style.visibility = "visible";
+        $field_3.style.visibility = "hidden";
+        document.getElementById("$field_3").src="./Karte/53.png";
+        $field_3.style.visibility = "visible";
+        $field_4.style.visibility = "hidden";
+        document.getElementById("$field_4").src="./Karte/00.png";
+        $field_4.style.visibility = "visible";
         clearInterval(timerJoker4);
     }
     function joker5() {
-        $polje4.style.visibility = "hidden";
-        document.getElementById("$polje4").src="./Karte/53.png";
-        $polje4.style.visibility = "visible";
-        $polje5.style.visibility = "hidden";
-        document.getElementById("$polje5").src="./Karte/00.png";
-        $polje5.style.visibility = "visible";
+        $field_4.style.visibility = "hidden";
+        document.getElementById("$field_4").src="./Karte/53.png";
+        $field_4.style.visibility = "visible";
+        $field_5.style.visibility = "hidden";
+        document.getElementById("$field_5").src="./Karte/00.png";
+        $field_5.style.visibility = "visible";
         clearInterval(timerJoker5);
     }
     function autohold() {
@@ -452,11 +452,11 @@ if($deal == 0) {
                     poruka2.style.visibility = "hidden";
                     reklama1.style.visibility = "hidden";
                     reklama2.style.visibility = "hidden";
-                    $polje1.style.visibility = "hidden";
-                    $polje2.style.visibility = "hidden";
-                    $polje3.style.visibility = "hidden";
-                    $polje4.style.visibility = "hidden";
-                    $polje5.style.visibility = "hidden";
+                    $field_1.style.visibility = "hidden";
+                    $field_2.style.visibility = "hidden";
+                    $field_3.style.visibility = "hidden";
+                    $field_4.style.visibility = "hidden";
+                    $field_5.style.visibility = "hidden";
                     reklama1.style.visibility = "hidden";
                     reklama2.style.visibility = "hidden";
                     prazneKarte();
