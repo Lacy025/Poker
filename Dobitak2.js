@@ -879,7 +879,7 @@ function Dobitak2() {
 		document.getElementById("dobit7").style.visibility = "hidden";
 		document.getElementById("dobit8").style.visibility = "hidden";
 		document.getElementById("dobit9").style.visibility = "hidden";
-		tabela.style.visibility = "visible";
+		table.style.visibility = "visible";
 
 		document.getElementById("audioDobitak").play();
 		audioDobitak.currentTime = 0;

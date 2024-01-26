@@ -231,12 +231,12 @@ $field_5.style.left = "1530px";
 $field_5.style.top = "320px";
 $field_5.style.visibility = "hidden";
 
-$rucno.style.position = "absolute";
-$rucno.style.left = "0px";
-$rucno.style.top = "5px";
-$rucno.style.visibility = "hidden";
+$hand.style.position = "absolute";
+$hand.style.left = "0px";
+$hand.style.top = "5px";
+$hand.style.visibility = "hidden";
 
-tabela.style.visibility = "hidden";
+table.style.visibility = "hidden";
 
 izborlevo.style.visibility = "hidden";
 izbordesno.style.visibility = "hidden";

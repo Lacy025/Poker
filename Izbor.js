@@ -138,7 +138,7 @@ function IzborKarata(event) {
             Ponistavanje();
             break;
         case 13 :
-            $rucno.style.visibility = "hidden";
+            $hand.style.visibility = "hidden";
             window.removeEventListener("keydown", IzborKarata);
             document.getElementById("audioDeljenje2").play();
             audioDeljenje1.currentTime = 0;

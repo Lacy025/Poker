@@ -115,7 +115,7 @@ if($deal == 0) {
         }
     }
     function Ispis() {
-        tabela.style.visibility = "hidden";
+        table.style.visibility = "hidden";
         document.getElementById("nazivdobitka").style.visibility = "hidden";
         document.getElementById("win_value").style.visibility = "hidden";
         victory.style.visibility = "hidden";
