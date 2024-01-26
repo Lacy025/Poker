@@ -204,7 +204,7 @@ let $k11;
 let $pause_high;
 let $pause_low;
 
-let $karta;
+let $card;
 
 $polje1.style.position = "absolute";
 $polje1.style.left = "10px";

@@ -8,7 +8,7 @@ function Cekanje9() {
         $deal = 12;
         $pause_low = 400;
         $pause_high = 800;
-        $karta = 1;
+        $card = 1;
         document.getElementById("audioVeca").play();
         audioCount1.currentTime = 0;
         $polje01.style.visibility = "visible";
@@ -28,7 +28,7 @@ function Dupliranje() {
     veca.style.visibility = "hidden";
     Karta1_12();
 
-    if($karta<12&&$d<10000) {
+    if($card<12&&$d<10000) {
         veca.style.visibility = "visible";
         document.getElementById("audioVeca").play();
         audioCount1.currentTime = 0;
@@ -46,12 +46,12 @@ function Dupliranje() {
 }
 function Karta1_12() {
 
-    if($karta==1) {
+    if($card == 1) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==2) {
+    if($card == 2) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01) {
             $k00 = Math.floor(Math.random() * 48) + 1;
@@ -60,7 +60,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==3) {
+    if($card == 3) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02) {
             $k00 = Math.floor(Math.random() * 48) + 1;
@@ -69,7 +69,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==4) {
+    if($card == 4) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02 || $k00==$k03) {
             $k00 = Math.floor(Math.random() * 48) + 1;
@@ -78,7 +78,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==5) {
+    if($card == 5) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04) {
             $k00 = Math.floor(Math.random() * 48) + 1;
@@ -87,7 +87,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==6) {
+    if($card == 6) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04 || $k00==$k05) {
             $k00 = Math.floor(Math.random() * 48) + 1;
@@ -96,7 +96,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==7) {
+    if($card == 7) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04 || $k00==$k05 ||
             $k00==$k06) {
@@ -106,7 +106,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==8) {
+    if($card == 8) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04 || $k00==$k05 ||
             $k00==$k06 || $k00==$k07) {
@@ -116,7 +116,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==9) {
+    if($card == 9) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04 || $k00==$k05 ||
             $k00==$k06 || $k00==$k07 || $k00==$k08) {
@@ -126,7 +126,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==10) {
+    if($card == 10) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04 || $k00==$k05 ||
             $k00==$k06 || $k00==$k07 || $k00==$k08 || $k00==$k09) {
@@ -136,7 +136,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==11) {
+    if($card == 11) {
         $k00 = Math.floor(Math.random() * 48) + 1;
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04 || $k00==$k05 ||
             $k00==$k06 || $k00==$k07 || $k00==$k08 || $k00==$k09 || $k00==$k10) {
@@ -146,7 +146,7 @@ function Karta1_12() {
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
-    if($karta==12) {
+    if($card == 12) {
         $polje12.style.visibility = "visible";
     }
 
@@ -327,7 +327,7 @@ function Trecideo3() {
 }
 function Karta() {
 
-    if($karta==1) {
+    if($card == 1) {
         $polje01.style.visibility = "hidden";
         $k01 = $k00;
         $poljeKarte = "$polje01"
@@ -336,7 +336,7 @@ function Karta() {
         izbormanja.style.left = "580px";
         izborveca.style.left = "580px";
     }
-    if($karta==2) {
+    if($card == 2) {
         $polje02.style.visibility = "hidden";
         $k02 = $k00;
         $poljeKarte = "$polje02"
@@ -345,7 +345,7 @@ function Karta() {
         izbormanja.style.left = "650px";
         izborveca.style.left = "650px";
     }
-    if($karta==3) {
+    if($card == 3) {
         $polje03.style.visibility = "hidden";
         $k03 = $k00;
         $poljeKarte = "$polje03"
@@ -354,7 +354,7 @@ function Karta() {
         izbormanja.style.left = "720px";
         izborveca.style.left = "720px";
     }
-    if($karta==4) {
+    if($card == 4) {
         $polje04.style.visibility = "hidden";
         $k04 = $k00;
         $poljeKarte = "$polje04"
@@ -363,7 +363,7 @@ function Karta() {
         izbormanja.style.left = "790px";
         izborveca.style.left = "790px";
     }
-    if($karta==5) {
+    if($card == 5) {
         $polje05.style.visibility = "hidden";
         $k05 = $k00;
         $poljeKarte = "$polje05"
@@ -372,7 +372,7 @@ function Karta() {
         izbormanja.style.left = "860px";
         izborveca.style.left = "860px";
     }
-    if($karta==6) {
+    if($card == 6) {
         $polje06.style.visibility = "hidden";
         $k06 = $k00;
         $poljeKarte = "$polje06"
@@ -381,7 +381,7 @@ function Karta() {
         izbormanja.style.left = "930px";
         izborveca.style.left = "930px";
     }
-    if($karta==7) {
+    if($card == 7) {
         $polje07.style.visibility = "hidden";
         $k07 = $k00;
         $poljeKarte = "$polje07"
@@ -390,7 +390,7 @@ function Karta() {
         izbormanja.style.left = "1000px";
         izborveca.style.left = "1000px";
     }
-    if($karta==8) {
+    if($card == 8) {
         $polje08.style.visibility = "hidden";
         $k08 = $k00;
         $poljeKarte = "$polje08"
@@ -399,7 +399,7 @@ function Karta() {
         izbormanja.style.left = "1070px";
         izborveca.style.left = "1070px";
     }
-    if($karta==9) {
+    if($card == 9) {
         $polje09.style.visibility = "hidden";
         $k09 = $k00;
         $poljeKarte = "$polje09"
@@ -408,7 +408,7 @@ function Karta() {
         izbormanja.style.left = "1140px";
         izborveca.style.left = "1140px";
     }
-    if($karta==10) {
+    if($card == 10) {
         $polje10.style.visibility = "hidden";
         $k10 = $k00;
         $poljeKarte = "$polje10"
@@ -417,7 +417,7 @@ function Karta() {
         izbormanja.style.left = "1210px";
         izborveca.style.left = "1210px";
     }
-    if($karta==11) {
+    if($card == 11) {
         $polje11.style.visibility = "hidden";
         $k11 = $k00;
         $poljeKarte = "$polje11"
@@ -434,7 +434,7 @@ function Pogodio() {
     document.getElementById("win_value").style.visibility = "visible";
     document.getElementById("audioPogodak").play();
     audioPogodak.currentTime = 0;
-    $karta++;
+    $card++;
     $pause_low = $pause_low - 30;
     $pause_high = $pause_high - 60;
     $timerPogodio = setInterval(Dupliranje, 1400);
