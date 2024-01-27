@@ -18,7 +18,7 @@ function Cekanje9() {
 }
 function Dupliranje() {
 
-    clearInterval($timerPogodio);
+    clearInterval($bingo);
     clearInterval($wait_low);
     clearInterval($wait_high);
     clearInterval($victory_1);
@@ -215,7 +215,7 @@ function Kockanje(event) {
                 Brisanje();
                 $Victory_2();
 
-                $pola = Math.floor($d / 2);
+                $half = Math.floor($d / 2);
 
                 $victory_1 = setInterval($Victory_1,500);
                 $victory_2 = setInterval($Victory_2,1000);
@@ -224,8 +224,8 @@ function Kockanje(event) {
                     $Check_3 = setInterval(Pola1,60);
                 }
                 if($d>100 && $d<200) {
-                    $prviDeo = $d - 100;
-                    $drugiDeo = 100 - $pola;
+                    $first_part = $d - 100;
+                    $second_part = 100 - $half;
                     Pola2();
                 }
                 if($d==200) {
@@ -240,14 +240,14 @@ function Kockanje(event) {
 }
 function Pola1() {
 
-    if($d != $pola) {
+    if($d != $half) {
         $Minus_1();
     }
     else {
         clearInterval($Check_3);
         $audioCount2();
         $Victory_1();
-        $timerPogodio = setInterval(Dupliranje, 1000);
+        $bingo = setInterval(Dupliranje, 1000);
     }
 }
 function Pola2() {
@@ -256,31 +256,31 @@ function Pola2() {
 }
 function Prvideo1() {
     $Victory_2();
-    $c = $c + $prviDeo;
+    $c = $c + $first_part;
     document.getElementById("credit").innerHTML = $c;
     $Credit_Value();
-    $d = $d - $prviDeo;
+    $d = $d - $first_part;
     document.getElementById("win_value").innerHTML = $d;
     $audioCount2();
 }
 function Drugideo1() {
     clearInterval($Check_3);
-    if($drugiDeo != 0) {
+    if($second_part != 0) {
         $Minus_1();
         $Check_3 = setInterval(Drugideo1, 60);
-        $drugiDeo--;
+        $second_part --;
     }
     else {
         clearInterval($Check_3);
         $Victory_2();
         $audioCount2();
-        $timerPogodio = setInterval(Dupliranje, 1000);
+        $bingo = setInterval(Dupliranje, 1000);
     }
 }
 function Pola3() {
     clearInterval($Check_3);
     $audioCount2();
-    $timerPogodio = setInterval(Dupliranje, 1000);
+    $bingo = setInterval(Dupliranje, 1000);
 }
 function Pola4() {
     if((Math.floor($d/100)) != ($d/100)) {
@@ -292,18 +292,18 @@ function Pola4() {
     }
 }
 function Prvideo2() {
-    $prviDeo = Math.round((($d/100) - (Math.floor($d/100))) * 100);
+    $first_part = Math.round((($d/100) - (Math.floor($d/100))) * 100);
     Prvideo1();
 }
 function Drugideo2() {
     clearInterval($Check_3);
-    if($d-$pola>99) {
+    if($d - $half > 99) {
         $Minus_100();
         $Check_3 = setInterval(Drugideo2, 1000);
     }
     else {
 
-        if($d-$pola == 0) {
+        if($d - $half == 0) {
             Trecideo3();
         }
         else {
@@ -311,15 +311,15 @@ function Drugideo2() {
             clearInterval($victory_1);
             clearInterval($victory_2);
             $Victory_2();
-            $prviDeo = $d - $pola;
+            $first_part = $d - $half;
             Prvideo1();
-            $timerPogodio = setInterval(Trecideo3, 1000);
+            $bingo = setInterval(Trecideo3, 1000);
         } 
     }
 }
 function Trecideo3() {
     clearInterval($Check_3);
-    clearInterval($timerPogodio);
+    clearInterval($bingo);
     clearInterval($victory_1);
     clearInterval($victory_2);
     $Victory_2();
@@ -330,7 +330,7 @@ function Karta() {
     if($card == 1) {
         $field_01.style.visibility = "hidden";
         $k01 = $k00;
-        $poljeKarte = "$field_01"
+        $card_field = "$field_01"
         Karta00();
         $field_01.style.visibility = "visible";
         low_choice.style.left = "580px";
@@ -339,7 +339,7 @@ function Karta() {
     if($card == 2) {
         $field_02.style.visibility = "hidden";
         $k02 = $k00;
-        $poljeKarte = "$field_02"
+        $card_field = "$field_02"
         Karta00();
         $field_02.style.visibility = "visible";
         low_choice.style.left = "650px";
@@ -348,7 +348,7 @@ function Karta() {
     if($card == 3) {
         $field_03.style.visibility = "hidden";
         $k03 = $k00;
-        $poljeKarte = "$field_03"
+        $card_field = "$field_03"
         Karta00();
         $field_03.style.visibility = "visible";
         low_choice.style.left = "720px";
@@ -357,7 +357,7 @@ function Karta() {
     if($card == 4) {
         $field_04.style.visibility = "hidden";
         $k04 = $k00;
-        $poljeKarte = "$field_04"
+        $card_field = "$field_04"
         Karta00();
         $field_04.style.visibility = "visible";
         low_choice.style.left = "790px";
@@ -366,7 +366,7 @@ function Karta() {
     if($card == 5) {
         $field_05.style.visibility = "hidden";
         $k05 = $k00;
-        $poljeKarte = "$field_05"
+        $card_field = "$field_05"
         Karta00();
         $field_05.style.visibility = "visible";
         low_choice.style.left = "860px";
@@ -375,7 +375,7 @@ function Karta() {
     if($card == 6) {
         $field_06.style.visibility = "hidden";
         $k06 = $k00;
-        $poljeKarte = "$field_06"
+        $card_field = "$field_06"
         Karta00();
         $field_06.style.visibility = "visible";
         low_choice.style.left = "930px";
@@ -384,7 +384,7 @@ function Karta() {
     if($card == 7) {
         $field_07.style.visibility = "hidden";
         $k07 = $k00;
-        $poljeKarte = "$field_07"
+        $card_field = "$field_07"
         Karta00();
         $field_07.style.visibility = "visible";
         low_choice.style.left = "1000px";
@@ -393,7 +393,7 @@ function Karta() {
     if($card == 8) {
         $field_08.style.visibility = "hidden";
         $k08 = $k00;
-        $poljeKarte = "$field_08"
+        $card_field = "$field_08"
         Karta00();
         $field_08.style.visibility = "visible";
         low_choice.style.left = "1070px";
@@ -402,7 +402,7 @@ function Karta() {
     if($card == 9) {
         $field_09.style.visibility = "hidden";
         $k09 = $k00;
-        $poljeKarte = "$field_09"
+        $card_field = "$field_09"
         Karta00();
         $field_09.style.visibility = "visible";
         low_choice.style.left = "1140px";
@@ -411,7 +411,7 @@ function Karta() {
     if($card == 10) {
         $field_10.style.visibility = "hidden";
         $k10 = $k00;
-        $poljeKarte = "$field_10"
+        $card_field = "$field_10"
         Karta00();
         $field_10.style.visibility = "visible";
         low_choice.style.left = "1210px";
@@ -420,7 +420,7 @@ function Karta() {
     if($card == 11) {
         $field_11.style.visibility = "hidden";
         $k11 = $k00;
-        $poljeKarte = "$field_11"
+        $card_field = "$field_11"
         Karta00();
         $field_11.style.visibility = "visible";
         low_choice.style.left = "1280px";
@@ -437,7 +437,7 @@ function Pogodio() {
     $card++;
     $pause_low = $pause_low - 30;
     $pause_high = $pause_high - 60;
-    $timerPogodio = setInterval(Dupliranje, 1400);
+    $bingo = setInterval(Dupliranje, 1400);
 }
 function Promasio() {
     $d = 0;
@@ -462,147 +462,147 @@ function Manja() {
 function Karta00() {
 
     if($k00==1) {
-        document.getElementById($poljeKarte).src="./Karte/01.png";
+        document.getElementById($card_field).src="./Karte/01.png";
     }
     if($k00==2) {
-        document.getElementById($poljeKarte).src="./Karte/02.png";
+        document.getElementById($card_field).src="./Karte/02.png";
     }
     if($k00==3) {
-        document.getElementById($poljeKarte).src="./Karte/03.png";
+        document.getElementById($card_field).src="./Karte/03.png";
     }
     if($k00==4) {
-        document.getElementById($poljeKarte).src="./Karte/04.png";
+        document.getElementById($card_field).src="./Karte/04.png";
     }
     if($k00==5) {
-        document.getElementById($poljeKarte).src="./Karte/05.png";
+        document.getElementById($card_field).src="./Karte/05.png";
     }
     if($k00==6) {
-        document.getElementById($poljeKarte).src="./Karte/06.png";
+        document.getElementById($card_field).src="./Karte/06.png";
     }
     if($k00==7) {
-        document.getElementById($poljeKarte).src="./Karte/14.png";
+        document.getElementById($card_field).src="./Karte/14.png";
     }
     if($k00==8) {
-        document.getElementById($poljeKarte).src="./Karte/15.png";
+        document.getElementById($card_field).src="./Karte/15.png";
     }
     if($k00==9) {
-        document.getElementById($poljeKarte).src="./Karte/16.png";
+        document.getElementById($card_field).src="./Karte/16.png";
     }
     if($k00==10) {
-        document.getElementById($poljeKarte).src="./Karte/17.png";
+        document.getElementById($card_field).src="./Karte/17.png";
     }
     if($k00==11) {
-        document.getElementById($poljeKarte).src="./Karte/18.png";
+        document.getElementById($card_field).src="./Karte/18.png";
     }
     if($k00==12) {
-        document.getElementById($poljeKarte).src="./Karte/19.png";
+        document.getElementById($card_field).src="./Karte/19.png";
     }
     if($k00==13) {
-        document.getElementById($poljeKarte).src="./Karte/27.png";
+        document.getElementById($card_field).src="./Karte/27.png";
     }
     if($k00==14) {
-        document.getElementById($poljeKarte).src="./Karte/28.png";
+        document.getElementById($card_field).src="./Karte/28.png";
     }
     if($k00==15) {
-        document.getElementById($poljeKarte).src="./Karte/29.png";
+        document.getElementById($card_field).src="./Karte/29.png";
     }
     if($k00==16) {
-        document.getElementById($poljeKarte).src="./Karte/30.png";
+        document.getElementById($card_field).src="./Karte/30.png";
     }
     if($k00==17) {
-        document.getElementById($poljeKarte).src="./Karte/31.png";
+        document.getElementById($card_field).src="./Karte/31.png";
     }
     if($k00==18) {
-        document.getElementById($poljeKarte).src="./Karte/32.png";
+        document.getElementById($card_field).src="./Karte/32.png";
     }
     if($k00==19) {
-        document.getElementById($poljeKarte).src="./Karte/40.png";
+        document.getElementById($card_field).src="./Karte/40.png";
     }
     if($k00==20) {
-        document.getElementById($poljeKarte).src="./Karte/41.png";
+        document.getElementById($card_field).src="./Karte/41.png";
     }
     if($k00==21) {
-        document.getElementById($poljeKarte).src="./Karte/42.png";
+        document.getElementById($card_field).src="./Karte/42.png";
     }
     if($k00==22) {
-        document.getElementById($poljeKarte).src="./Karte/43.png";
+        document.getElementById($card_field).src="./Karte/43.png";
     }
     if($k00==23) {
-        document.getElementById($poljeKarte).src="./Karte/44.png";
+        document.getElementById($card_field).src="./Karte/44.png";
     }
     if($k00==24) {
-        document.getElementById($poljeKarte).src="./Karte/45.png";
+        document.getElementById($card_field).src="./Karte/45.png";
     }
     if($k00==25) {
-        document.getElementById($poljeKarte).src="./Karte/08.png";
+        document.getElementById($card_field).src="./Karte/08.png";
     }
     if($k00==26) {
-        document.getElementById($poljeKarte).src="./Karte/09.png";
+        document.getElementById($card_field).src="./Karte/09.png";
     }
     if($k00==27) {
-        document.getElementById($poljeKarte).src="./Karte/10.png";
+        document.getElementById($card_field).src="./Karte/10.png";
     }
     if($k00==28) {
-        document.getElementById($poljeKarte).src="./Karte/11.png";
+        document.getElementById($card_field).src="./Karte/11.png";
     }
     if($k00==29) {
-        document.getElementById($poljeKarte).src="./Karte/12.png";
+        document.getElementById($card_field).src="./Karte/12.png";
     }
     if($k00==30) {
-        document.getElementById($poljeKarte).src="./Karte/13.png";
+        document.getElementById($card_field).src="./Karte/13.png";
     }
     if($k00==31) {
-        document.getElementById($poljeKarte).src="./Karte/21.png";
+        document.getElementById($card_field).src="./Karte/21.png";
     }
     if($k00==32) {
-        document.getElementById($poljeKarte).src="./Karte/22.png";
+        document.getElementById($card_field).src="./Karte/22.png";
     }
     if($k00==33) {
-        document.getElementById($poljeKarte).src="./Karte/23.png";
+        document.getElementById($card_field).src="./Karte/23.png";
     }
     if($k00==34) {
-        document.getElementById($poljeKarte).src="./Karte/24.png";
+        document.getElementById($card_field).src="./Karte/24.png";
     }
     if($k00==35) {
-        document.getElementById($poljeKarte).src="./Karte/25.png";
+        document.getElementById($card_field).src="./Karte/25.png";
     }
     if($k00==36) {
-        document.getElementById($poljeKarte).src="./Karte/26.png";
+        document.getElementById($card_field).src="./Karte/26.png";
     }
     if($k00==37) {
-        document.getElementById($poljeKarte).src="./Karte/34.png";
+        document.getElementById($card_field).src="./Karte/34.png";
     }
     if($k00==38) {
-        document.getElementById($poljeKarte).src="./Karte/35.png";
+        document.getElementById($card_field).src="./Karte/35.png";
     }
     if($k00==39) {
-        document.getElementById($poljeKarte).src="./Karte/36.png";
+        document.getElementById($card_field).src="./Karte/36.png";
     }
     if($k00==40) {
-        document.getElementById($poljeKarte).src="./Karte/37.png";
+        document.getElementById($card_field).src="./Karte/37.png";
     }
     if($k00==41) {
-        document.getElementById($poljeKarte).src="./Karte/38.png";
+        document.getElementById($card_field).src="./Karte/38.png";
     }
     if($k00==42) {
-        document.getElementById($poljeKarte).src="./Karte/39.png";
+        document.getElementById($card_field).src="./Karte/39.png";
     }
     if($k00==43) {
-        document.getElementById($poljeKarte).src="./Karte/47.png";
+        document.getElementById($card_field).src="./Karte/47.png";
     }
     if($k00==44) {
-        document.getElementById($poljeKarte).src="./Karte/48.png";
+        document.getElementById($card_field).src="./Karte/48.png";
     }
     if($k00==45) {
-        document.getElementById($poljeKarte).src="./Karte/49.png";
+        document.getElementById($card_field).src="./Karte/49.png";
     }
     if($k00==46) {
-        document.getElementById($poljeKarte).src="./Karte/50.png";
+        document.getElementById($card_field).src="./Karte/50.png";
     }
     if($k00==47) {
-        document.getElementById($poljeKarte).src="./Karte/51.png";
+        document.getElementById($card_field).src="./Karte/51.png";
     }
     if($k00==48) {
-        document.getElementById($poljeKarte).src="./Karte/52.png";
+        document.getElementById($card_field).src="./Karte/52.png";
     }
 }

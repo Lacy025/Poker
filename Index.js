@@ -313,11 +313,11 @@ $field_12.style.visibility = "hidden";
 low_choice.style.visibility = "hidden";
 high_choice.style.visibility = "hidden";
 
-let $poljeKarte = "$field_00";
-let $timerPogodio;
-let $pola;
-let $prviDeo;
-let $drugiDeo;
+let $card_field = "$field_00";
+let $bingo;
+let $half;
+let $first_part;
+let $second_part;
 
 $includeJs("Poker.js");
 
