@@ -964,8 +964,8 @@ function Dobitak2() {
 	}
 	else{
 		if($d<10000) {
-			izborlevo.style.visibility = "visible"
-			izbordesno.style.visibility = "hidden"
+			left_choice.style.visibility = "visible"
+			right_choice.style.visibility = "hidden"
 			choice_1 = setInterval(Izbordesno,500);
 			choice_2 = setInterval(Izborlevo,1000);
 
@@ -977,12 +977,12 @@ function Dobitak2() {
 		}
 	}
 	function Izborlevo() {
-		izborlevo.style.visibility = "visible";
-		izbordesno.style.visibility = "hidden";
+		left_choice.style.visibility = "visible";
+		right_choice.style.visibility = "hidden";
 	}
 	function Izbordesno() {
-		izborlevo.style.visibility = "hidden";
-		izbordesno.style.visibility = "visible";
+		left_choice.style.visibility = "hidden";
+		right_choice.style.visibility = "visible";
 	}
 	function DupliranjeKasiranje(event) {
 		switch(event.keyCode) {
@@ -991,8 +991,8 @@ function Dobitak2() {
 				window.removeEventListener("keydown", DupliranjeKasiranje);
 				clearInterval(choice_1);
 				clearInterval(choice_2);
-				izborlevo.style.visibility = "hidden";
-				izbordesno.style.visibility = "hidden";
+				left_choice.style.visibility = "hidden";
+				right_choice.style.visibility = "hidden";
 				audioDobitak.currentTime = 5;
 				$field_1.style.visibility = "hidden";
 				$field_2.style.visibility = "hidden";
@@ -1002,19 +1002,19 @@ function Dobitak2() {
 				$deal = 10;
 				console.log($deal);
 				break;
-				// DUPLIRANJE
+				// DOUBLING
 			case 32 :
 				window.removeEventListener("keydown", DupliranjeKasiranje);
 				clearInterval(choice_1);
 				clearInterval(choice_2);
-				izborlevo.style.visibility = "hidden";
-				izbordesno.style.visibility = "hidden";
+				left_choice.style.visibility = "hidden";
+				right_choice.style.visibility = "hidden";
 				victory.style.visibility = "visible";
 				audioDobitak.currentTime = 5;
 				$deal = 11;
 				console.log($deal);
 				break;
-				// KASIRANJE
+				// CASHING
 			}
 		}
 	function Nemadobitka() {

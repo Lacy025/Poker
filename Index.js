@@ -238,82 +238,82 @@ $hand.style.visibility = "hidden";
 
 table.style.visibility = "hidden";
 
-izborlevo.style.visibility = "hidden";
-izbordesno.style.visibility = "hidden";
+left_choice.style.visibility = "hidden";
+right_choice.style.visibility = "hidden";
 victory.style.visibility = "hidden";
 
-veca.style.visibility = "hidden";
-manja.style.visibility = "hidden";
+high.style.visibility = "hidden";
+low.style.visibility = "hidden";
 
-$polje00.style.position = "absolute";
-$polje00.style.left = "10px";
-$polje00.style.top = "320px";
-$polje00.style.visibility = "hidden";
+$field_00.style.position = "absolute";
+$field_00.style.left = "10px";
+$field_00.style.top = "320px";
+$field_00.style.visibility = "hidden";
 
-$polje01.style.position = "absolute";
-$polje01.style.left = "10px";
-$polje01.style.top = "320px";
-$polje01.style.visibility = "hidden";
+$field_01.style.position = "absolute";
+$field_01.style.left = "10px";
+$field_01.style.top = "320px";
+$field_01.style.visibility = "hidden";
 
-$polje02.style.position = "absolute";
-$polje02.style.left = "80px";
-$polje02.style.top = "320px";
-$polje02.style.visibility = "hidden";
+$field_02.style.position = "absolute";
+$field_02.style.left = "80px";
+$field_02.style.top = "320px";
+$field_02.style.visibility = "hidden";
 
-$polje03.style.position = "absolute";
-$polje03.style.left = "150px";
-$polje03.style.top = "320px";
-$polje03.style.visibility = "hidden";
+$field_03.style.position = "absolute";
+$field_03.style.left = "150px";
+$field_03.style.top = "320px";
+$field_03.style.visibility = "hidden";
 
-$polje04.style.position = "absolute";
-$polje04.style.left = "220px";
-$polje04.style.top = "320px";
-$polje04.style.visibility = "hidden";
+$field_04.style.position = "absolute";
+$field_04.style.left = "220px";
+$field_04.style.top = "320px";
+$field_04.style.visibility = "hidden";
 
-$polje05.style.position = "absolute";
-$polje05.style.left = "290px";
-$polje05.style.top = "320px";
-$polje05.style.visibility = "hidden";
+$field_05.style.position = "absolute";
+$field_05.style.left = "290px";
+$field_05.style.top = "320px";
+$field_05.style.visibility = "hidden";
 
-$polje06.style.position = "absolute";
-$polje06.style.left = "360px";
-$polje06.style.top = "320px";
-$polje06.style.visibility = "hidden";
+$field_06.style.position = "absolute";
+$field_06.style.left = "360px";
+$field_06.style.top = "320px";
+$field_06.style.visibility = "hidden";
 
-$polje07.style.position = "absolute";
-$polje07.style.left = "430px";
-$polje07.style.top = "320px";
-$polje07.style.visibility = "hidden";
+$field_07.style.position = "absolute";
+$field_07.style.left = "430px";
+$field_07.style.top = "320px";
+$field_07.style.visibility = "hidden";
 
-$polje08.style.position = "absolute";
-$polje08.style.left = "500px";
-$polje08.style.top = "320px";
-$polje08.style.visibility = "hidden";
+$field_08.style.position = "absolute";
+$field_08.style.left = "500px";
+$field_08.style.top = "320px";
+$field_08.style.visibility = "hidden";
 
-$polje09.style.position = "absolute";
-$polje09.style.left = "570px";
-$polje09.style.top = "320px";
-$polje09.style.visibility = "hidden";
+$field_09.style.position = "absolute";
+$field_09.style.left = "570px";
+$field_09.style.top = "320px";
+$field_09.style.visibility = "hidden";
 
-$polje10.style.position = "absolute";
-$polje10.style.left = "640px";
-$polje10.style.top = "320px";
-$polje10.style.visibility = "hidden";
+$field_10.style.position = "absolute";
+$field_10.style.left = "640px";
+$field_10.style.top = "320px";
+$field_10.style.visibility = "hidden";
 
-$polje11.style.position = "absolute";
-$polje11.style.left = "710px";
-$polje11.style.top = "320px";
-$polje11.style.visibility = "hidden";
+$field_11.style.position = "absolute";
+$field_11.style.left = "710px";
+$field_11.style.top = "320px";
+$field_11.style.visibility = "hidden";
 
-$polje12.style.position = "absolute";
-$polje12.style.left = "780px";
-$polje12.style.top = "320px";
-$polje12.style.visibility = "hidden";
+$field_12.style.position = "absolute";
+$field_12.style.left = "780px";
+$field_12.style.top = "320px";
+$field_12.style.visibility = "hidden";
 
-izbormanja.style.visibility = "hidden";
-izborveca.style.visibility = "hidden";
+low_choice.style.visibility = "hidden";
+high_choice.style.visibility = "hidden";
 
-let $poljeKarte = "$polje00";
+let $poljeKarte = "$field_00";
 let $timerPogodio;
 let $pola;
 let $prviDeo;

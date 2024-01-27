@@ -11,8 +11,8 @@ function Cekanje9() {
         $card = 1;
         document.getElementById("audioVeca").play();
         audioCount1.currentTime = 0;
-        $polje01.style.visibility = "visible";
-        veca.style.visibility = "visible";
+        $field_01.style.visibility = "visible";
+        high.style.visibility = "visible";
         Dupliranje();
     }
 }
@@ -24,12 +24,12 @@ function Dupliranje() {
     clearInterval($victory_1);
     clearInterval($victory_2);
     victory.style.visibility = "hidden";
-    manja.style.visibility = "hidden";
-    veca.style.visibility = "hidden";
+    low.style.visibility = "hidden";
+    high.style.visibility = "hidden";
     Karta1_12();
 
     if($card<12&&$d<10000) {
-        veca.style.visibility = "visible";
+        high.style.visibility = "visible";
         document.getElementById("audioVeca").play();
         audioCount1.currentTime = 0;
         window.addEventListener("keydown", Kockanje);
@@ -37,8 +37,8 @@ function Dupliranje() {
     else {
         clearInterval($wait_low);
         clearInterval($wait_high);
-        manja.style.visibility = "hidden";
-        veca.style.visibility = "hidden";
+        low.style.visibility = "hidden";
+        high.style.visibility = "hidden";
         window.removeEventListener("keydown", Kockanje);
         victory.style.visibility = "visible";
         $deal = 11;
@@ -56,7 +56,7 @@ function Karta1_12() {
         while($k00==$k01) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje02.style.visibility = "visible";
+        $field_02.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -65,7 +65,7 @@ function Karta1_12() {
         while($k00==$k01 || $k00==$k02) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje03.style.visibility = "visible";
+        $field_03.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -74,7 +74,7 @@ function Karta1_12() {
         while($k00==$k01 || $k00==$k02 || $k00==$k03) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje04.style.visibility = "visible";
+        $field_04.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -83,7 +83,7 @@ function Karta1_12() {
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje05.style.visibility = "visible";
+        $field_05.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -92,7 +92,7 @@ function Karta1_12() {
         while($k00==$k01 || $k00==$k02 || $k00==$k03 || $k00==$k04 || $k00==$k05) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje06.style.visibility = "visible";
+        $field_06.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -102,7 +102,7 @@ function Karta1_12() {
             $k00==$k06) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje07.style.visibility = "visible";
+        $field_07.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -112,7 +112,7 @@ function Karta1_12() {
             $k00==$k06 || $k00==$k07) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje08.style.visibility = "visible";
+        $field_08.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -122,7 +122,7 @@ function Karta1_12() {
             $k00==$k06 || $k00==$k07 || $k00==$k08) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje09.style.visibility = "visible";
+        $field_09.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -132,7 +132,7 @@ function Karta1_12() {
             $k00==$k06 || $k00==$k07 || $k00==$k08 || $k00==$k09) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje10.style.visibility = "visible";
+        $field_10.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
@@ -142,12 +142,12 @@ function Karta1_12() {
             $k00==$k06 || $k00==$k07 || $k00==$k08 || $k00==$k09 || $k00==$k10) {
             $k00 = Math.floor(Math.random() * 48) + 1;
         }
-        $polje11.style.visibility = "visible";
+        $field_11.style.visibility = "visible";
         $wait_low = setInterval(Manja, $pause_low);
         $wait_high = setInterval(Veca, $pause_high);
     }
     if($card == 12) {
-        $polje12.style.visibility = "visible";
+        $field_12.style.visibility = "visible";
     }
 
 
@@ -159,14 +159,14 @@ function Brisanje() {
     window.removeEventListener("keydown", Kockanje);
     clearInterval($wait_low);
     clearInterval($wait_high);
-    manja.style.visibility = "hidden";
-    veca.style.visibility = "hidden";
+    low.style.visibility = "hidden";
+    high.style.visibility = "hidden";
 }
 function Kockanje(event) {
 
     switch(event.keyCode) {
 
-        case 17 :  // TASTER CTRL - DUPLIRANJE
+        case 17 :  // CTRL - DOUBLING
 
             Brisanje();
 
@@ -175,10 +175,10 @@ function Kockanje(event) {
             document.getElementById("win_value").innerHTML = $d;
             document.getElementById("win_value").style.visibility = "hidden";
 
-            if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {  // MANJA
+            if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {  // LOW
                 
-                izborveca.style.visibility = "hidden";
-                izbormanja.style.visibility = "visible";
+                high_choice.style.visibility = "hidden";
+                low_choice.style.visibility = "visible";
 
                 if($k00<25) {
                     Pogodio();
@@ -188,10 +188,10 @@ function Kockanje(event) {
                 }
                 break;
             }
-            if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {  // VEĆA
+            if (event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT) {  // HIGH
             
-                izbormanja.style.visibility = "hidden";
-                izborveca.style.visibility = "visible";
+                low_choice.style.visibility = "hidden";
+                high_choice.style.visibility = "visible";
 
                 if($k00>24) {
                     Pogodio();
@@ -328,103 +328,103 @@ function Trecideo3() {
 function Karta() {
 
     if($card == 1) {
-        $polje01.style.visibility = "hidden";
+        $field_01.style.visibility = "hidden";
         $k01 = $k00;
-        $poljeKarte = "$polje01"
+        $poljeKarte = "$field_01"
         Karta00();
-        $polje01.style.visibility = "visible";
-        izbormanja.style.left = "580px";
-        izborveca.style.left = "580px";
+        $field_01.style.visibility = "visible";
+        low_choice.style.left = "580px";
+        high_choice.style.left = "580px";
     }
     if($card == 2) {
-        $polje02.style.visibility = "hidden";
+        $field_02.style.visibility = "hidden";
         $k02 = $k00;
-        $poljeKarte = "$polje02"
+        $poljeKarte = "$field_02"
         Karta00();
-        $polje02.style.visibility = "visible";
-        izbormanja.style.left = "650px";
-        izborveca.style.left = "650px";
+        $field_02.style.visibility = "visible";
+        low_choice.style.left = "650px";
+        high_choice.style.left = "650px";
     }
     if($card == 3) {
-        $polje03.style.visibility = "hidden";
+        $field_03.style.visibility = "hidden";
         $k03 = $k00;
-        $poljeKarte = "$polje03"
+        $poljeKarte = "$field_03"
         Karta00();
-        $polje03.style.visibility = "visible";
-        izbormanja.style.left = "720px";
-        izborveca.style.left = "720px";
+        $field_03.style.visibility = "visible";
+        low_choice.style.left = "720px";
+        high_choice.style.left = "720px";
     }
     if($card == 4) {
-        $polje04.style.visibility = "hidden";
+        $field_04.style.visibility = "hidden";
         $k04 = $k00;
-        $poljeKarte = "$polje04"
+        $poljeKarte = "$field_04"
         Karta00();
-        $polje04.style.visibility = "visible";
-        izbormanja.style.left = "790px";
-        izborveca.style.left = "790px";
+        $field_04.style.visibility = "visible";
+        low_choice.style.left = "790px";
+        high_choice.style.left = "790px";
     }
     if($card == 5) {
-        $polje05.style.visibility = "hidden";
+        $field_05.style.visibility = "hidden";
         $k05 = $k00;
-        $poljeKarte = "$polje05"
+        $poljeKarte = "$field_05"
         Karta00();
-        $polje05.style.visibility = "visible";
-        izbormanja.style.left = "860px";
-        izborveca.style.left = "860px";
+        $field_05.style.visibility = "visible";
+        low_choice.style.left = "860px";
+        high_choice.style.left = "860px";
     }
     if($card == 6) {
-        $polje06.style.visibility = "hidden";
+        $field_06.style.visibility = "hidden";
         $k06 = $k00;
-        $poljeKarte = "$polje06"
+        $poljeKarte = "$field_06"
         Karta00();
-        $polje06.style.visibility = "visible";
-        izbormanja.style.left = "930px";
-        izborveca.style.left = "930px";
+        $field_06.style.visibility = "visible";
+        low_choice.style.left = "930px";
+        high_choice.style.left = "930px";
     }
     if($card == 7) {
-        $polje07.style.visibility = "hidden";
+        $field_07.style.visibility = "hidden";
         $k07 = $k00;
-        $poljeKarte = "$polje07"
+        $poljeKarte = "$field_07"
         Karta00();
-        $polje07.style.visibility = "visible";
-        izbormanja.style.left = "1000px";
-        izborveca.style.left = "1000px";
+        $field_07.style.visibility = "visible";
+        low_choice.style.left = "1000px";
+        high_choice.style.left = "1000px";
     }
     if($card == 8) {
-        $polje08.style.visibility = "hidden";
+        $field_08.style.visibility = "hidden";
         $k08 = $k00;
-        $poljeKarte = "$polje08"
+        $poljeKarte = "$field_08"
         Karta00();
-        $polje08.style.visibility = "visible";
-        izbormanja.style.left = "1070px";
-        izborveca.style.left = "1070px";
+        $field_08.style.visibility = "visible";
+        low_choice.style.left = "1070px";
+        high_choice.style.left = "1070px";
     }
     if($card == 9) {
-        $polje09.style.visibility = "hidden";
+        $field_09.style.visibility = "hidden";
         $k09 = $k00;
-        $poljeKarte = "$polje09"
+        $poljeKarte = "$field_09"
         Karta00();
-        $polje09.style.visibility = "visible";
-        izbormanja.style.left = "1140px";
-        izborveca.style.left = "1140px";
+        $field_09.style.visibility = "visible";
+        low_choice.style.left = "1140px";
+        high_choice.style.left = "1140px";
     }
     if($card == 10) {
-        $polje10.style.visibility = "hidden";
+        $field_10.style.visibility = "hidden";
         $k10 = $k00;
-        $poljeKarte = "$polje10"
+        $poljeKarte = "$field_10"
         Karta00();
-        $polje10.style.visibility = "visible";
-        izbormanja.style.left = "1210px";
-        izborveca.style.left = "1210px";
+        $field_10.style.visibility = "visible";
+        low_choice.style.left = "1210px";
+        high_choice.style.left = "1210px";
     }
     if($card == 11) {
-        $polje11.style.visibility = "hidden";
+        $field_11.style.visibility = "hidden";
         $k11 = $k00;
-        $poljeKarte = "$polje11"
+        $poljeKarte = "$field_11"
         Karta00();
-        $polje11.style.visibility = "visible";
-        izbormanja.style.left = "1280px";
-        izborveca.style.left = "1280px";
+        $field_11.style.visibility = "visible";
+        low_choice.style.left = "1280px";
+        high_choice.style.left = "1280px";
     }
 }
 function Pogodio() {
@@ -446,15 +446,15 @@ function Promasio() {
     $deal = 11;
 }
 function Veca() {
-    veca.style.visibility = "visible";
-    manja.style.visibility = "hidden";
+    high.style.visibility = "visible";
+    low.style.visibility = "hidden";
     audioManja.currentTime = 1;
     document.getElementById("audioVeca").play();
     audioVeca.currentTime = 0;
 }
 function Manja() {
-    veca.style.visibility = "hidden";
-    manja.style.visibility = "visible";
+    high.style.visibility = "hidden";
+    low.style.visibility = "visible";
     audioVeca.currentTime = 1;
     document.getElementById("audioManja").play();
     audioManja.currentTime = 0;

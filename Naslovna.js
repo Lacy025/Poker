@@ -66,33 +66,33 @@ if($deal == 0) {
         
     }
     function Brisanje1_12() {
-        $polje00.style.visibility = "hidden";
-        $polje01.style.visibility = "hidden";
-        $polje02.style.visibility = "hidden";
-        $polje03.style.visibility = "hidden";
-        $polje04.style.visibility = "hidden";
-        $polje05.style.visibility = "hidden";
-        $polje06.style.visibility = "hidden";
-        $polje07.style.visibility = "hidden";
-        $polje08.style.visibility = "hidden";
-        $polje09.style.visibility = "hidden";
-        $polje10.style.visibility = "hidden";
-        $polje11.style.visibility = "hidden";
-        $polje12.style.visibility = "hidden";
-        document.getElementById("$polje00").src="./Karte/53.png";
-        document.getElementById("$polje01").src="./Karte/53.png";
-        document.getElementById("$polje02").src="./Karte/53.png";
-        document.getElementById("$polje03").src="./Karte/53.png";
-        document.getElementById("$polje04").src="./Karte/53.png";
-        document.getElementById("$polje05").src="./Karte/53.png";
-        document.getElementById("$polje06").src="./Karte/53.png";
-        document.getElementById("$polje07").src="./Karte/53.png";
-        document.getElementById("$polje08").src="./Karte/53.png";
-        document.getElementById("$polje09").src="./Karte/53.png";
-        document.getElementById("$polje10").src="./Karte/53.png";
-        document.getElementById("$polje11").src="./Karte/53.png";
-        izbormanja.style.visibility = "hidden";
-        izborveca.style.visibility = "hidden";
+        $field_00.style.visibility = "hidden";
+        $field_01.style.visibility = "hidden";
+        $field_02.style.visibility = "hidden";
+        $field_03.style.visibility = "hidden";
+        $field_04.style.visibility = "hidden";
+        $field_05.style.visibility = "hidden";
+        $field_06.style.visibility = "hidden";
+        $field_07.style.visibility = "hidden";
+        $field_08.style.visibility = "hidden";
+        $field_09.style.visibility = "hidden";
+        $field_10.style.visibility = "hidden";
+        $field_11.style.visibility = "hidden";
+        $field_12.style.visibility = "hidden";
+        document.getElementById("$field_00").src="./Karte/53.png";
+        document.getElementById("$field_01").src="./Karte/53.png";
+        document.getElementById("$field_02").src="./Karte/53.png";
+        document.getElementById("$field_03").src="./Karte/53.png";
+        document.getElementById("$field_04").src="./Karte/53.png";
+        document.getElementById("$field_05").src="./Karte/53.png";
+        document.getElementById("$field_06").src="./Karte/53.png";
+        document.getElementById("$field_07").src="./Karte/53.png";
+        document.getElementById("$field_08").src="./Karte/53.png";
+        document.getElementById("$field_09").src="./Karte/53.png";
+        document.getElementById("$field_10").src="./Karte/53.png";
+        document.getElementById("$field_11").src="./Karte/53.png";
+        low_choice.style.visibility = "hidden";
+        high_choice.style.visibility = "hidden";
     }
 
     function Prviekran() {
