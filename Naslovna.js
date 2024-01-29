@@ -437,8 +437,8 @@ if($deal == 0) {
                     audioIntro.currentTime = 5;
                     $c = $c - $u;
                     $Credit_Value();
-                    document.getElementById("audioDeljenje1").play();
-                    audioDeljenje1.currentTime = 0;
+                    document.getElementById("audio_deal_1").play();
+                    audio_deal_1.currentTime = 0;
                     clearInterval(timerPoruka1);
                     clearInterval(timerPoruka2);
                     clearInterval(timerImaReklame);

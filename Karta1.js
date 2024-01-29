@@ -1,20 +1,20 @@
-$waiting_1 = setInterval(Cekanje1, 100);
+$waiting_1 = setInterval(Wait_1, 100);
 
-function Cekanje1() {
+function Wait_1() {
     console.log($deal);
 
     if($deal == 2) {
         clearInterval($waiting_1);
         console.log($deal);
         $Audio_Cards = setInterval(Audio_Cards,200);
-        $Audio_Card_1 = setInterval($Karta1, 200);
+        $Audio_Card_1 = setInterval($Card_1, 200);
     }
 }
 function Audio_Cards() {
-    document.getElementById("audioKarta-1-5").play();
-    audioDeljenje1.currentTime = 0;
+    document.getElementById("audio_cards").play();
+    audio_deal_1.currentTime = 0;
 }
-function $Karta1() {
+function $Card_1() {
 
     clearInterval($card_1);
     clearInterval($Audio_Cards);
