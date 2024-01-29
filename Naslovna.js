@@ -116,29 +116,29 @@ if($deal == 0) {
     }
     function Ispis() {
         table.style.visibility = "hidden";
-        document.getElementById("nazivdobitka").style.visibility = "hidden";
+        document.getElementById("win_name").style.visibility = "hidden";
         document.getElementById("win_value").style.visibility = "hidden";
         victory.style.visibility = "hidden";
-        document.getElementById("dobitak0").style.visibility = "visible";
-        document.getElementById("dobitak1").style.visibility = "visible";
-        document.getElementById("dobitak2").style.visibility = "visible";
-        document.getElementById("dobitak3").style.visibility = "visible";
-        document.getElementById("dobitak4").style.visibility = "visible";
-        document.getElementById("dobitak5").style.visibility = "visible";
-        document.getElementById("dobitak6").style.visibility = "visible";
-        document.getElementById("dobitak7").style.visibility = "visible";
-        document.getElementById("dobitak8").style.visibility = "visible";
-        document.getElementById("dobitak9").style.visibility = "visible";
-        document.getElementById("dobit0").style.visibility = "visible";
-        document.getElementById("dobit1").style.visibility = "visible";
-        document.getElementById("dobit2").style.visibility = "visible";
-        document.getElementById("dobit3").style.visibility = "visible";
-        document.getElementById("dobit4").style.visibility = "visible";
-        document.getElementById("dobit5").style.visibility = "visible";
-        document.getElementById("dobit6").style.visibility = "visible";
-        document.getElementById("dobit7").style.visibility = "visible";
-        document.getElementById("dobit8").style.visibility = "visible";
-        document.getElementById("dobit9").style.visibility = "visible";
+        document.getElementById("win_1").style.visibility = "visible";
+        document.getElementById("win_2").style.visibility = "visible";
+        document.getElementById("win_3").style.visibility = "visible";
+        document.getElementById("win_4").style.visibility = "visible";
+        document.getElementById("win_5").style.visibility = "visible";
+        document.getElementById("win_6").style.visibility = "visible";
+        document.getElementById("win_7").style.visibility = "visible";
+        document.getElementById("win_8").style.visibility = "visible";
+        document.getElementById("win_9").style.visibility = "visible";
+        document.getElementById("win_10").style.visibility = "visible";
+        document.getElementById("value_1").style.visibility = "visible";
+        document.getElementById("value_2").style.visibility = "visible";
+        document.getElementById("value_3").style.visibility = "visible";
+        document.getElementById("value_4").style.visibility = "visible";
+        document.getElementById("value_5").style.visibility = "visible";
+        document.getElementById("value_6").style.visibility = "visible";
+        document.getElementById("value_7").style.visibility = "visible";
+        document.getElementById("value_8").style.visibility = "visible";
+        document.getElementById("value_9").style.visibility = "visible";
+        document.getElementById("value_10").style.visibility = "visible";
         $was_win = 0;
     }
     function Dobici() {
@@ -155,16 +155,16 @@ if($deal == 0) {
     }
     function vrednostDobitka() {
         Dobici();
-        document.getElementById("dobit0").innerHTML = $d0;
-        document.getElementById("dobit1").innerHTML = $d1;
-        document.getElementById("dobit2").innerHTML = $d2;
-        document.getElementById("dobit3").innerHTML = $d3;
-        document.getElementById("dobit4").innerHTML = $d4;
-        document.getElementById("dobit5").innerHTML = $d5;
-        document.getElementById("dobit6").innerHTML = $d6;
-        document.getElementById("dobit7").innerHTML = $d7;
-        document.getElementById("dobit8").innerHTML = $d8;
-        document.getElementById("dobit9").innerHTML = $d9;
+        document.getElementById("value_1").innerHTML = $d0;
+        document.getElementById("value_2").innerHTML = $d1;
+        document.getElementById("value_3").innerHTML = $d2;
+        document.getElementById("value_4").innerHTML = $d3;
+        document.getElementById("value_5").innerHTML = $d4;
+        document.getElementById("value_6").innerHTML = $d5;
+        document.getElementById("value_7").innerHTML = $d6;
+        document.getElementById("value_8").innerHTML = $d7;
+        document.getElementById("value_9").innerHTML = $d8;
+        document.getElementById("value_10").innerHTML = $d9;
     }
     function $Credit_Value() {
         document.getElementById("credit").innerHTML = $c;

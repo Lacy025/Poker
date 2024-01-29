@@ -806,100 +806,100 @@ function Win_2() {
 		$High_pair = 1;
 	}
 	if($win > 0) {
-		document.getElementById("dobitak0").style.visibility = "hidden";
-		document.getElementById("dobitak1").style.visibility = "hidden";
-		document.getElementById("dobitak2").style.visibility = "hidden";
-		document.getElementById("dobitak3").style.visibility = "hidden";
-		document.getElementById("dobitak4").style.visibility = "hidden";
-		document.getElementById("dobitak5").style.visibility = "hidden";
-		document.getElementById("dobitak6").style.visibility = "hidden";
-		document.getElementById("dobitak7").style.visibility = "hidden";
-		document.getElementById("dobitak8").style.visibility = "hidden";
-		document.getElementById("dobitak9").style.visibility = "hidden";
-		document.getElementById("dobit0").style.visibility = "hidden";
-		document.getElementById("dobit1").style.visibility = "hidden";
-		document.getElementById("dobit2").style.visibility = "hidden";
-		document.getElementById("dobit3").style.visibility = "hidden";
-		document.getElementById("dobit4").style.visibility = "hidden";
-		document.getElementById("dobit5").style.visibility = "hidden";
-		document.getElementById("dobit6").style.visibility = "hidden";
-		document.getElementById("dobit7").style.visibility = "hidden";
-		document.getElementById("dobit8").style.visibility = "hidden";
-		document.getElementById("dobit9").style.visibility = "hidden";
+		document.getElementById("win_1").style.visibility = "hidden";
+		document.getElementById("win_2").style.visibility = "hidden";
+		document.getElementById("win_3").style.visibility = "hidden";
+		document.getElementById("win_4").style.visibility = "hidden";
+		document.getElementById("win_5").style.visibility = "hidden";
+		document.getElementById("win_6").style.visibility = "hidden";
+		document.getElementById("win_7").style.visibility = "hidden";
+		document.getElementById("win_8").style.visibility = "hidden";
+		document.getElementById("win_9").style.visibility = "hidden";
+		document.getElementById("win_10").style.visibility = "hidden";
+		document.getElementById("value_1").style.visibility = "hidden";
+		document.getElementById("value_2").style.visibility = "hidden";
+		document.getElementById("value_3").style.visibility = "hidden";
+		document.getElementById("value_4").style.visibility = "hidden";
+		document.getElementById("value_5").style.visibility = "hidden";
+		document.getElementById("value_6").style.visibility = "hidden";
+		document.getElementById("value_7").style.visibility = "hidden";
+		document.getElementById("value_8").style.visibility = "hidden";
+		document.getElementById("value_9").style.visibility = "hidden";
+		document.getElementById("value_10").style.visibility = "hidden";
 		table.style.visibility = "visible";
 
-		document.getElementById("audioDobitak").play();
-		audioDobitak.currentTime = 0;
+		document.getElementById("audio_win").play();
+		audio_win.currentTime = 0;
 		$was_win = 1;
 	}
 	$d = 0;
 
 	if($Five_of_a_kind == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "FIVE OF A KIND";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "FIVE OF A KIND";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d0;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d0;
 	}
 	if($Royal_flush == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "ROYAL FLUSH";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "ROYAL FLUSH";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d1;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d1;
 	}
 	if($Street_flush == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "STREET FLUSH";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "STREET FLUSH";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d2;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d2;
 	}
 	if($Poker == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "POKER";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "POKER";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d3;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d3;
 	}
 	if($Full_house == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "FULL HOUSE";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "FULL HOUSE";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d4;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d4;
 	}
 	if($Flush == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "FLUSH";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "FLUSH";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d5;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d5;
 	}
 	if($Street == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "STREET";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "STREET";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d6;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d6;
 	}
 	if($Three_of_a_kind == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "THREE OF A KIND";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "THREE OF A KIND";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d7;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d7;
 	}
 	if($Two_pairs == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "2 PAIRS";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "2 PAIRS";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d8;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d8;
 	}
 	if($High_pair == 1) {
-		document.getElementById("nazivdobitka").innerHTML = "HIGH PAIR";
-		document.getElementById("nazivdobitka").style.visibility = "visible";
+		document.getElementById("win_name").innerHTML = "HIGH PAIR";
+		document.getElementById("win_name").style.visibility = "visible";
 		document.getElementById("win_value").innerHTML = $d9;
 		document.getElementById("win_value").style.visibility = "visible";
 		$d = $d9;
@@ -940,7 +940,7 @@ function Win_2() {
 				clearInterval(choice_2);
 				left_choice.style.visibility = "hidden";
 				right_choice.style.visibility = "hidden";
-				audioDobitak.currentTime = 5;
+				audio_win.currentTime = 5;
 				$field_1.style.visibility = "hidden";
 				$field_2.style.visibility = "hidden";
 				$field_3.style.visibility = "hidden";
@@ -957,7 +957,7 @@ function Win_2() {
 				left_choice.style.visibility = "hidden";
 				right_choice.style.visibility = "hidden";
 				victory.style.visibility = "visible";
-				audioDobitak.currentTime = 5;
+				audio_win.currentTime = 5;
 				$deal = 11;
 				console.log($deal);
 				break;

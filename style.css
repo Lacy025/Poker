@@ -1,4 +1,4 @@
-#dobitak0 {
+#win_1 {
     position: relative;
     text-align:left;
     top: -5px;
@@ -7,7 +7,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak1{
+#win_2 {
     position: relative;
     text-align:left;
     top: -13px;
@@ -15,7 +15,7 @@
     color:red;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak2{
+#win_3 {
     position: relative;
     text-align:left;
     top: -21px;
@@ -23,7 +23,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak3{
+#win_4 {
     position: relative;
     text-align:left;
     top: -29px;
@@ -31,7 +31,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak4{
+#win_5 {
     position: relative;
     text-align:left;
     top: -37px;
@@ -39,7 +39,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak5{
+#win_6 {
     position: relative;
     text-align:left;
     top: -45px;
@@ -47,7 +47,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak6{
+#win_7 {
     position: relative;
     text-align:left;
     top: -53px;
@@ -55,7 +55,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak7{
+#win_8 {
     position: relative;
     text-align:left;
     top: -61px;
@@ -63,7 +63,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak8{
+#win_9 {
     position: relative;
     text-align:left;
     top: -69px;
@@ -71,7 +71,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobitak9{
+#win_10 {
     position: relative;
     text-align:left;
     top: -77px;
@@ -79,7 +79,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit0{
+#value_1 {
     position: absolute;
     text-align: right;
     top: 3px;
@@ -88,7 +88,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit1{
+#value_2 {
     position: absolute;
     text-align: right;
     top: 33px;
@@ -97,7 +97,7 @@
     color:red;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit2{
+#value_3 {
     position: absolute;
     text-align: right;
     top: 61px;
@@ -106,7 +106,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit3{
+#value_4 {
     position: absolute;
     text-align: right;
     top: 90px;
@@ -115,7 +115,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit4{
+#value_5 {
     position: absolute;
     text-align: right;
     top: 118px;
@@ -124,7 +124,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit5{
+#value_6 {
     position: absolute;
     text-align: right;
     top: 148px;
@@ -133,7 +133,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit6{
+#value_7 {
     position: absolute;
     text-align: right;
     top: 176px;
@@ -142,7 +142,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit7{
+#value_8 {
     position: absolute;
     text-align: right;
     top: 205px;
@@ -151,7 +151,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit8{
+#value_9 {
     position: absolute;
     text-align: right;
     top: 234px;
@@ -160,7 +160,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#dobit9{
+#value_10 {
     position: absolute;
     text-align: right;
     top: 264px;
@@ -169,7 +169,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#kredit{
+#kredit {
     position:absolute;
     text-align:left;
     top: 36px;
@@ -178,7 +178,7 @@
     color:red;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#credit{
+#credit {
     position:absolute;
     text-align:left;
     top: 66px;
@@ -187,7 +187,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#ulog{
+#ulog {
     position: absolute;
     text-align:left;
     top: 120px;
@@ -196,7 +196,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#bet{
+#bet {
     position: absolute;
     text-align:left;
     top: 150px;
@@ -205,7 +205,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#autohold{
+#autohold {
     position: absolute;
     text-align:left;
     top: 208px;
@@ -214,7 +214,7 @@
     color:blue;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#reklama1{
+#reklama1 {
     position: absolute;
     text-align:left;
     top: 340px;
@@ -224,7 +224,7 @@
     color:red;
     font-family: 'Algerian', cursive;
 }
-#reklama2{
+#reklama2 {
     position: absolute;
     text-align:left;
     top: 560px;
@@ -234,7 +234,7 @@
     color:red;
     font-family: 'Algerian', cursive;
 }
-#levo{
+#levo {
     position: absolute;
     text-align:left;
     top: 885px;
@@ -245,7 +245,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#desno{
+#desno {
     position: absolute;
     text-align:left;
     top: 885px;
@@ -256,7 +256,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#poruka1{
+#poruka1 {
     position: absolute;
     text-align:left;
     top: 885px;
@@ -267,7 +267,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#poruka2{
+#poruka2 {
     position: absolute;
     text-align:left;
     top: 885px;
@@ -278,7 +278,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#message_3{
+#message_3 {
     position: absolute;
     text-align:left;
     top: 885px;
@@ -289,7 +289,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#message_4{
+#message_4 {
     position: absolute;
     text-align:left;
     top: 885px;
@@ -300,7 +300,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#message_5{
+#message_5 {
     position: absolute;
     text-align:left;
     top: 885px;
@@ -311,7 +311,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#stop1{
+#stop1 {
     position: absolute;
     text-align:left;
     top: 843px;
@@ -322,7 +322,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#stop2{
+#stop2 {
     position: absolute;
     text-align:left;
     top: 843px;
@@ -333,7 +333,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#stop3{
+#stop3 {
     position: absolute;
     text-align:left;
     top: 843px;
@@ -344,7 +344,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#stop4{
+#stop4 {
     position: absolute;
     text-align:left;
     top: 843px;
@@ -355,7 +355,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#stop5{
+#stop5 {
     position: absolute;
     text-align:left;
     top: 843px;
@@ -366,7 +366,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     background-color: red;
 }
-#table{
+#table {
     position: absolute;
     top: 5px;
     left: 10px;
@@ -378,21 +378,21 @@
     border-radius: 25px;
     background-color: red;
 }
-#dobitak{
+#dobitak {
     position: absolute;
     top: 140px;
     left: 10px;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 128px;
 }
-#nazivdobitka{
+#win_name {
     position: absolute;
     top: -10px;
     left: 10px;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 128px;
 }
-#win_value{
+#win_value {
     position: absolute;
     text-align: right;
     top: 140px;
@@ -400,7 +400,7 @@
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 128px;
 }
-#left_choice{
+#left_choice {
     position: absolute;
     top: 856px;
     left: 12px;
@@ -412,7 +412,7 @@
     border-radius: 5px;
     background-color: red;
 }
-#right_choice{
+#right_choice {
     position: absolute;
     top: 856px;
     left: 1150px;
@@ -424,21 +424,21 @@
     border-radius: 5px;
     background-color: red;
 }
-#dupliranje{
+#dupliranje {
     position: absolute;
     top: 0px;
     left: 200px;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 48px;
 }
-#kasiranje{
+#kasiranje {
     position: absolute;
     top: 0px;
     left: 230px;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 48px;
 }
-#victory{
+#victory {
     position: absolute;
     top: 856px;
     left: 572px;
@@ -450,14 +450,14 @@
     border-radius: 5px;
     background-color: red;
 }
-#pobedio{
+#pobedio {
     position: absolute;
     top: -7px;
     left: 230px;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 56px;
 }
-#high{
+#high {
     position: absolute;
     top: 843px;
     left: 780px;
@@ -465,7 +465,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#low{
+#low {
     position: absolute;
     top: 880px;
     left: 800px;
@@ -473,7 +473,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#low_choice{
+#low_choice {
     position: absolute;
     top: 500px;
     left: 580px;
@@ -481,7 +481,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#high_choice{
+#high_choice {
     position: absolute;
     top: 500px;
     left: 580px;
@@ -489,7 +489,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#kartaxx{
+#kartaxx {
     position: absolute;
     top: 40px;
     left: 1780px;
