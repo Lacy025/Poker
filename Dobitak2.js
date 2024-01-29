@@ -907,35 +907,35 @@ function Win_2() {
 	if($win == 0) {
 		clearInterval($waiting_9);
 		clearInterval($waiting_10);
-		$no_win = setInterval(Nemadobitka,500);
+		$no_win = setInterval(No_win,500);
 	}
 	else{
-		if($d<10000) {
+		if($d < 10000) {
 			left_choice.style.visibility = "visible"
 			right_choice.style.visibility = "hidden"
-			choice_1 = setInterval(Izbordesno,500);
-			choice_2 = setInterval(Izborlevo,1000);
+			choice_1 = setInterval(Choice_right,500);
+			choice_2 = setInterval(Choice_left,1000);
 
-			window.addEventListener("keydown", DupliranjeKasiranje);
+			window.addEventListener("keydown", Doubling_Cashing);
 		}
 		else {
 			victory.style.visibility = "visible";
-			choice_1 = setInterval(Blokada,3000);
+			choice_1 = setInterval(Block,3000);
 		}
 	}
-	function Izborlevo() {
+	function Choice_left() {
 		left_choice.style.visibility = "visible";
 		right_choice.style.visibility = "hidden";
 	}
-	function Izbordesno() {
+	function Choice_right() {
 		left_choice.style.visibility = "hidden";
 		right_choice.style.visibility = "visible";
 	}
-	function DupliranjeKasiranje(event) {
+	function Doubling_Cashing(event) {
 		switch(event.keyCode) {
 			
 			case 13 : 
-				window.removeEventListener("keydown", DupliranjeKasiranje);
+				window.removeEventListener("keydown", Doubling_Cashing);
 				clearInterval(choice_1);
 				clearInterval(choice_2);
 				left_choice.style.visibility = "hidden";
@@ -951,7 +951,7 @@ function Win_2() {
 				break;
 				// DOUBLING
 			case 32 :
-				window.removeEventListener("keydown", DupliranjeKasiranje);
+				window.removeEventListener("keydown", Doubling_Cashing);
 				clearInterval(choice_1);
 				clearInterval(choice_2);
 				left_choice.style.visibility = "hidden";
@@ -964,11 +964,11 @@ function Win_2() {
 				// CASHING
 			}
 		}
-	function Nemadobitka() {
+	function No_win() {
 		$deal = 0;
 		$includeJs("Poker.js");
 	}
-	function Blokada() {
+	function Block() {
 		clearInterval(choice_1);
 		$deal = 11;
 		console.log($deal);

@@ -155,23 +155,23 @@ function IzborKarata(event) {
             $stop5.style.visibility = "hidden";
 
             if($hold1 == 0) {
-                document.getElementById("$field_1").src="./Karte/53.png";
+                document.getElementById("$field_1").src="./Cards/53.png";
                 $field_1.style.visibility = "visible";
             }
             if($hold2 == 0) {
-                document.getElementById("$field_2").src="./Karte/53.png";
+                document.getElementById("$field_2").src="./Cards/53.png";
                 $field_2.style.visibility = "visible";
             }
             if($hold3 == 0) {
-                document.getElementById("$field_3").src="./Karte/53.png";
+                document.getElementById("$field_3").src="./Cards/53.png";
                 $field_3.style.visibility = "visible";
             }
             if($hold4 == 0) {
-                document.getElementById("$field_4").src="./Karte/53.png";
+                document.getElementById("$field_4").src="./Cards/53.png";
                 $field_4.style.visibility = "visible";
             }
             if($hold5 == 0) {
-                document.getElementById("$field_5").src="./Karte/53.png";
+                document.getElementById("$field_5").src="./Cards/53.png";
                 $field_5.style.visibility = "visible";
             }
             function Audio_Card_1() {

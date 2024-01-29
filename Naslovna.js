@@ -79,18 +79,18 @@ if($deal == 0) {
         $field_10.style.visibility = "hidden";
         $field_11.style.visibility = "hidden";
         $field_12.style.visibility = "hidden";
-        document.getElementById("$field_00").src="./Karte/53.png";
-        document.getElementById("$field_01").src="./Karte/53.png";
-        document.getElementById("$field_02").src="./Karte/53.png";
-        document.getElementById("$field_03").src="./Karte/53.png";
-        document.getElementById("$field_04").src="./Karte/53.png";
-        document.getElementById("$field_05").src="./Karte/53.png";
-        document.getElementById("$field_06").src="./Karte/53.png";
-        document.getElementById("$field_07").src="./Karte/53.png";
-        document.getElementById("$field_08").src="./Karte/53.png";
-        document.getElementById("$field_09").src="./Karte/53.png";
-        document.getElementById("$field_10").src="./Karte/53.png";
-        document.getElementById("$field_11").src="./Karte/53.png";
+        document.getElementById("$field_00").src="./Cards/53.png";
+        document.getElementById("$field_01").src="./Cards/53.png";
+        document.getElementById("$field_02").src="./Cards/53.png";
+        document.getElementById("$field_03").src="./Cards/53.png";
+        document.getElementById("$field_04").src="./Cards/53.png";
+        document.getElementById("$field_05").src="./Cards/53.png";
+        document.getElementById("$field_06").src="./Cards/53.png";
+        document.getElementById("$field_07").src="./Cards/53.png";
+        document.getElementById("$field_08").src="./Cards/53.png";
+        document.getElementById("$field_09").src="./Cards/53.png";
+        document.getElementById("$field_10").src="./Cards/53.png";
+        document.getElementById("$field_11").src="./Cards/53.png";
         low_choice.style.visibility = "hidden";
         high_choice.style.visibility = "hidden";
     }
@@ -229,11 +229,11 @@ if($deal == 0) {
         }
     }
     function prazneKarte() {
-        document.getElementById("$field_1").src="./Karte/53.png";
-        document.getElementById("$field_2").src="./Karte/53.png";
-        document.getElementById("$field_3").src="./Karte/53.png";
-        document.getElementById("$field_4").src="./Karte/53.png";
-        document.getElementById("$field_5").src="./Karte/53.png";
+        document.getElementById("$field_1").src="./Cards/53.png";
+        document.getElementById("$field_2").src="./Cards/53.png";
+        document.getElementById("$field_3").src="./Cards/53.png";
+        document.getElementById("$field_4").src="./Cards/53.png";
+        document.getElementById("$field_5").src="./Cards/53.png";
         $field_1.style.visibility = "visible";
         $field_2.style.visibility = "visible";
         $field_3.style.visibility = "visible";
@@ -242,43 +242,43 @@ if($deal == 0) {
     }
     function joker1() {
         $field_1.style.visibility = "hidden";
-        document.getElementById("$field_1").src="./Karte/00.png";
+        document.getElementById("$field_1").src="./Cards/00.png";
         $field_1.style.visibility = "visible";
         clearInterval(timerJoker1);
     }
     function joker2() {
         $field_1.style.visibility = "hidden";
-        document.getElementById("$field_1").src="./Karte/53.png";
+        document.getElementById("$field_1").src="./Cards/53.png";
         $field_1.style.visibility = "visible";
         $field_2.style.visibility = "hidden";
-        document.getElementById("$field_2").src="./Karte/00.png";
+        document.getElementById("$field_2").src="./Cards/00.png";
         $field_2.style.visibility = "visible";
         clearInterval(timerJoker2);
     }
     function joker3() {
         $field_2.style.visibility = "hidden";
-        document.getElementById("$field_2").src="./Karte/53.png";
+        document.getElementById("$field_2").src="./Cards/53.png";
         $field_2.style.visibility = "visible";
         $field_3.style.visibility = "hidden";
-        document.getElementById("$field_3").src="./Karte/00.png";
+        document.getElementById("$field_3").src="./Cards/00.png";
         $field_3.style.visibility = "visible";
         clearInterval(timerJoker3);
     }
     function joker4() {
         $field_3.style.visibility = "hidden";
-        document.getElementById("$field_3").src="./Karte/53.png";
+        document.getElementById("$field_3").src="./Cards/53.png";
         $field_3.style.visibility = "visible";
         $field_4.style.visibility = "hidden";
-        document.getElementById("$field_4").src="./Karte/00.png";
+        document.getElementById("$field_4").src="./Cards/00.png";
         $field_4.style.visibility = "visible";
         clearInterval(timerJoker4);
     }
     function joker5() {
         $field_4.style.visibility = "hidden";
-        document.getElementById("$field_4").src="./Karte/53.png";
+        document.getElementById("$field_4").src="./Cards/53.png";
         $field_4.style.visibility = "visible";
         $field_5.style.visibility = "hidden";
-        document.getElementById("$field_5").src="./Karte/00.png";
+        document.getElementById("$field_5").src="./Cards/00.png";
         $field_5.style.visibility = "visible";
         clearInterval(timerJoker5);
     }
