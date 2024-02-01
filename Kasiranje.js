@@ -62,8 +62,8 @@ function Minus_100_2() {
 }
 function Zero_2() {
     clearInterval($Zero_2);
-    document.getElementById("audioIntro").play();
-    audioIntro.currentTime = 0;
+    document.getElementById("audio_intro").play();
+    audio_intro.currentTime = 0;
 }
 function Countdown_2() {
     clearInterval($Countdown_2);

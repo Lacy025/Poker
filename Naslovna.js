@@ -1,22 +1,22 @@
 if($deal == 0) {
     
-    let timerImaReklame;
-    let timerNemaReklame;
-    let timerLevo;
-    let timerDesno;
-    let timerPoruka1;
-    let timerPoruka2;
-    let timerJoker1;
-    let timerJoker2;
-    let timerJoker3;
-    let timerJoker4;
-    let timerJoker5;
-    let timerPrviekran;
+    let advertisement;
+    let no_advertisement;
+    let message_left_1;
+    let message_right_1;
+    let message_left_2;
+    let message_right_2;
+    let joker_1;
+    let joker_2;
+    let joker_3;
+    let joker_4;
+    let joker_5;
+    let main_screen;
 
     if($c > 0 && $u > $c) {
         $u = $c;
-        vrednostUloga();
-        vrednostDobitka();
+        Bet_value();
+        Win_value();
     }
     if($c == 0) {
         $u = 1;
@@ -24,48 +24,48 @@ if($deal == 0) {
 
     clearInterval($no_win);
 
-    window.addEventListener("keydown", pocetak);
+    window.addEventListener("keydown", Choose);
 
     if($was_win == 1) {
-        window.removeEventListener("keydown", pocetak);
-        window.addEventListener("keydown", pocetak);
-        timerPrviekran = setInterval(Prviekran,3000);
+        window.removeEventListener("keydown", Choose);
+        window.addEventListener("keydown", Choose);
+        main_screen = setInterval(Main_screen,3000);
 
     }
     if($was_win == 0 && $game == 1) {
         
-        timerPrviekran = setInterval(Prviekran,1000);
+        main_screen = setInterval(Main_screen,1000);
     }
     if($game == 0) {
         intro();
-        window.addEventListener("keydown", pocetak);
-        imaReklame();
-        vrednostDobitka();
+        window.addEventListener("keydown", Choose);
+        Advertisement();
+        Win_value();
         $Credit_Value();
-        vrednostUloga();
-        timerNemaReklame = setInterval(nemaReklame, 6000);
-        timerImaReklame = setInterval(imaReklame, 12000);
+        Bet_value();
+        no_advertisement = setInterval(No_advertisement, 6000);
+        advertisement = setInterval(Advertisement, 12000);
     }
     if($deal == 0 && $c == 0) {
-        desno.style.visibility = "hidden";
-        poruka1.style.visibility = "hidden";
-        poruka2.style.visibility = "hidden";
+        right.style.visibility = "hidden";
+        message_1.style.visibility = "hidden";
+        message_2.style.visibility = "hidden";
         message_3.style.visibility = "hidden";
         message_4.style.visibility = "hidden";
         $message_5.style.visibility = "hidden";
-        timerDesno = setInterval(desnoDole, 500);
-        timerLevo = setInterval(levoDole, 1000);
+        message_right_1 = setInterval(Message_right_1, 500);
+        message_left_1 = setInterval(Message_left_1, 1000);
     }
     else {
-        levo.style.visibility = "hidden";
-        desno.style.visibility = "hidden";
+        left.style.visibility = "hidden";
+        right.style.visibility = "hidden";
         if($was_win== 0) {
-            timerPoruka1 = setInterval(Poruka1,1000);
-            timerPoruka2 = setInterval(Poruka2,2000);
+            message_left_2 = setInterval(Message_left_2,1000);
+            message_right_2 = setInterval(Message_right_2,2000);
         }
         
     }
-    function Brisanje1_12() {
+    function Clear_gambling_cards() {
         $field_00.style.visibility = "hidden";
         $field_01.style.visibility = "hidden";
         $field_02.style.visibility = "hidden";
@@ -95,26 +95,26 @@ if($deal == 0) {
         high_choice.style.visibility = "hidden";
     }
 
-    function Prviekran() {
-        Brisanje1_12();
-        Ispis();
-        clearInterval(timerPoruka1);
-        clearInterval(timerPoruka2);
-        clearInterval(timerPrviekran);
-        imaReklame();
-        vrednostDobitka();
+    function Main_screen() {
+        Clear_gambling_cards();
+        Winnings();
+        clearInterval(message_left_2);
+        clearInterval(message_right_2);
+        clearInterval(main_screen);
+        Advertisement();
+        Win_value();
         $Credit_Value();
-        vrednostUloga();
-        timerNemaReklame = setInterval(nemaReklame, 6000);
-        timerImaReklame = setInterval(imaReklame, 12000);
-        window.removeEventListener("keydown", pocetak);
-        window.addEventListener("keydown", pocetak);
+        Bet_value();
+        no_advertisement = setInterval(No_advertisement, 6000);
+        advertisement = setInterval(Advertisement, 12000);
+        window.removeEventListener("keydown", Choose);
+        window.addEventListener("keydown", Choose);
         if($c > 0) {
-            timerPoruka1 = setInterval(Poruka1,1000);
-            timerPoruka2 = setInterval(Poruka2,2000);
+            message_left_2 = setInterval(Message_left_2,1000);
+            message_right_2 = setInterval(Message_right_2,2000);
         }
     }
-    function Ispis() {
+    function Winnings() {
         table.style.visibility = "hidden";
         document.getElementById("win_name").style.visibility = "hidden";
         document.getElementById("win_value").style.visibility = "hidden";
@@ -141,7 +141,7 @@ if($deal == 0) {
         document.getElementById("value_10").style.visibility = "visible";
         $was_win = 0;
     }
-    function Dobici() {
+    function Values() {
         $d0 = $u * 1100;
         $d1 = $u * 500;
         $d2 = $u * 100;
@@ -153,8 +153,8 @@ if($deal == 0) {
         $d8 = $u * 2;
         $d9 = $u * 1;
     }
-    function vrednostDobitka() {
-        Dobici();
+    function Win_value() {
+        Values();
         document.getElementById("value_1").innerHTML = $d0;
         document.getElementById("value_2").innerHTML = $d1;
         document.getElementById("value_3").innerHTML = $d2;
@@ -169,66 +169,66 @@ if($deal == 0) {
     function $Credit_Value() {
         document.getElementById("credit").innerHTML = $c;
     }
-    function vrednostUloga() {
+    function Bet_value() {
         document.getElementById("bet").innerHTML = $u;
     }
-    function imaReklame() {
-        reklama1.style.visibility = "visible";
-        reklama2.style.visibility = "visible";
+    function Advertisement() {
+        joker.style.visibility = "visible";
+        card.style.visibility = "visible";
         $field_1.style.visibility = "hidden";
         $field_2.style.visibility = "hidden";
         $field_3.style.visibility = "hidden";
         $field_4.style.visibility = "hidden";
         $field_5.style.visibility = "hidden";
-        clearInterval(timerJoker1);
-        clearInterval(timerJoker2);
-        clearInterval(timerJoker3);
-        clearInterval(timerJoker4);
-        clearInterval(timerJoker5);
+        clearInterval(joker_1);
+        clearInterval(joker_2);
+        clearInterval(joker_3);
+        clearInterval(joker_4);
+        clearInterval(joker_5);
     }
-    function nemaReklame() {
-        reklama1.style.visibility = "hidden";
-        reklama2.style.visibility = "hidden";
-        prazneKarte();
-        timerJoker1 = setInterval(joker1, 1000);
-        timerJoker2 = setInterval(joker2, 2000);
-        timerJoker3 = setInterval(joker3, 3000);
-        timerJoker4 = setInterval(joker4, 4000);
-        timerJoker5 = setInterval(joker5, 5000);
+    function No_advertisement() {
+        joker.style.visibility = "hidden";
+        card.style.visibility = "hidden";
+        Back_cards();
+        joker_1 = setInterval(joker1, 1000);
+        joker_2 = setInterval(joker2, 2000);
+        joker_3 = setInterval(joker3, 3000);
+        joker_4 = setInterval(joker4, 4000);
+        joker_5 = setInterval(joker5, 5000);
     }
-    function levoDole() {
-        let levo = document.getElementById("levo");
-        levo.innerHTML = ' ' + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LACIKA BAČI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        levo.style.visibility = "visible";
-        desno.style.visibility = "hidden";
+    function Message_left_1() {
+        let left = document.getElementById("left");
+        left.innerHTML = ' ' + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LACIKA BAČI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        left.style.visibility = "visible";
+        right.style.visibility = "hidden";
     }
-    function desnoDole() {
-        let desno = document.getElementById("desno");
-        desno.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SERBIA  2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        levo.style.visibility = "hidden";
-        desno.style.visibility = "visible";
+    function Message_right_1() {
+        let right = document.getElementById("right");
+        right.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SERBIA  2023&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        left.style.visibility = "hidden";
+        right.style.visibility = "visible";
     }
-    function Poruka1() {
-        let poruka1 = document.getElementById("poruka1");
-        poruka1.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHOOSE BET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        poruka1.style.left = "746px";
-        poruka1.style.visibility = "visible";
-        poruka2.style.visibility = "hidden";
+    function Message_left_2() {
+        let message_1 = document.getElementById("message_1");
+        message_1.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHOOSE BET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        message_1.style.left = "746px";
+        message_1.style.visibility = "visible";
+        message_2.style.visibility = "hidden";
     }
-    function Poruka2() {
-        let poruka2 = document.getElementById("poruka2");
-        poruka2.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRESS DEAL CARDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-        poruka2.style.left = "744px";
-        poruka2.style.visibility = "visible";
-        poruka1.style.visibility = "hidden";
+    function Message_right_2() {
+        let message_2 = document.getElementById("message_2");
+        message_2.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRESS DEAL CARDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+        message_2.style.left = "744px";
+        message_2.style.visibility = "visible";
+        message_1.style.visibility = "hidden";
     }
     function intro() {
         if($c == 0) {
-            document.getElementById("audioIntro").play();
-            audioIntro.currentTime = 0;
+            document.getElementById("audio_intro").play();
+            audio_intro.currentTime = 0;
         }
     }
-    function prazneKarte() {
+    function Back_cards() {
         document.getElementById("$field_1").src="./Cards/53.png";
         document.getElementById("$field_2").src="./Cards/53.png";
         document.getElementById("$field_3").src="./Cards/53.png";
@@ -244,7 +244,7 @@ if($deal == 0) {
         $field_1.style.visibility = "hidden";
         document.getElementById("$field_1").src="./Cards/00.png";
         $field_1.style.visibility = "visible";
-        clearInterval(timerJoker1);
+        clearInterval(joker_1);
     }
     function joker2() {
         $field_1.style.visibility = "hidden";
@@ -253,7 +253,7 @@ if($deal == 0) {
         $field_2.style.visibility = "hidden";
         document.getElementById("$field_2").src="./Cards/00.png";
         $field_2.style.visibility = "visible";
-        clearInterval(timerJoker2);
+        clearInterval(joker_2);
     }
     function joker3() {
         $field_2.style.visibility = "hidden";
@@ -262,7 +262,7 @@ if($deal == 0) {
         $field_3.style.visibility = "hidden";
         document.getElementById("$field_3").src="./Cards/00.png";
         $field_3.style.visibility = "visible";
-        clearInterval(timerJoker3);
+        clearInterval(joker_3);
     }
     function joker4() {
         $field_3.style.visibility = "hidden";
@@ -271,7 +271,7 @@ if($deal == 0) {
         $field_4.style.visibility = "hidden";
         document.getElementById("$field_4").src="./Cards/00.png";
         $field_4.style.visibility = "visible";
-        clearInterval(timerJoker4);
+        clearInterval(joker_4);
     }
     function joker5() {
         $field_4.style.visibility = "hidden";
@@ -280,30 +280,30 @@ if($deal == 0) {
         $field_5.style.visibility = "hidden";
         document.getElementById("$field_5").src="./Cards/00.png";
         $field_5.style.visibility = "visible";
-        clearInterval(timerJoker5);
+        clearInterval(joker_5);
     }
-    function autohold() {
+    function Auto_hold() {
         if($c > 0) {
-            document.getElementById("audioAutohold").play();
-            audioAutohold.currentTime = 0;
+            document.getElementById("audio_auto_hold").play();
+            audio_auto_hold.currentTime = 0;
             if($a == 1) {
                 $a = 0;
-                document.getElementById("autohold").style.visibility = "hidden";
+                document.getElementById("auto_hold").style.visibility = "hidden";
             }
             else {
                 $a = 1;
-                document.getElementById("autohold").style.visibility = "visible";
+                document.getElementById("auto_hold").style.visibility = "visible";
             }
         }
     }
     function Reset() {
         clearInterval($Countdown_1);
-        clearInterval(timerNemaReklame);
-        clearInterval(timerImaReklame);
-        imaReklame();
-        timerNemaReklame = setInterval(nemaReklame, 6000);
-        timerImaReklame = setInterval(imaReklame, 12000);
-        window.addEventListener("keydown", pocetak);
+        clearInterval(no_advertisement);
+        clearInterval(advertisement);
+        Advertisement();
+        no_advertisement = setInterval(No_advertisement, 6000);
+        advertisement = setInterval(Advertisement, 12000);
+        window.addEventListener("keydown", Choose);
     }
     function Money() {
         $c = $c - 1;
@@ -355,26 +355,26 @@ if($deal == 0) {
         }
         function Zero_1() {
             clearInterval($Zero_1);
-            document.getElementById("audioIntro").play();
-            audioIntro.currentTime = 0;
+            document.getElementById("audio_intro").play();
+            audio_intro.currentTime = 0;
         }
         function Countdown_1() {
             clearInterval($Countdown_1);
             $deal = 0;
             $u = 1;
             $a = 1;
-            document.getElementById("autohold").style.visibility = "visible";
-            vrednostUloga();
-            vrednostDobitka();
-            clearInterval(timerJoker1);
-            clearInterval(timerJoker2);
-            clearInterval(timerJoker3);
-            clearInterval(timerJoker4);
-            clearInterval(timerJoker5);
+            document.getElementById("auto_hold").style.visibility = "visible";
+            Bet_value();
+            Win_value();
+            clearInterval(joker_1);
+            clearInterval(joker_2);
+            clearInterval(joker_3);
+            clearInterval(joker_4);
+            clearInterval(joker_5);
             $Countdown_1 = setInterval(Reset,100);
         }
     }
-    function pocetak(event) {
+    function Choose(event) {
 
         switch(event.keyCode) {
 
@@ -383,19 +383,19 @@ if($deal == 0) {
                 if($c == 0) {
                     $was_win = 0;
                     $game = 1;
-                    levo.style.visibility = "hidden";
-                    desno.style.visibility = "hidden";
-                    clearInterval(timerLevo);
-                    clearInterval(timerDesno);
-                    timerPoruka1 = setInterval(Poruka1,1000);
-                    timerPoruka2 = setInterval(Poruka2,2000);
+                    left.style.visibility = "hidden";
+                    right.style.visibility = "hidden";
+                    clearInterval(message_left_1);
+                    clearInterval(message_right_1);
+                    message_left_2 = setInterval(Message_left_2,1000);
+                    message_right_2 = setInterval(Message_right_2,2000);
                 }
                 if($c < 4901 && $was_win == 0) {
                     $c = $c + 100;
                     $Credit_Value();
-                    document.getElementById("audioKredit").play();
-                    audioKredit.currentTime = 0;
-                    audioIntro.currentTime = 5;
+                    document.getElementById("audio_credit").play();
+                    audio_credit.currentTime = 0;
+                    audio_intro.currentTime = 5;
                     break;
                 }
                 else {
@@ -412,60 +412,58 @@ if($deal == 0) {
                 if($u > $c) {
                     $u = 1;
                 }
-                vrednostUloga();
-                vrednostDobitka();
-                document.getElementById("audioUlog").play();
-                audioUlog.currentTime = 0;
+                Bet_value();
+                Win_value();
+                document.getElementById("audio_bet").play();
+                audio_bet.currentTime = 0;
                 }
                 break;
 
             case 32 :
 
                 if($was_win == 0) {
-                    autohold();
+                    Auto_hold();
                 }
                 break;
 
             case 13 :
 
                 if($c > 0) {
-                    Brisanje1_12();
-                    Ispis();
+                    Clear_gambling_cards();
+                    Winnings();
                     $money = 0;
                     victory.style.visibility = "hidden";
-                    clearInterval(timerPrviekran);
-                    audioIntro.currentTime = 5;
+                    clearInterval(main_screen);
+                    audio_intro.currentTime = 5;
                     $c = $c - $u;
                     $Credit_Value();
                     document.getElementById("audio_deal_1").play();
                     audio_deal_1.currentTime = 0;
-                    clearInterval(timerPoruka1);
-                    clearInterval(timerPoruka2);
-                    clearInterval(timerImaReklame);
-                    clearInterval(timerNemaReklame);
-                    clearInterval(timerJoker1);
-                    clearInterval(timerJoker2);
-                    clearInterval(timerJoker3);
-                    clearInterval(timerJoker4);
-                    clearInterval(timerJoker5);
-                    poruka1.style.visibility = "hidden";
-                    poruka2.style.visibility = "hidden";
-                    reklama1.style.visibility = "hidden";
-                    reklama2.style.visibility = "hidden";
+                    clearInterval(message_left_2);
+                    clearInterval(message_right_2);
+                    clearInterval(advertisement);
+                    clearInterval(no_advertisement);
+                    clearInterval(joker_1);
+                    clearInterval(joker_2);
+                    clearInterval(joker_3);
+                    clearInterval(joker_4);
+                    clearInterval(joker_5);
+                    message_1.style.visibility = "hidden";
+                    message_2.style.visibility = "hidden";
+                    joker.style.visibility = "hidden";
+                    card.style.visibility = "hidden";
                     $field_1.style.visibility = "hidden";
                     $field_2.style.visibility = "hidden";
                     $field_3.style.visibility = "hidden";
                     $field_4.style.visibility = "hidden";
                     $field_5.style.visibility = "hidden";
-                    reklama1.style.visibility = "hidden";
-                    reklama2.style.visibility = "hidden";
-                    prazneKarte();
-                    window.removeEventListener("keydown", pocetak);
+                    Back_cards();
+                    window.removeEventListener("keydown", Choose);
                     $deal = 1;
                     break;
                     }
                 else {
-                    Brisanje1_12();
+                    Clear_gambling_cards();
                     break;
                 }
 
@@ -473,16 +471,16 @@ if($deal == 0) {
 
                 if($c > 0 && $was_win == 0) {
 
-                    window.removeEventListener("keydown", pocetak);
+                    window.removeEventListener("keydown", Choose);
 
                     $money = 1;
-                    clearInterval(timerPoruka1);
-                    clearInterval(timerPoruka2);
-                    poruka1.style.visibility = "hidden";
-                    poruka2.style.visibility = "hidden";
-                    levo.style.visibility = "visible";
-                    timerDesno = setInterval(desnoDole, 500);
-                    timerLevo = setInterval(levoDole, 1000);
+                    clearInterval(message_left_2);
+                    clearInterval(message_right_2);
+                    message_1.style.visibility = "hidden";
+                    message_2.style.visibility = "hidden";
+                    left.style.visibility = "visible";
+                    message_right_1 = setInterval(Message_right_1, 500);
+                    message_left_1 = setInterval(Message_left_1, 1000);
                     Money();
                     break;
                 }
