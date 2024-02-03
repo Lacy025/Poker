@@ -123,13 +123,13 @@ function $Victory_1() {
 function $Victory_2() {
     victory.style.visibility = "visible";
 }
-function $audioCount1() {
-    document.getElementById("audioCount1").play();
-    document.getElementById("audioCount1").currentTime = 0;
+function $Audio_count_1() {
+    document.getElementById("audio_count_1").play();
+    audio_count_1.currentTime = 0;
 }
-function $audioCount2() {
-    document.getElementById("audioCount2").play();
-    document.getElementById("audioCount2").currentTime = 0;
+function $Audio_count_2() {
+    document.getElementById("audio_count_2").play();
+    audio_count_2.currentTime = 0;
 }
 function $Minus_1() {
     $c = $c + 1;
@@ -137,7 +137,7 @@ function $Minus_1() {
     $Credit_Value();
     $d = $d - 1;
     document.getElementById("win_value").innerHTML = $d;
-    $audioCount1();
+    $Audio_count_1();
 }
 function $Minus_100() {
     $c = $c + 100;
@@ -145,7 +145,7 @@ function $Minus_100() {
     $Credit_Value();
     $d = $d - 100;
     document.getElementById("win_value").innerHTML = $d;
-    $audioCount2();
+    $Audio_count_2();
 }
 
 let $message_3 = document.getElementById("message_3");

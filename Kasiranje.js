@@ -39,8 +39,8 @@ function Check_2() {
             victory.style.visibility = "visible";
             clearInterval($victory_1);
             clearInterval($victory_2);
-            document.getElementById("audioCount2").play();
-            audioCount2.currentTime = 0;
+            document.getElementById("audio_count_2").play();
+            audio_count_2.currentTime = 0;
             $deal = 0;
             $Countdown_2 = setInterval(Countdown_2,1000);
             $Zero_2 = setInterval(Zero_2,1000);

@@ -42,36 +42,36 @@ function Wait_7() {
 function $Stop1() {
     stop1.style.visibility = "visible";
     $hold1 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
+    document.getElementById("audio_stop").play();
+    audio_stop.currentTime = 0;
     clearInterval($timerStop1);
 }
 function $Stop2() {
     stop2.style.visibility = "visible";
     $hold2 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
+    document.getElementById("audio_stop").play();
+    audio_stop.currentTime = 0;
     clearInterval($timerStop2);
 }
 function $Stop3() {
     stop3.style.visibility = "visible";
     $hold3 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
+    document.getElementById("audio_stop").play();
+    audio_stop.currentTime = 0;
     clearInterval($timerStop3);
 }
 function $Stop4() {
     stop4.style.visibility = "visible";
     $hold4 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
+    document.getElementById("audio_stop").play();
+    audio_stop.currentTime = 0;
     clearInterval($timerStop4);
 }
 function $Stop5() {
     stop5.style.visibility = "visible";
     $hold5 = 1;
-    document.getElementById("audioStop").play();
-    audioStop.currentTime = 0;
+    document.getElementById("audio_stop").play();
+    audio_stop.currentTime = 0;
     clearInterval($timerStop5);
 }
 function Clear_hold() {

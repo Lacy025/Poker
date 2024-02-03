@@ -309,14 +309,14 @@ if($deal == 0) {
         $c = $c - 1;
         document.getElementById("credit").innerHTML = $c;
         $Credit_Value();
-        $audioCount1();
+        $Audio_count_1();
     
         $Check_1 = setInterval(Check_1,60);
     
         function Check_1() {
             
             if((Math.round($c/100) != $c/100) && $c > 0) {
-                $audioCount1();
+                $Audio_count_1();
                 Minus_1_1();
             }
             else {
@@ -328,8 +328,8 @@ if($deal == 0) {
                     $Minus_100_1 = setInterval(Minus_100_1,1000);
                 }
                 else {
-                    document.getElementById("audioCount2").play();
-                    audioCount2.currentTime = 0;
+                    document.getElementById("audio_count_2").play();
+                    audio_count_2.currentTime = 0;
                     $Countdown_1 = setInterval(Countdown_1,1000);
                     $Zero_1 = setInterval(Zero_1,1000);
                 }

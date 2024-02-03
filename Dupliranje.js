@@ -10,7 +10,7 @@ function Wait_9() {
         $pause_high = 800;
         $card = 1;
         document.getElementById("audio_high").play();
-        audioCount1.currentTime = 0;
+        audio_count_1.currentTime = 0;
         $field_01.style.visibility = "visible";
         high.style.visibility = "visible";
         Doubling();
@@ -31,7 +31,7 @@ function Doubling() {
     if($card < 12 && $d < 10000) {
         high.style.visibility = "visible";
         document.getElementById("audio_high").play();
-        audioCount1.currentTime = 0;
+        audio_count_1.currentTime = 0;
         window.addEventListener("keydown", Gambling);
     }
     else {
@@ -245,7 +245,7 @@ function Pola1() {
     }
     else {
         clearInterval($Check_3);
-        $audioCount2();
+        $Audio_count_2();
         $Victory_1();
         $bingo = setInterval(Doubling, 1000);
     }
@@ -261,7 +261,7 @@ function First_1() {
     $Credit_Value();
     $d = $d - $first_part;
     document.getElementById("win_value").innerHTML = $d;
-    $audioCount2();
+    $Audio_count_2();
 }
 function Second_1() {
     clearInterval($Check_3);
@@ -273,13 +273,13 @@ function Second_1() {
     else {
         clearInterval($Check_3);
         $Victory_2();
-        $audioCount2();
+        $Audio_count_2();
         $bingo = setInterval(Doubling, 1000);
     }
 }
 function Pola3() {
     clearInterval($Check_3);
-    $audioCount2();
+    $Audio_count_2();
     $bingo = setInterval(Doubling, 1000);
 }
 function Half_4() {
