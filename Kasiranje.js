@@ -6,7 +6,7 @@ function Wait_10() {
     if($deal == 11) {
         clearInterval($waiting_10);
         $deal = 12;
-        if($d > 0) {
+        if($final_win > 0) {
             $Victory_2();
             $victory_1 = setInterval($Victory_1,500);
             $victory_2 = setInterval($Victory_2,1000);
@@ -23,15 +23,15 @@ function Cashing() {
 }
 function Check_2() {
 
-    if((Math.round($d / 100) != $d / 100) && $d > 0) {
+    if((Math.round($final_win / 100) != $final_win / 100) && $final_win > 0) {
         $Minus_1();
     }
     else {
         clearInterval($Check_2);
-        if($d > 0) {
+        if($final_win > 0) {
             Minus_100_2();
         }
-        if($d > 0) {
+        if($final_win > 0) {
 
             $Minus_100_2 = setInterval(Minus_100_2,1000);
         }
@@ -48,7 +48,7 @@ function Check_2() {
     }
 }
 function Minus_100_2() {
-    if($d > 99) {
+    if($final_win > 99) {
         $Minus_100();
     }
     else {

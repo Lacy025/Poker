@@ -94,7 +94,7 @@ let $Three_of_a_kind;
 let $Two_pairs;
 let $High_pair;
 
-let $d;
+let $final_win;
 let $was_win;
 
 let $hold1;
@@ -124,16 +124,16 @@ function $Minus_1() {
     $c = $c + 1;
     document.getElementById("credit").innerHTML = $c;
     $Credit_Value();
-    $d = $d - 1;
-    document.getElementById("win_value").innerHTML = $d;
+    $final_win = $final_win - 1;
+    document.getElementById("win_value").innerHTML = $final_win;
     $Audio_count_1();
 }
 function $Minus_100() {
     $c = $c + 100;
     document.getElementById("credit").innerHTML = $c;
     $Credit_Value();
-    $d = $d - 100;
-    document.getElementById("win_value").innerHTML = $d;
+    $final_win = $final_win - 100;
+    document.getElementById("win_value").innerHTML = $final_win;
     $Audio_count_2();
 }
 

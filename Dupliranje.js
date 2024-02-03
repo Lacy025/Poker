@@ -28,7 +28,7 @@ function Doubling() {
     high.style.visibility = "hidden";
     Doubling_cards();
 
-    if($card < 12 && $d < 10000) {
+    if($card < 12 && $final_win < 10000) {
         high.style.visibility = "visible";
         document.getElementById("audio_high").play();
         audio_count_1.currentTime = 0;
@@ -172,7 +172,7 @@ function Gambling(event) {
 
             Card();
 
-            document.getElementById("win_value").innerHTML = $d;
+            document.getElementById("win_value").innerHTML = $final_win;
             document.getElementById("win_value").style.visibility = "hidden";
 
             if (event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT) {  // LOW
@@ -210,29 +210,29 @@ function Gambling(event) {
 
         case 53 :  // 5 - TAKE HALF
 
-            if($d > 1) {
+            if($final_win > 1) {
 
                 Clearing();
                 $Victory_2();
 
-                $half = Math.floor($d / 2);
+                $half = Math.floor($final_win / 2);
 
                 $victory_1 = setInterval($Victory_1,500);
                 $victory_2 = setInterval($Victory_2,1000);
 
-                if($d < 101) {
+                if($final_win < 101) {
                     $Check_3 = setInterval(Pola1,60);
                 }
-                if($d > 100 && $d < 200) {
-                    $first_part = $d - 100;
+                if($final_win > 100 && $final_win < 200) {
+                    $first_part = $final_win - 100;
                     $second_part = 100 - $half;
                     Half_2();
                 }
-                if($d == 200) {
+                if($final_win == 200) {
                     $Minus_100();
                     $Check_3 = setInterval(Pola3,1000);
                 }
-                if($d > 200) {
+                if($final_win > 200) {
                     Half_4();
                 }
             }
@@ -240,7 +240,7 @@ function Gambling(event) {
 }
 function Pola1() {
 
-    if($d != $half) {
+    if($final_win != $half) {
         $Minus_1();
     }
     else {
@@ -259,8 +259,8 @@ function First_1() {
     $c = $c + $first_part;
     document.getElementById("credit").innerHTML = $c;
     $Credit_Value();
-    $d = $d - $first_part;
-    document.getElementById("win_value").innerHTML = $d;
+    $final_win = $final_win - $first_part;
+    document.getElementById("win_value").innerHTML = $final_win;
     $Audio_count_2();
 }
 function Second_1() {
@@ -283,7 +283,7 @@ function Pola3() {
     $bingo = setInterval(Doubling, 1000);
 }
 function Half_4() {
-    if((Math.floor($d / 100)) != ($d / 100)) {
+    if((Math.floor($final_win / 100)) != ($final_win / 100)) {
         First_2();
         $Check_3 = setInterval(Second_2, 1000);
     }
@@ -292,18 +292,17 @@ function Half_4() {
     }
 }
 function First_2() {
-    $first_part = Math.round((($d / 100) - (Math.floor($d / 100))) * 100);
+    $first_part = Math.round((($final_win / 100) - (Math.floor($final_win / 100))) * 100);
     First_1();
 }
 function Second_2() {
     clearInterval($Check_3);
-    if($d - $half > 99) {
+    if($final_win - $half > 99) {
         $Minus_100();
         $Check_3 = setInterval(Second_2, 1000);
     }
     else {
-
-        if($d - $half == 0) {
+        if($final_win - $half == 0) {
             Third_3();
         }
         else {
@@ -311,7 +310,7 @@ function Second_2() {
             clearInterval($victory_1);
             clearInterval($victory_2);
             $Victory_2();
-            $first_part = $d - $half;
+            $first_part = $final_win - $half;
             First_1();
             $bingo = setInterval(Third_3, 1000);
         } 
@@ -429,19 +428,19 @@ function Card() {
 }
 function Hit() {
     victory.style.visibility = "visible";
-    $d = $d * 2;
-    document.getElementById("win_value").innerHTML = $d;
+    $final_win = $final_win * 2;
+    document.getElementById("win_value").innerHTML = $final_win;
     document.getElementById("win_value").style.visibility = "visible";
     document.getElementById("audio_hit").play();
     audio_hit.currentTime = 0;
-    $card++;
+    $card ++;
     $pause_low = $pause_low - 30;
     $pause_high = $pause_high - 60;
     $bingo = setInterval(Doubling, 1400);
 }
 function Mis() {
-    $d = 0;
-    document.getElementById("win_value").innerHTML = $d;
+    $final_win = 0;
+    document.getElementById("win_value").innerHTML = $final_win;
     document.getElementById("win_value").style.visibility = "visible";
     $deal = 11;
 }
