@@ -15,71 +15,71 @@ function Wait_7() {
         console.log($hold_5);
 
         if($hold_1 == 1 && $a == 1) {
-            $Stop1();
+            $Stop_1();
             $stop += 250;
         }
         if($hold_2 == 1 && $a == 1) {
-            $timerStop2 = setInterval($Stop2,$stop);
+            $auto_stop_2 = setInterval($Stop_2,$stop);
             $stop += 250;
         }
         if($hold_3 == 1&&$a == 1) {
-            $timerStop3 = setInterval($Stop3,$stop);
+            $auto_stop_3 = setInterval($Stop_3,$stop);
             $stop += 250;
         }
         if($hold_4 == 1 && $a == 1) {
-            $timerStop4 = setInterval($Stop4,$stop);
+            $auto_stop_4 = setInterval($Stop_4,$stop);
             $stop += 250;
         }
         if($hold_5 == 1 && $a == 1) {
-            $timerStop5 = setInterval($Stop5,$stop);
+            $auto_stop_5 = setInterval($Stop_5,$stop);
             $stop += 50;
         }
         $message_5.style.visibility = "visible";
         console.log($deal);
-        $choice_1 = setInterval(Choice_1,($stop+200));
+        $choice_1 = setInterval(Choice_1,($stop + 200));
     }
 }
-function $Stop1() {
-    stop1.style.visibility = "visible";
+function $Stop_1() {
+    stop_1.style.visibility = "visible";
     $hold_1 = 1;
     document.getElementById("audio_stop").play();
     audio_stop.currentTime = 0;
-    clearInterval($timerStop1);
+    clearInterval($auto_stop_1);
 }
-function $Stop2() {
-    stop2.style.visibility = "visible";
+function $Stop_2() {
+    stop_2.style.visibility = "visible";
     $hold_2 = 1;
     document.getElementById("audio_stop").play();
     audio_stop.currentTime = 0;
-    clearInterval($timerStop2);
+    clearInterval($auto_stop_2);
 }
-function $Stop3() {
-    stop3.style.visibility = "visible";
+function $Stop_3() {
+    stop_3.style.visibility = "visible";
     $hold_3 = 1;
     document.getElementById("audio_stop").play();
     audio_stop.currentTime = 0;
-    clearInterval($timerStop3);
+    clearInterval($auto_stop_3);
 }
-function $Stop4() {
-    stop4.style.visibility = "visible";
+function $Stop_4() {
+    stop_4.style.visibility = "visible";
     $hold_4 = 1;
     document.getElementById("audio_stop").play();
     audio_stop.currentTime = 0;
-    clearInterval($timerStop4);
+    clearInterval($auto_stop_4);
 }
-function $Stop5() {
-    stop5.style.visibility = "visible";
+function $Stop_5() {
+    stop_5.style.visibility = "visible";
     $hold_5 = 1;
     document.getElementById("audio_stop").play();
     audio_stop.currentTime = 0;
-    clearInterval($timerStop5);
+    clearInterval($auto_stop_5);
 }
 function Clear_hold() {
-    $stop1.style.visibility = "hidden";
-    $stop2.style.visibility = "hidden";
-    $stop3.style.visibility = "hidden";
-    $stop4.style.visibility = "hidden";
-    $stop5.style.visibility = "hidden";
+    $stop_1.style.visibility = "hidden";
+    $stop_2.style.visibility = "hidden";
+    $stop_3.style.visibility = "hidden";
+    $stop_4.style.visibility = "hidden";
+    $stop_5.style.visibility = "hidden";
     $hold_1 = 0;
     $hold_2 = 0;
     $hold_3 = 0;
@@ -120,19 +120,19 @@ function Choice_1() {
 function Card_choice(event) {
     switch(event.keyCode) {
         case 49 :
-            $Stop1();
+            $Stop_1();
             break;
         case 50 :
-            $Stop2();
+            $Stop_2();
             break;
         case 51 :
-            $Stop3();
+            $Stop_3();
             break;
         case 52 :
-            $Stop4();
+            $Stop_4();
             break;
         case 53 :
-            $Stop5();
+            $Stop_5();
             break;
         case 32 :
             Clear_hold();
@@ -148,11 +148,11 @@ function Card_choice(event) {
             clearInterval(message_3);
             clearInterval(message_4);
             clearInterval(message_5);
-            $stop1.style.visibility = "hidden";
-            $stop2.style.visibility = "hidden";
-            $stop3.style.visibility = "hidden";
-            $stop4.style.visibility = "hidden";
-            $stop5.style.visibility = "hidden";
+            $stop_1.style.visibility = "hidden";
+            $stop_2.style.visibility = "hidden";
+            $stop_3.style.visibility = "hidden";
+            $stop_4.style.visibility = "hidden";
+            $stop_5.style.visibility = "hidden";
 
             if($hold_1 == 0) {
                 document.getElementById("$field_1").src="./Cards/53.png";

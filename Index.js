@@ -147,28 +147,28 @@ let $message_5 = document.getElementById("message_5");
 $message_5.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRESS  CLEAR CARDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 $message_5.style.left = "724px";
 
-let $stop1 = document.getElementById("stop1");
-$stop1.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
-let $stop2 = document.getElementById("stop2");
-$stop2.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
-let $stop3 = document.getElementById("stop3");
-$stop3.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
-let $stop4 = document.getElementById("stop4");
-$stop4.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
-let $stop5 = document.getElementById("stop5");
-$stop5.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
+let $stop_1 = document.getElementById("stop_1");
+$stop_1.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
+let $stop_2 = document.getElementById("stop_2");
+$stop_2.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
+let $stop_3 = document.getElementById("stop_3");
+$stop_3.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
+let $stop_4 = document.getElementById("stop_4");
+$stop_4.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
+let $stop_5 = document.getElementById("stop_5");
+$stop_5.innerHTML = "&nbsp;&nbsp;&nbsp;HOLD&nbsp;&nbsp;&nbsp;";
 
-$stop1.style.visibility = "hidden";
-$stop2.style.visibility = "hidden";
-$stop3.style.visibility = "hidden";
-$stop4.style.visibility = "hidden";
-$stop5.style.visibility = "hidden";
+$stop_1.style.visibility = "hidden";
+$stop_2.style.visibility = "hidden";
+$stop_3.style.visibility = "hidden";
+$stop_4.style.visibility = "hidden";
+$stop_5.style.visibility = "hidden";
 
-let $timerStop1;
-let $timerStop2;
-let $timerStop3;
-let $timerStop4;
-let $timerStop5;
+let $auto_stop_1;
+let $auto_stop_2;
+let $auto_stop_3;
+let $auto_stop_4;
+let $auto_stop_5;
 
 let $no_win;
 
