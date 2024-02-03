@@ -6,16 +6,16 @@ let $c = 0;
 let $u = 1;
 let $a = 1;
 
-let $d0;
-let $d1;
-let $d2;
-let $d3;
-let $d4;
-let $d5;
-let $d6;
-let $d7;
-let $d8;
-let $d9;
+let $wining_0;
+let $wining_1;
+let $wining_2;
+let $wining_3;
+let $wining_4;
+let $wining_5;
+let $wining_6;
+let $wining_7;
+let $wining_8;
+let $wining_9;
 
 let $Check_1;
 let $Check_2;
@@ -28,17 +28,6 @@ let $Countdown_2;
 let $Zero_1;
 let $Zero_2;
 
-let $timer1;
-let $timer2;
-let $timer3;
-let $timer4;
-let $timer5;
-let $timer6;
-let $timer7;
-let $timer8;
-let $timer9;
-let $timer10;
-
 let $First_Deal;
 let $Audio_Cards;
 
@@ -50,8 +39,8 @@ let $card_5;
 
 let $choice_1;
 
-let $win_1;
-let $win_2;
+let $cards_1;
+let $cards_2;
 
 let $waiting_1;
 let $waiting_2;

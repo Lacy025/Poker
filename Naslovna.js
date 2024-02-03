@@ -119,6 +119,7 @@ if($deal == 0) {
         document.getElementById("win_name").style.visibility = "hidden";
         document.getElementById("win_value").style.visibility = "hidden";
         victory.style.visibility = "hidden";
+        document.getElementById("win_0").style.visibility = "visible";
         document.getElementById("win_1").style.visibility = "visible";
         document.getElementById("win_2").style.visibility = "visible";
         document.getElementById("win_3").style.visibility = "visible";
@@ -128,7 +129,7 @@ if($deal == 0) {
         document.getElementById("win_7").style.visibility = "visible";
         document.getElementById("win_8").style.visibility = "visible";
         document.getElementById("win_9").style.visibility = "visible";
-        document.getElementById("win_10").style.visibility = "visible";
+        document.getElementById("value_0").style.visibility = "visible";
         document.getElementById("value_1").style.visibility = "visible";
         document.getElementById("value_2").style.visibility = "visible";
         document.getElementById("value_3").style.visibility = "visible";
@@ -138,33 +139,32 @@ if($deal == 0) {
         document.getElementById("value_7").style.visibility = "visible";
         document.getElementById("value_8").style.visibility = "visible";
         document.getElementById("value_9").style.visibility = "visible";
-        document.getElementById("value_10").style.visibility = "visible";
         $was_win = 0;
     }
     function Values() {
-        $d0 = $u * 1100;
-        $d1 = $u * 500;
-        $d2 = $u * 100;
-        $d3 = $u * 40;
-        $d4 = $u * 10;
-        $d5 = $u * 7;
-        $d6 = $u * 5;
-        $d7 = $u * 3;
-        $d8 = $u * 2;
-        $d9 = $u * 1;
+        $wining_0 = $u * 1100;
+        $wining_1 = $u * 500;
+        $wining_2 = $u * 100;
+        $wining_3 = $u * 40;
+        $wining_4 = $u * 10;
+        $wining_5 = $u * 7;
+        $wining_6 = $u * 5;
+        $wining_7 = $u * 3;
+        $wining_8 = $u * 2;
+        $wining_9 = $u * 1;
     }
     function Win_value() {
         Values();
-        document.getElementById("value_1").innerHTML = $d0;
-        document.getElementById("value_2").innerHTML = $d1;
-        document.getElementById("value_3").innerHTML = $d2;
-        document.getElementById("value_4").innerHTML = $d3;
-        document.getElementById("value_5").innerHTML = $d4;
-        document.getElementById("value_6").innerHTML = $d5;
-        document.getElementById("value_7").innerHTML = $d6;
-        document.getElementById("value_8").innerHTML = $d7;
-        document.getElementById("value_9").innerHTML = $d8;
-        document.getElementById("value_10").innerHTML = $d9;
+        document.getElementById("value_0").innerHTML = $wining_0;
+        document.getElementById("value_1").innerHTML = $wining_1;
+        document.getElementById("value_2").innerHTML = $wining_2;
+        document.getElementById("value_3").innerHTML = $wining_3;
+        document.getElementById("value_4").innerHTML = $wining_4;
+        document.getElementById("value_5").innerHTML = $wining_5;
+        document.getElementById("value_6").innerHTML = $wining_6;
+        document.getElementById("value_7").innerHTML = $wining_7;
+        document.getElementById("value_8").innerHTML = $wining_8;
+        document.getElementById("value_9").innerHTML = $wining_9;
     }
     function $Credit_Value() {
         document.getElementById("credit").innerHTML = $c;

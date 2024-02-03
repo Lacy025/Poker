@@ -1,4 +1,4 @@
-#win_1 {
+#win_0 {
     position: relative;
     text-align:left;
     top: -5px;
@@ -7,7 +7,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_2 {
+#win_1 {
     position: relative;
     text-align:left;
     top: -13px;
@@ -15,7 +15,7 @@
     color:red;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_3 {
+#win_2 {
     position: relative;
     text-align:left;
     top: -21px;
@@ -23,7 +23,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_4 {
+#win_3 {
     position: relative;
     text-align:left;
     top: -29px;
@@ -31,7 +31,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_5 {
+#win_4 {
     position: relative;
     text-align:left;
     top: -37px;
@@ -39,7 +39,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_6 {
+#win_5 {
     position: relative;
     text-align:left;
     top: -45px;
@@ -47,7 +47,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_7 {
+#win_6 {
     position: relative;
     text-align:left;
     top: -53px;
@@ -55,7 +55,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_8 {
+#win_7 {
     position: relative;
     text-align:left;
     top: -61px;
@@ -63,7 +63,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_9 {
+#win_8 {
     position: relative;
     text-align:left;
     top: -69px;
@@ -71,7 +71,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#win_10 {
+#win_9 {
     position: relative;
     text-align:left;
     top: -77px;
@@ -79,7 +79,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_1 {
+#value_0 {
     position: absolute;
     text-align: right;
     top: 3px;
@@ -88,7 +88,7 @@
     color:yellow;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_2 {
+#value_1 {
     position: absolute;
     text-align: right;
     top: 33px;
@@ -97,7 +97,7 @@
     color:red;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_3 {
+#value_2 {
     position: absolute;
     text-align: right;
     top: 61px;
@@ -106,7 +106,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_4 {
+#value_3 {
     position: absolute;
     text-align: right;
     top: 90px;
@@ -115,7 +115,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_5 {
+#value_4 {
     position: absolute;
     text-align: right;
     top: 118px;
@@ -124,7 +124,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_6 {
+#value_5 {
     position: absolute;
     text-align: right;
     top: 148px;
@@ -133,7 +133,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_7 {
+#value_6 {
     position: absolute;
     text-align: right;
     top: 176px;
@@ -142,7 +142,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_8 {
+#value_7 {
     position: absolute;
     text-align: right;
     top: 205px;
@@ -151,7 +151,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_9 {
+#value_8 {
     position: absolute;
     text-align: right;
     top: 234px;
@@ -160,7 +160,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#value_10 {
+#value_9 {
     position: absolute;
     text-align: right;
     top: 264px;

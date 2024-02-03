@@ -17,12 +17,12 @@ function Wait_8() {
 		$Two_pairs = 0;
 		$High_pair = 0;
 		$win = 0;
-		$win_2 = setInterval(Win_2,200);
+		$cards_2 = setInterval(Win_2,200);
 	}
 }
 function Win_2() {
 
-	clearInterval($win_2);
+	clearInterval($cards_2);
 
 	console.log($n1);
 	console.log($n2);
@@ -806,6 +806,7 @@ function Win_2() {
 		$High_pair = 1;
 	}
 	if($win > 0) {
+		document.getElementById("win_0").style.visibility = "hidden";
 		document.getElementById("win_1").style.visibility = "hidden";
 		document.getElementById("win_2").style.visibility = "hidden";
 		document.getElementById("win_3").style.visibility = "hidden";
@@ -815,7 +816,7 @@ function Win_2() {
 		document.getElementById("win_7").style.visibility = "hidden";
 		document.getElementById("win_8").style.visibility = "hidden";
 		document.getElementById("win_9").style.visibility = "hidden";
-		document.getElementById("win_10").style.visibility = "hidden";
+		document.getElementById("value_0").style.visibility = "hidden";
 		document.getElementById("value_1").style.visibility = "hidden";
 		document.getElementById("value_2").style.visibility = "hidden";
 		document.getElementById("value_3").style.visibility = "hidden";
@@ -825,7 +826,6 @@ function Win_2() {
 		document.getElementById("value_7").style.visibility = "hidden";
 		document.getElementById("value_8").style.visibility = "hidden";
 		document.getElementById("value_9").style.visibility = "hidden";
-		document.getElementById("value_10").style.visibility = "hidden";
 		table.style.visibility = "visible";
 
 		document.getElementById("audio_win").play();
@@ -837,72 +837,72 @@ function Win_2() {
 	if($Five_of_a_kind == 1) {
 		document.getElementById("win_name").innerHTML = "FIVE OF A KIND";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d0;
+		document.getElementById("win_value").innerHTML = $wining_0;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d0;
+		$d = $wining_0;
 	}
 	if($Royal_flush == 1) {
 		document.getElementById("win_name").innerHTML = "ROYAL FLUSH";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d1;
+		document.getElementById("win_value").innerHTML = $wining_1;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d1;
+		$d = $wining_1;
 	}
 	if($Street_flush == 1) {
 		document.getElementById("win_name").innerHTML = "STREET FLUSH";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d2;
+		document.getElementById("win_value").innerHTML = $wining_2;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d2;
+		$d = $wining_2;
 	}
 	if($Poker == 1) {
 		document.getElementById("win_name").innerHTML = "POKER";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d3;
+		document.getElementById("win_value").innerHTML = $wining_3;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d3;
+		$d = $wining_3;
 	}
 	if($Full_house == 1) {
 		document.getElementById("win_name").innerHTML = "FULL HOUSE";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d4;
+		document.getElementById("win_value").innerHTML = $wining_4;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d4;
+		$d = $wining_4;
 	}
 	if($Flush == 1) {
 		document.getElementById("win_name").innerHTML = "FLUSH";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d5;
+		document.getElementById("win_value").innerHTML = $wining_5;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d5;
+		$d = $wining_5;
 	}
 	if($Street == 1) {
 		document.getElementById("win_name").innerHTML = "STREET";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d6;
+		document.getElementById("win_value").innerHTML = $wining_6;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d6;
+		$d = $wining_6;
 	}
 	if($Three_of_a_kind == 1) {
 		document.getElementById("win_name").innerHTML = "THREE OF A KIND";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d7;
+		document.getElementById("win_value").innerHTML = $wining_7;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d7;
+		$d = $wining_7;
 	}
 	if($Two_pairs == 1) {
 		document.getElementById("win_name").innerHTML = "2 PAIRS";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d8;
+		document.getElementById("win_value").innerHTML = $wining_8;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d8;
+		$d = $wining_8;
 	}
 	if($High_pair == 1) {
 		document.getElementById("win_name").innerHTML = "HIGH PAIR";
 		document.getElementById("win_name").style.visibility = "visible";
-		document.getElementById("win_value").innerHTML = $d9;
+		document.getElementById("win_value").innerHTML = $wining_9;
 		document.getElementById("win_value").style.visibility = "visible";
-		$d = $d9;
+		$d = $wining_9;
 	}
 	if($win == 0) {
 		clearInterval($waiting_9);

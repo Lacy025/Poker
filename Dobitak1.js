@@ -5,12 +5,12 @@ function Wait_6() {
 
 	if($deal == 7) {
 		clearInterval($waiting_6);
-		$win_1 = setInterval(Win_1,100);
+		$cards_1 = setInterval(Win_1,100);
 	}
 }
 function Win_1() {
 
-	clearInterval($win_1);
+	clearInterval($cards_1);
 
 	$win = 0;
 	$two_of_a_kind = 0;
