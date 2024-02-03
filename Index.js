@@ -97,11 +97,11 @@ let $High_pair;
 let $final_win;
 let $was_win;
 
-let $hold1;
-let $hold2;
-let $hold3;
-let $hold4;
-let $hold5;
+let $hold_1;
+let $hold_2;
+let $hold_3;
+let $hold_4;
+let $hold_5;
 
 let $victory_1;
 let $victory_2;
