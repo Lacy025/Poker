@@ -169,7 +169,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#kredit {
+#Credit {
     position:absolute;
     text-align:left;
     top: 36px;
@@ -187,7 +187,7 @@
     color:burlywood;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
-#ulog {
+#Bet {
     position: absolute;
     text-align:left;
     top: 120px;
@@ -378,7 +378,7 @@
     border-radius: 25px;
     background-color: red;
 }
-#dobitak {
+#Win {
     position: absolute;
     top: 140px;
     left: 10px;
@@ -424,17 +424,17 @@
     border-radius: 5px;
     background-color: red;
 }
-#dupliranje {
+#Gambling {
     position: absolute;
     top: 0px;
-    left: 200px;
+    left: 220px;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 48px;
 }
-#kasiranje {
+#Cashing {
     position: absolute;
     top: 0px;
-    left: 230px;
+    left: 250px;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 48px;
 }
@@ -450,10 +450,10 @@
     border-radius: 5px;
     background-color: red;
 }
-#pobedio {
+#You_win {
     position: absolute;
     top: -7px;
-    left: 230px;
+    left: 232px;
     font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-size: 56px;
 }
