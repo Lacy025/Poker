@@ -29,12 +29,12 @@ if($deal == 0) {
     if($was_win == 1) {
         window.removeEventListener("keydown", Choose);
         window.addEventListener("keydown", Choose);
-        main_screen = setInterval(Main_screen,3000);
+        main_screen = setInterval(Main_screen, 3000);
 
     }
     if($was_win == 0 && $game == 1) {
         
-        main_screen = setInterval(Main_screen,1000);
+        main_screen = setInterval(Main_screen, 1000);
     }
     if($game == 0) {
         intro();
@@ -59,9 +59,9 @@ if($deal == 0) {
     else {
         left.style.visibility = "hidden";
         right.style.visibility = "hidden";
-        if($was_win== 0) {
-            message_left_2 = setInterval(Message_left_2,1000);
-            message_right_2 = setInterval(Message_right_2,2000);
+        if($was_win == 0) {
+            message_left_2 = setInterval(Message_left_2, 1000);
+            message_right_2 = setInterval(Message_right_2, 2000);
         }
         
     }
@@ -110,8 +110,8 @@ if($deal == 0) {
         window.removeEventListener("keydown", Choose);
         window.addEventListener("keydown", Choose);
         if($c > 0) {
-            message_left_2 = setInterval(Message_left_2,1000);
-            message_right_2 = setInterval(Message_right_2,2000);
+            message_left_2 = setInterval(Message_left_2, 1000);
+            message_right_2 = setInterval(Message_right_2, 2000);
         }
     }
     function Winnings() {
@@ -311,7 +311,7 @@ if($deal == 0) {
         $Credit_Value();
         $Audio_count_1();
     
-        $Check_1 = setInterval(Check_1,60);
+        $Check_1 = setInterval(Check_1, 60);
     
         function Check_1() {
             
@@ -325,13 +325,13 @@ if($deal == 0) {
                     Minus_100_1();
                 }
                 if($c > 0) {
-                    $Minus_100_1 = setInterval(Minus_100_1,1000);
+                    $Minus_100_1 = setInterval(Minus_100_1, 1000);
                 }
                 else {
                     document.getElementById("audio_count_2").play();
                     audio_count_2.currentTime = 0;
-                    $Countdown_1 = setInterval(Countdown_1,1000);
-                    $Zero_1 = setInterval(Zero_1,1000);
+                    $Countdown_1 = setInterval(Countdown_1, 1000);
+                    $Zero_1 = setInterval(Zero_1, 1000);
                 }
             }
         }
@@ -349,8 +349,8 @@ if($deal == 0) {
             }
             else {
                 clearInterval($Minus_100_1);
-                $Countdown_1 = setInterval(Countdown_1,100);
-                $Zero_1 = setInterval(Zero_1,100);
+                $Countdown_1 = setInterval(Countdown_1, 100);
+                $Zero_1 = setInterval(Zero_1, 100);
             }
         }
         function Zero_1() {
@@ -371,7 +371,7 @@ if($deal == 0) {
             clearInterval(joker_3);
             clearInterval(joker_4);
             clearInterval(joker_5);
-            $Countdown_1 = setInterval(Reset,100);
+            $Countdown_1 = setInterval(Reset, 100);
         }
     }
     function Choose(event) {
@@ -387,11 +387,11 @@ if($deal == 0) {
                     right.style.visibility = "hidden";
                     clearInterval(message_left_1);
                     clearInterval(message_right_1);
-                    message_left_2 = setInterval(Message_left_2,1000);
-                    message_right_2 = setInterval(Message_right_2,2000);
+                    message_left_2 = setInterval(Message_left_2, 1000);
+                    message_right_2 = setInterval(Message_right_2, 2000);
                 }
                 if($c < 4901 && $was_win == 0) {
-                    $c = $c + 100;
+                    $c += 100;
                     $Credit_Value();
                     document.getElementById("audio_credit").play();
                     audio_credit.currentTime = 0;

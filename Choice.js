@@ -19,19 +19,19 @@ function Wait_7() {
             $stop += 250;
         }
         if($hold_2 == 1 && $a == 1) {
-            $auto_stop_2 = setInterval($Stop_2,$stop);
+            $auto_stop_2 = setInterval($Stop_2, $stop);
             $stop += 250;
         }
         if($hold_3 == 1&&$a == 1) {
-            $auto_stop_3 = setInterval($Stop_3,$stop);
+            $auto_stop_3 = setInterval($Stop_3, $stop);
             $stop += 250;
         }
         if($hold_4 == 1 && $a == 1) {
-            $auto_stop_4 = setInterval($Stop_4,$stop);
+            $auto_stop_4 = setInterval($Stop_4, $stop);
             $stop += 250;
         }
         if($hold_5 == 1 && $a == 1) {
-            $auto_stop_5 = setInterval($Stop_5,$stop);
+            $auto_stop_5 = setInterval($Stop_5, $stop);
             $stop += 50;
         }
         $message_5.style.visibility = "visible";
@@ -207,8 +207,8 @@ function Card_choice(event) {
                     $k1 = Math.floor(Math.random() * 53);
                 }
                 $stop += 300;
-                $Audio_Card_1 = setInterval(Audio_Card_1,$stop);
-                $card_1 = setInterval($Card_1,$stop);
+                $Audio_Card_1 = setInterval(Audio_Card_1, $stop);
+                $card_1 = setInterval($Card_1, $stop);
             }
             if($hold_2 == 0) {
                 $k2 = Math.floor(Math.random() * 53);
@@ -216,8 +216,8 @@ function Card_choice(event) {
                     $k2 = Math.floor(Math.random() * 53);
                 }
                 $stop += 300;
-                $Audio_Card_2 = setInterval(Audio_Card_2,$stop);
-                $card_2 = setInterval($Card_2,$stop);
+                $Audio_Card_2 = setInterval(Audio_Card_2, $stop);
+                $card_2 = setInterval($Card_2, $stop);
             }
             if($hold_3 == 0) {
                 $k3 = Math.floor(Math.random() * 53);
@@ -225,8 +225,8 @@ function Card_choice(event) {
                     $k3 = Math.floor(Math.random() * 53);
                 }
                 $stop += 300;
-                $Audio_Card_3 = setInterval(Audio_Card_3,$stop);
-                $card_3 = setInterval($Card_3,$stop);
+                $Audio_Card_3 = setInterval(Audio_Card_3, $stop);
+                $card_3 = setInterval($Card_3, $stop);
             }
             if($hold_4 == 0) {
                 $k4 = Math.floor(Math.random() * 53);
@@ -234,8 +234,8 @@ function Card_choice(event) {
                     $k4 = Math.floor(Math.random() * 53);
                 }
                 $stop += 300;
-                $Audio_Card_4 = setInterval(Audio_Card_4,$stop);
-                $card_4 = setInterval($Card_4,$stop);
+                $Audio_Card_4 = setInterval(Audio_Card_4, $stop);
+                $card_4 = setInterval($Card_4, $stop);
             }
             if($hold_5 == 0) {
                 $k5 = Math.floor(Math.random() * 53);
@@ -243,10 +243,10 @@ function Card_choice(event) {
                     $k5 = Math.floor(Math.random() * 53);
                 }
                 $stop += 300;
-                $Audio_Card_5 = setInterval(Audio_Card_5,$stop);
-                $card_5 = setInterval($Card_5,$stop);
+                $Audio_Card_5 = setInterval(Audio_Card_5, $stop);
+                $card_5 = setInterval($Card_5, $stop);
             }
-            between_1 = setInterval(Between_1,$stop);
+            between_1 = setInterval(Between_1, $stop);
     
     }   
 }

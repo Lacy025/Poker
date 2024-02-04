@@ -1,5 +1,4 @@
 if($money == 0) {
-
     $includeJs("Main_Frame.js");
     $includeJs("Deal_Cards.js");
     $includeJs("Card_1.js");
@@ -11,7 +10,6 @@ if($money == 0) {
     $includeJs("Choice.js");
     $includeJs("Win_2.js");
     $includeJs("Gambling.js");
-    $includeJs("Cashing.js");
-    
+    $includeJs("Cashing.js"); 
 }
 

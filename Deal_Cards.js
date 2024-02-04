@@ -5,9 +5,8 @@ function Wait_1() {
 
     if($deal == 1) {
         clearInterval(waiting_0);
-        $First_Deal = setInterval(First_Deal,100);
+        $First_Deal = setInterval(First_Deal, 100);
     }
-
 }
 function First_Deal() {
     clearInterval($First_Deal);
@@ -26,11 +25,9 @@ function First_Deal() {
     $deal = 2;
 }
 function Random_cards() {
-    
     $k1 = Math.floor(Math.random() * 53);
     $k2 = Math.floor(Math.random() * 53);
     $k3 = Math.floor(Math.random() * 53);
     $k4 = Math.floor(Math.random() * 53);
     $k5 = Math.floor(Math.random() * 53);
-   
 }

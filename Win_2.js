@@ -17,7 +17,7 @@ function Wait_8() {
 		$Two_pairs = 0;
 		$High_pair = 0;
 		$win = 0;
-		$cards_2 = setInterval(Win_2,200);
+		$cards_2 = setInterval(Win_2, 200);
 	}
 }
 function Win_2() {
@@ -913,14 +913,14 @@ function Win_2() {
 		if($final_win < 10000) {
 			left_choice.style.visibility = "visible"
 			right_choice.style.visibility = "hidden"
-			choice_1 = setInterval(Choice_right,500);
-			choice_2 = setInterval(Choice_left,1000);
+			choice_1 = setInterval(Choice_right, 500);
+			choice_2 = setInterval(Choice_left, 1000);
 
 			window.addEventListener("keydown", Doubling_Cashing);
 		}
 		else {
 			victory.style.visibility = "visible";
-			choice_1 = setInterval(Block,3000);
+			choice_1 = setInterval(Block, 3000);
 		}
 	}
 	function Choice_left() {

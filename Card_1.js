@@ -6,7 +6,7 @@ function Wait_1() {
     if($deal == 2) {
         clearInterval($waiting_1);
         console.log($deal);
-        $Audio_Cards = setInterval(Audio_Cards,200);
+        $Audio_Cards = setInterval(Audio_Cards, 200);
         $Audio_Card_1 = setInterval($Card_1, 200);
     }
 }
